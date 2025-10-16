@@ -1978,3 +1978,25 @@ Sin información adicional, no puedo proporcionar el nombre oficial completo del
 [2025-10-15 13:39:31] 
 ✅ Archivo limpio guardado en: datos/datos_limpios.csv
 [2025-10-15 13:39:31] 🎉 ¡Listo para cargar en Power BI!
+[2025-10-15 20:35:04] 
+============================================================
+[2025-10-15 20:35:04] 🚀 INICIANDO NORMALIZACIÓN
+[2025-10-15 20:35:04] ============================================================
+[2025-10-15 20:35:04] 
+📂 Leyendo: datos/hubspot_export.csv
+[2025-10-15 20:35:04] ✅ Leído: 26 leads
+[2025-10-15 20:35:04] 
+🔄 Unificando columnas...
+[2025-10-15 20:35:04] ✅ Unificadas: Grado Académico + Grado Académico.1
+[2025-10-15 20:35:04] ✅ Columnas unificadas
+[2025-10-15 20:35:04] 
+🏫 Normalizando colegios...
+[2025-10-15 20:35:04] Colegios únicos: 24
+[2025-10-15 20:35:04] 🤖 Consultando Claude: 'Don Bosco'
+[2025-10-15 20:35:05] ❌ Error Claude: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CUA6bZvvLtxHzG3XzAktG'}
+[2025-10-15 20:35:12] 🤖 Consultando Claude: 'Prueba'
+[2025-10-15 20:35:12] ❌ Error Claude: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CUA6c9gBXyUGRbWgHN4U9'}
+[2025-10-15 20:35:21] ⚠️ Respuesta inválida: 'ninguno' → 'Otro'
+[2025-10-15 20:35:21] ⚠️ No es colegio: 'Cooperativa' → 'Otro'
+[2025-10-15 20:35:21] 🤖 Consultando Claude: 'INED'
+[2025-10-15 20:35:21] ❌ Error Claude: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CUA6cms3XhtUftPE5MAj7'}

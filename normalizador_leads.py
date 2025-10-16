@@ -59,6 +59,13 @@ UNIVERSIDADES_GT = {
     'istmo': 'Universidad del Istmo',
 }
 
+# ⭐ NUEVO: Colegios que NO son universidades (se clasifican como "Otro")
+COLEGIOS_NO_UNIVERSITARIOS = {
+    'valle colonial',
+    'valle colonial colegio',
+    'colegio valle colonial'
+}
+
 # Respuestas inválidas
 RESPUESTAS_INVALIDAS = [
     'no', 'ninguno', 'ninguna', 'no estudio', 'no estoy estudiando',
@@ -100,26 +107,33 @@ class NormalizadorLeads:
         self.normalizaciones_nuevas = []
         self.urls_nuevas = []
         self.formularios_nuevos = []
-        
+    
     def log(self, mensaje):
         """Registra mensajes en consola y archivo"""
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         log_msg = f"[{timestamp}] {mensaje}"
-        print(log_msg)
+        print(mensaje)
         
-        with open(LOG_FILE, 'a', encoding='utf-8') as f:
-            f.write(log_msg + '\n')
+        try:
+            with open(LOG_FILE, 'a', encoding='utf-8') as f:
+                f.write(log_msg + '\n')
+        except Exception as e:
+            print(f"⚠️ Error al escribir log: {e}")
     
     def cargar_diccionario(self):
         """Carga el diccionario de normalizaciones previas"""
         if os.path.exists(DICCIONARIO_FILE):
-            with open(DICCIONARIO_FILE, 'r', encoding='utf-8') as f:
-                diccionario = json.load(f)
-                if 'urls' not in diccionario:
-                    diccionario['urls'] = {}
-                if 'formularios' not in diccionario:
-                    diccionario['formularios'] = {}
-                return diccionario
+            try:
+                with open(DICCIONARIO_FILE, 'r', encoding='utf-8') as f:
+                    diccionario = json.load(f)
+                    if 'urls' not in diccionario:
+                        diccionario['urls'] = {}
+                    if 'formularios' not in diccionario:
+                        diccionario['formularios'] = {}
+                    return diccionario
+            except:
+                pass
+        
         return {
             'colegios': {},
             'grados': {},
@@ -166,201 +180,6 @@ class NormalizadorLeads:
                 self.log(f"🗑️ Backup antiguo eliminado: {backup}")
         except Exception as e:
             self.log(f"⚠️ Error al limpiar backups: {e}")
-    
-    # ============================================================================
-    # MÉTODO MEJORADO PARA CLASIFICAR URLs - VERSIÓN ROBUSTA
-    # ============================================================================
-    
-    def categorizar_url(self, url, modo_interactivo=True):
-        """
-        Categoriza URL por palabras clave - VERSIÓN MEJORADA
-        Integrado con diccionario de aprendizaje
-        """
-        if not url or pd.isna(url):
-            return "Otro"
-        
-        url_str = str(url).strip().lower()
-        
-        if not url_str:
-            return "Otro"
-        
-        # 1. Buscar en diccionario exacto (aprendizaje previo)
-        if 'urls' in self.diccionario and url_str in self.diccionario['urls']:
-            return self.diccionario['urls'][url_str]
-        
-        # 2. Patrones mejorados de clasificación por carrera
-        patterns = {
-            'Administración de Empresas': [
-                'administracion-empresas',
-                'licenciatura-administracion',
-                'lic-administracion',
-                'webinar-conoce-licenciatura-en-administracion',
-                'conoce-la-licenciatura-en-administracion',
-                'lic%2badministracion',
-                'form-lic-administracion',
-                'promoting-form-lic-administracion'
-            ],
-            'Ciencia de la Administración': [
-                'ingenieria-ciencia-administracion',
-                'ingenieria-administracion',
-                'ciencia-administracion',
-                'ing-administracion',
-                'ing%2badministracion',
-                'form-ing-administracion',
-                'promoting-form-ing-administracion'
-            ],
-            'International Marketing and Business Analytics': [
-                'marketing-analytics',
-                'licenciatura-marketing',
-                'international-marketing',
-                'lic-marketing',
-                'lic%2bmarketing',
-                'form-lic-marketing',
-                'promoting-form-lic-marketing'
-            ],
-            'Comunicación Estratégica': [
-                'comunicacion-estrategica',
-                'licenciatura-comunicacion',
-                'comunicacion/',
-                'lic-comunicacion'
-            ],
-            'Maestrías': [
-                'maestria',
-                'master-',
-                '/master',
-                'maestrias'
-            ]
-        }
-        
-        # 3. Casos especiales que siempre son "Otro"
-        casos_otro = [
-            'facebook.com',
-            'fb.com',
-            'instagram.com',
-            'gracias-ok',
-            'thank-you',
-            'thank_you',
-            'lead_ads_forms',
-            'publishing_tools',
-            'form_uvg_bridge'
-        ]
-        
-        # Verificar casos "Otro"
-        for caso in casos_otro:
-            if caso in url_str:
-                return 'Otro'
-        
-        # 4. Buscar coincidencias con patrones de carreras
-        for carrera, patrones_carrera in patterns.items():
-            for patron in patrones_carrera:
-                if patron in url_str:
-                    # Guardar en diccionario
-                    if 'urls' not in self.diccionario:
-                        self.diccionario['urls'] = {}
-                    self.diccionario['urls'][url_str] = carrera
-                    return carrera
-        
-        # 5. Bridge Principal - página raíz sin path específico
-        if 'uvgbridge.gt' in url_str:
-            # Verificar que NO tenga ninguna palabra clave de carrera
-            tiene_carrera = False
-            for patrones_carrera in patterns.values():
-                if any(patron in url_str for patron in patrones_carrera):
-                    tiene_carrera = True
-                    break
-            
-            if not tiene_carrera:
-                if re.search(r'uvgbridge\.gt/?(\?|$)', url_str):
-                    return 'Bridge Principal'
-        
-        # 6. Si no se encontró y es modo interactivo, preguntar
-        if modo_interactivo and 'uvgbridge.gt' in url_str:
-            return self.preguntar_categoria_url(url_str)
-        
-        # 7. Si no coincide con nada, es "Otro"
-        return 'Otro'
-    
-    # ============================================================================
-    # FIN DEL MÉTODO MEJORADO
-    # ============================================================================
-    
-    def preguntar_categoria_url(self, url):
-        """Pregunta al usuario a qué categoría pertenece una URL"""
-        print(f"\n{'='*60}")
-        print(f"🔗 URL NO RECONOCIDA")
-        print(f"URL: {url}")
-        print(f"{'='*60}")
-        print("\n¿A qué categoría pertenece?")
-        print("1. Administración de Empresas")
-        print("2. Ciencia de la Administración")
-        print("3. International Marketing and Business Analytics")
-        print("4. Comunicación Estratégica")
-        print("5. Maestrías")
-        print("6. Bridge Principal")
-        print("7. Otro")
-        
-        while True:
-            respuesta = input("\nSelecciona (1-7): ").strip()
-            
-            categorias = {
-                '1': 'Administración de Empresas',
-                '2': 'Ciencia de la Administración',
-                '3': 'International Marketing and Business Analytics',
-                '4': 'Comunicación Estratégica',
-                '5': 'Maestrías',
-                '6': 'Bridge Principal',
-                '7': 'Otro'
-            }
-            
-            if respuesta in categorias:
-                categoria = categorias[respuesta]
-                
-                if 'urls' not in self.diccionario:
-                    self.diccionario['urls'] = {}
-                self.diccionario['urls'][url] = categoria
-                
-                self.log(f"✅ URL categorizada: '{url}' → '{categoria}'")
-                self.urls_nuevas.append(f"URL: {url} → {categoria}")
-                return categoria
-            else:
-                print("⚠️ Opción inválida. Por favor selecciona un número del 1 al 7.")
-    
-    def validar_respuesta_claude(self, texto_original, normalizado):
-        """Valida que Claude no haya respondido con texto de sistema"""
-        if len(normalizado) > 150:
-            self.log(f"⚠️ Respuesta muy larga: '{texto_original}' → 'Otro'")
-            return "Otro"
-        
-        frases_sistema = [
-            'estoy listo para', 'por favor proporciona',
-            'entendido', 'necesito más información',
-            'no puedo', 'dame más contexto'
-        ]
-        
-        normalizado_lower = normalizado.lower()
-        for frase in frases_sistema:
-            if frase in normalizado_lower:
-                self.log(f"⚠️ Respuesta de sistema: '{texto_original}' → 'Otro'")
-                return "Otro"
-        
-        if normalizado.count('\n') > 2:
-            self.log(f"⚠️ Respuesta con formato: '{texto_original}' → 'Otro'")
-            return "Otro"
-        
-        return normalizado
-    
-    def detectar_no_es_colegio(self, texto):
-        """Detecta si NO es un colegio"""
-        if not texto or pd.isna(texto):
-            return False
-        
-        texto_limpio = str(texto).strip().lower()
-        
-        for institucion in NO_SON_COLEGIOS:
-            if institucion in texto_limpio:
-                return True
-        
-        return False
     
     def es_sigla_ambigua(self, texto):
         """Detecta siglas ambiguas"""
@@ -425,6 +244,11 @@ class NormalizadorLeads:
         
         texto_limpio = str(texto).strip().lower()
         
+        # ⭐ NUEVA VERIFICACIÓN: Verificar si es un colegio que NO es universidad
+        if texto_limpio in COLEGIOS_NO_UNIVERSITARIOS:
+            self.log(f"⚠️ No es universidad: '{texto}' → 'Otro'")
+            return None
+        
         if texto_limpio in UNIVERSIDADES_GT:
             return UNIVERSIDADES_GT[texto_limpio]
         
@@ -458,106 +282,77 @@ REGLAS:
 3. Si es COLEGIO → Nombre limpio
 4. Si es ambiguo → nombre original
 
-SOLO el nombre normalizado, sin explicaciones."""
+SOLO el nombre normalizado, sin explicaciones.""",
+            'grado': f"""Grado académico: "{texto}"
+
+REGLAS:
+- 3ro Básico, 2do Básico, etc.
+- 4to Diversificado, 5to Diversificado, 6to Diversificado
+- Estudiante Universitario
+- Graduado Diversificado
+
+SOLO el grado normalizado."""
         }
         
         try:
+            self.log(f"🤖 Consultando Claude: '{texto}'")
+            
             response = self.client.messages.create(
                 model="claude-sonnet-4-20250514",
-                max_tokens=100,
-                messages=[{"role": "user", "content": prompts[tipo]}]
+                max_tokens=150,
+                messages=[{
+                    "role": "user",
+                    "content": prompts.get(tipo, texto)
+                }]
             )
-            
-            resultado = response.content[0].text.strip()
-            
-            if len(resultado) > 200 or '\n' in resultado:
-                lineas = [l.strip() for l in resultado.split('\n') if l.strip()]
-                resultado = lineas[-1] if lineas else texto
             
             self.tokens_usados += response.usage.input_tokens + response.usage.output_tokens
             
-            resultado_validado = self.validar_respuesta_claude(texto, resultado)
+            normalizado = response.content[0].text.strip()
+            normalizado = self.validar_respuesta_claude(texto, normalizado)
             
-            return resultado_validado
+            return normalizado
             
         except Exception as e:
-            self.log(f"❌ Error en Claude: {e}")
+            self.log(f"❌ Error Claude: {e}")
             return texto
     
-    def validar_normalizacion(self, original, normalizado, tipo):
-        """Validación manual"""
+    def validar_normalizacion(self, original, propuesta, tipo):
+        """Valida normalización con usuario"""
         print(f"\n{'='*60}")
-        print(f"🔍 NUEVA NORMALIZACIÓN DE {tipo.upper()}")
-        print(f"Original:    {original}")
-        print(f"Normalizado: {normalizado}")
+        print(f"📝 {tipo.upper()}")
+        print(f"Original: {original}")
+        print(f"Propuesta: {propuesta}")
         print(f"{'='*60}")
+        print("\n1. Aceptar propuesta")
+        print("2. Ingresar manualmente")
+        print("3. Marcar como 'Otro'")
         
         while True:
-            respuesta = input("¿Aprobar? (s=sí, n=no, e=editar): ").lower().strip()
+            respuesta = input("\nSelecciona (1-3): ").strip()
             
-            if respuesta == 's':
-                return normalizado
-            elif respuesta == 'n':
-                print("❌ Rechazado. Se mantendrá original.")
-                return original
-            elif respuesta == 'e':
-                nuevo = input("Escribe normalización correcta: ").strip()
-                return nuevo if nuevo else original
+            if respuesta == '1':
+                return propuesta
+            elif respuesta == '2':
+                manual = input("Ingresa el nombre correcto: ").strip()
+                return manual if manual else propuesta
+            elif respuesta == '3':
+                return "Otro"
             else:
-                print("⚠️ Respuesta inválida. Usa 's', 'n', o 'e'")
+                print("⚠️ Opción inválida")
     
-    def normalizar_grado(self, grado):
-        """Normaliza grado académico"""
-        if not grado or pd.isna(grado):
-            return ""
+    def detectar_no_es_colegio(self, texto):
+        """Detecta si NO es un colegio"""
+        if not texto or pd.isna(texto):
+            return False
         
-        grado_str = str(grado).strip()
-        if not grado_str:
-            return ""
+        texto_limpio = str(texto).strip().lower()
         
-        grado_lower = grado_str.lower()
+        for institucion in NO_SON_COLEGIOS:
+            if institucion in texto_limpio:
+                return True
         
-        # Universitario
-        palabras_universitario = [
-            'licenciatura', 'universitario', 'universidad',
-            'técnico universitario', 'pem', 'profesor'
-        ]
-        if any(palabra in grado_lower for palabra in palabras_universitario):
-            return "Estudiante Universitario"
-        
-        # Diversificado
-        if grado_lower == 'bachillerato':
-            return "5to Diversificado"
-        
-        match = re.search(r'(\d+)(to|do|ro)?', grado_lower)
-        if match:
-            numero = match.group(1)
-            
-            if any(palabra in grado_lower for palabra in ['bachillerato', 'perito', 'diversificado']):
-                if numero == '4':
-                    return "4to Diversificado"
-                elif numero == '5':
-                    return "5to Diversificado"
-                elif numero == '6':
-                    return "6to Diversificado"
-            
-            if 'basico' in grado_lower or 'básico' in grado_lower:
-                if numero == '1':
-                    return "1ro Básico"
-                elif numero == '2':
-                    return "2do Básico"
-                elif numero == '3':
-                    return "3ro Básico"
-        
-        if 'graduado' in grado_lower and 'diversificado' in grado_lower:
-            return "Graduado Diversificado"
-        
-        if grado_str in self.diccionario['grados']:
-            return self.diccionario['grados'][grado_str]
-        
-        normalizado = grado_str
-        self.diccionario['grados'][grado_str] = normalizado
-        return normalizado
+        return False
     
     def normalizar_colegio(self, colegio, modo_validacion=True):
         """Normaliza nombre de colegio"""
@@ -605,13 +400,11 @@ SOLO el nombre normalizado, sin explicaciones."""
                 self.normalizaciones_nuevas.append(f"Colegio (sigla): {colegio_str} → {normalizado}")
                 return normalizado
             else:
-                self.diccionario['colegios'][colegio_str] = colegio_str
                 return colegio_str
         
-        self.log(f"🤖 Consultando Claude: '{colegio_str}'")
         normalizado = self.normalizar_con_claude(colegio_str, 'colegio')
         
-        if modo_validacion and normalizado != colegio_str:
+        if modo_validacion:
             normalizado = self.validar_normalizacion(colegio_str, normalizado, 'colegio')
         
         self.diccionario['colegios'][colegio_str] = normalizado
@@ -619,91 +412,55 @@ SOLO el nombre normalizado, sin explicaciones."""
         
         return normalizado
     
-    def extraer_primer_form(self, form_submission):
-        """Extrae primer elemento de formulario"""
-        if not form_submission or pd.isna(form_submission):
-            return "Otro"
+    def normalizar_grado(self, grado):
+        """Normaliza grado académico"""
+        if not grado or pd.isna(grado):
+            return "Sin especificar"
         
-        form_str = str(form_submission).strip()
-        if not form_str:
-            return "Otro"
+        grado_str = str(grado).strip()
+        if not grado_str:
+            return "Sin especificar"
         
-        elementos = re.split(r'[;,]', form_str)
-        primer_elemento = elementos[0].strip() if elementos else ""
+        grado_lower = grado_str.lower()
         
-        if '.elementor-form' in primer_elemento.lower():
-            return "Otro"
+        if 'universitario' in grado_lower or 'universidad' in grado_lower:
+            return "Estudiante Universitario"
         
-        return primer_elemento if primer_elemento else "Otro"
-    
-    def preguntar_carrera_form(self, form_name):
-        """Pregunta carrera para formulario"""
-        print(f"\n{'='*60}")
-        print(f"📝 FORMULARIO NO RECONOCIDO")
-        print(f"Formulario: {form_name}")
-        print(f"{'='*60}")
-        print("\n¿A qué carrera corresponde?")
-        print("1. Administración de Empresas")
-        print("2. Ciencia de la Administración")
-        print("3. International Marketing and Business Analytics")
-        print("4. Comunicación Estratégica")
-        print("5. No mapear")
-        
-        while True:
-            respuesta = input("\nSelecciona (1-5): ").strip()
+        match = re.search(r'(\d+)', grado_lower)
+        if match:
+            numero = match.group(1)
             
-            carreras = {
-                '1': 'Administración de Empresas',
-                '2': 'Ciencia de la Administración',
-                '3': 'International Marketing and Business Analytics',
-                '4': 'Comunicación Estratégica',
-                '5': None
-            }
+            if any(palabra in grado_lower for palabra in ['bachillerato', 'perito', 'diversificado']):
+                if numero == '4':
+                    return "4to Diversificado"
+                elif numero == '5':
+                    return "5to Diversificado"
+                elif numero == '6':
+                    return "6to Diversificado"
             
-            if respuesta in carreras:
-                carrera = carreras[respuesta]
-                
-                if 'formularios' not in self.diccionario:
-                    self.diccionario['formularios'] = {}
-                self.diccionario['formularios'][form_name.lower()] = carrera
-                
-                if carrera:
-                    self.log(f"✅ Formulario: '{form_name}' → '{carrera}'")
-                    self.formularios_nuevos.append(f"Formulario: {form_name} → {carrera}")
-                else:
-                    self.log(f"✅ Formulario sin mapeo: '{form_name}'")
-                    self.formularios_nuevos.append(f"Formulario: {form_name} → Sin mapeo")
-                
-                return carrera
-            else:
-                print("⚠️ Opción inválida.")
-    
-    def mapear_form_a_carrera(self, form_name, modo_interactivo=True):
-        """Mapea formulario a carrera"""
-        if not form_name or form_name == "Otro":
-            return None
+            if 'basico' in grado_lower or 'básico' in grado_lower:
+                if numero == '1':
+                    return "1ro Básico"
+                elif numero == '2':
+                    return "2do Básico"
+                elif numero == '3':
+                    return "3ro Básico"
         
-        form_lower = form_name.lower()
+        if 'graduado' in grado_lower and 'diversificado' in grado_lower:
+            return "Graduado Diversificado"
         
-        if 'formularios' in self.diccionario and form_lower in self.diccionario['formularios']:
-            return self.diccionario['formularios'][form_lower]
+        if grado_str in self.diccionario['grados']:
+            return self.diccionario['grados'][grado_str]
         
-        for key, carrera in MAPEO_FORMULARIOS.items():
-            if key in form_lower:
-                return carrera
-        
-        if 'uvg bridge' in form_lower or 'bridge' in form_lower:
-            return None
-        
-        if modo_interactivo:
-            return self.preguntar_carrera_form(form_name)
-        
-        return None
+        normalizado = grado_str
+        self.diccionario['grados'][grado_str] = normalizado
+        return normalizado
     
     def unificar_columnas(self, df):
         """Unifica columnas duplicadas"""
-        self.log("📋 Unificando columnas...")
+        self.log("\n🔄 Unificando columnas...")
         
+        # Unificar Grado Académico
         grado_cols = [col for col in df.columns if col == 'Grado Académico' or col.startswith('Grado Académico.')]
         
         if len(grado_cols) >= 2:
@@ -719,6 +476,7 @@ SOLO el nombre normalizado, sin explicaciones."""
             df['___GRADO_UNIFICADO___'] = ''
             self.log("⚠️ No se encontró Grado Académico")
         
+        # Unificar Colegio
         colegio_col1 = 'Colegio Actual'
         colegio_col2 = 'En qué colegio estudias actualmente?'
         
@@ -740,14 +498,268 @@ SOLO el nombre normalizado, sin explicaciones."""
         self.log("✅ Columnas unificadas")
         return df
     
+    def extraer_primer_form(self, texto):
+        """Extrae el primer formulario de un texto con múltiples forms"""
+        if not texto or pd.isna(texto):
+            return "Otro"
+        
+        texto_str = str(texto).strip().lower()
+        
+        if ';' in texto_str:
+            forms = [f.strip() for f in texto_str.split(';')]
+            forms = [f for f in forms if f and f != '.elementor-form' and 'elementor' not in f]
+            if forms:
+                return forms[0]
+        
+        if '.elementor-form' not in texto_str:
+            return texto_str
+        
+        return "Otro"
+    
+    def preguntar_carrera_form(self, form_name):
+        """Pregunta al usuario a qué carrera pertenece un formulario"""
+        print(f"\n{'='*60}")
+        print(f"📝 FORMULARIO NO RECONOCIDO")
+        print(f"Formulario: {form_name}")
+        print(f"{'='*60}")
+        print("\n¿A qué carrera pertenece?")
+        print("1. Administración de Empresas")
+        print("2. Ciencia de la Administración")
+        print("3. International Marketing and Business Analytics")
+        print("4. Comunicación Estratégica")
+        print("5. Maestrías")
+        print("6. Sin especificar")
+        
+        while True:
+            respuesta = input("\nSelecciona (1-6): ").strip()
+            
+            carreras = {
+                '1': 'Administración de Empresas',
+                '2': 'Ciencia de la Administración',
+                '3': 'International Marketing and Business Analytics',
+                '4': 'Comunicación Estratégica',
+                '5': 'Maestrías',
+                '6': 'Sin especificar'
+            }
+            
+            if respuesta in carreras:
+                carrera = carreras[respuesta]
+                
+                if 'formularios' not in self.diccionario:
+                    self.diccionario['formularios'] = {}
+                self.diccionario['formularios'][form_name.lower()] = carrera
+                
+                self.log(f"✅ Formulario mapeado: '{form_name}' → '{carrera}'")
+                self.formularios_nuevos.append(f"Form: {form_name} → {carrera}")
+                
+                return carrera
+            else:
+                print("⚠️ Opción inválida. Selecciona 1-6.")
+    
+    def mapear_form_a_carrera(self, form, modo_interactivo=True):
+        """Mapea formulario a carrera"""
+        if not form or pd.isna(form) or form == "Otro":
+            return None
+        
+        form_str = str(form).strip().lower()
+        
+        # Buscar en diccionario de formularios
+        if 'formularios' in self.diccionario and form_str in self.diccionario['formularios']:
+            return self.diccionario['formularios'][form_str]
+        
+        # Buscar en mapeo predefinido
+        for key, carrera in MAPEO_FORMULARIOS.items():
+            if key in form_str:
+                if 'formularios' not in self.diccionario:
+                    self.diccionario['formularios'] = {}
+                self.diccionario['formularios'][form_str] = carrera
+                return carrera
+        
+        # Si contiene "uvg bridge" no mapear (ya tiene carrera)
+        if 'uvg bridge' in form_str or 'bridge' in form_str:
+            return None
+        
+        # Si es modo interactivo, preguntar
+        if modo_interactivo:
+            return self.preguntar_carrera_form(form)
+        
+        return None
+    
+    def categorizar_url(self, url, modo_interactivo=True):
+        """Categoriza URL por palabras clave - VERSIÓN MEJORADA"""
+        if not url or pd.isna(url):
+            return "Otro"
+        
+        url_str = str(url).strip().lower()
+        
+        if not url_str:
+            return "Otro"
+        
+        # 1. Buscar en diccionario
+        if 'urls' in self.diccionario and url_str in self.diccionario['urls']:
+            return self.diccionario['urls'][url_str]
+        
+        # 2. Patrones de clasificación
+        patterns = {
+            'Administración de Empresas': [
+                'administracion-empresas',
+                'licenciatura-administracion',
+                'lic-administracion',
+                'webinar-conoce-licenciatura-en-administracion',
+                'conoce-la-licenciatura-en-administracion',
+                'lic%2badministracion',
+                'form-lic-administracion',
+                'promoting-form-lic-administracion'
+            ],
+            'Ciencia de la Administración': [
+                'ingenieria-ciencia-administracion',
+                'ingenieria-administracion',
+                'ciencia-administracion',
+                'ing-administracion',
+                'ing%2badministracion',
+                'form-ing-administracion',
+                'promoting-form-ing-administracion'
+            ],
+            'International Marketing and Business Analytics': [
+                'marketing-analytics',
+                'licenciatura-marketing',
+                'international-marketing',
+                'lic-marketing',
+                'lic%2bmarketing',
+                'form-lic-marketing',
+                'promoting-form-lic-marketing'
+            ],
+            'Comunicación Estratégica': [
+                'comunicacion-estrategica',
+                'licenciatura-comunicacion',
+                'comunicacion/',
+                'lic-comunicacion'
+            ],
+            'Maestrías': [
+                'maestria',
+                'master-',
+                '/master',
+                'maestrias'
+            ]
+        }
+        
+        # 3. Casos especiales "Otro"
+        casos_otro = [
+            'facebook.com',
+            'fb.com',
+            'instagram.com',
+            'gracias-ok',
+            'thank-you',
+            'thank_you',
+            'lead_ads_forms',
+            'publishing_tools',
+            'form_uvg_bridge'
+        ]
+        
+        for caso in casos_otro:
+            if caso in url_str:
+                return 'Otro'
+        
+        # 4. Buscar coincidencias
+        for carrera, patrones_carrera in patterns.items():
+            for patron in patrones_carrera:
+                if patron in url_str:
+                    if 'urls' not in self.diccionario:
+                        self.diccionario['urls'] = {}
+                    self.diccionario['urls'][url_str] = carrera
+                    return carrera
+        
+        # 5. Bridge Principal
+        if 'uvgbridge.gt' in url_str:
+            tiene_carrera = False
+            for patrones_carrera in patterns.values():
+                if any(patron in url_str for patron in patrones_carrera):
+                    tiene_carrera = True
+                    break
+            
+            if not tiene_carrera:
+                if re.search(r'uvgbridge\.gt/?(\?|$)', url_str):
+                    return 'Bridge Principal'
+        
+        # 6. Modo interactivo
+        if modo_interactivo and 'uvgbridge.gt' in url_str:
+            return self.preguntar_categoria_url(url_str)
+        
+        return 'Otro'
+    
+    def preguntar_categoria_url(self, url):
+        """Pregunta al usuario a qué categoría pertenece una URL"""
+        print(f"\n{'='*60}")
+        print(f"🔗 URL NO RECONOCIDA")
+        print(f"URL: {url}")
+        print(f"{'='*60}")
+        print("\n¿A qué categoría pertenece?")
+        print("1. Administración de Empresas")
+        print("2. Ciencia de la Administración")
+        print("3. International Marketing and Business Analytics")
+        print("4. Comunicación Estratégica")
+        print("5. Maestrías")
+        print("6. Bridge Principal")
+        print("7. Otro")
+        
+        while True:
+            respuesta = input("\nSelecciona (1-7): ").strip()
+            
+            categorias = {
+                '1': 'Administración de Empresas',
+                '2': 'Ciencia de la Administración',
+                '3': 'International Marketing and Business Analytics',
+                '4': 'Comunicación Estratégica',
+                '5': 'Maestrías',
+                '6': 'Bridge Principal',
+                '7': 'Otro'
+            }
+            
+            if respuesta in categorias:
+                categoria = categorias[respuesta]
+                
+                if 'urls' not in self.diccionario:
+                    self.diccionario['urls'] = {}
+                self.diccionario['urls'][url] = categoria
+                
+                self.log(f"✅ URL categorizada: '{url}' → '{categoria}'")
+                self.urls_nuevas.append(f"URL: {url} → {categoria}")
+                return categoria
+            else:
+                print("⚠️ Opción inválida. Selecciona 1-7.")
+    
+    def validar_respuesta_claude(self, texto_original, normalizado):
+        """Valida que Claude no haya respondido con texto de sistema"""
+        if len(normalizado) > 150:
+            self.log(f"⚠️ Respuesta muy larga: '{texto_original}' → 'Otro'")
+            return "Otro"
+        
+        frases_sistema = [
+            'estoy listo para', 'por favor proporciona',
+            'entendido', 'necesito más información',
+            'no puedo', 'dame más contexto'
+        ]
+        
+        normalizado_lower = normalizado.lower()
+        for frase in frases_sistema:
+            if frase in normalizado_lower:
+                self.log(f"⚠️ Respuesta de sistema: '{texto_original}' → 'Otro'")
+                return "Otro"
+        
+        if normalizado.count('\n') > 2:
+            self.log(f"⚠️ Respuesta con formato: '{texto_original}' → 'Otro'")
+            return "Otro"
+        
+        return normalizado
+    
     def procesar_leads(self, modo_validacion=True):
         """Proceso principal"""
-        self.log("="*60)
+        self.log("\n" + "="*60)
         self.log("🚀 INICIANDO NORMALIZACIÓN")
         self.log("="*60)
         
         # 1. Leer CSV
-        self.log(f"📂 Leyendo: {INPUT_FILE}")
+        self.log(f"\n📂 Leyendo: {INPUT_FILE}")
         try:
             df = pd.read_csv(INPUT_FILE, encoding='utf-8')
             self.log(f"✅ Leído: {len(df)} leads")
@@ -813,7 +825,7 @@ SOLO el nombre normalizado, sin explicaciones."""
             
             df['___CARRERA_COMPLETADA___'] = df.apply(completar_carrera, axis=1)
         
-        # 7. Identificar URLs únicas
+        # 7. Identificar URLs
         if modo_validacion:
             self.log("\n🔗 Identificando URLs...")
             urls_first = df['First Page Seen'].dropna().unique() if 'First Page Seen' in df.columns else []
@@ -882,7 +894,11 @@ SOLO el nombre normalizado, sin explicaciones."""
         self.log(f"\n💾 Guardando: {OUTPUT_FILE}")
         df.to_csv(OUTPUT_FILE, index=False, encoding='utf-8-sig')
         
-        # 12. Resumen
+        # 12. Guardar diccionario
+        self.log("\n💾 Guardando diccionario...")
+        self.guardar_diccionario()
+        
+        # 13. Resumen
         self.log("\n" + "="*60)
         self.log("✅ PROCESO COMPLETADO")
         self.log("="*60)
