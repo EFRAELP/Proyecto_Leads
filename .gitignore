@@ -1,3 +1,18 @@
+# Cachés y compilados
+_pycache_/
+*.py[cod]
+*$py.class
+
+# Entorno virtual
+venv/
 .env
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
 *.csv
-datos/hubspot_export.csv
+
+# Archivos de configuración locales
+config.json
+.env
