@@ -1,0 +1,1980 @@
+[2025-10-13 20:12:47] ============================================================
+[2025-10-13 20:12:47] 🚀 INICIANDO NORMALIZACIÓN DE LEADS
+[2025-10-13 20:12:47] ============================================================
+[2025-10-13 20:12:47] 📂 Leyendo archivo: datos/hubspot_export.csv
+[2025-10-13 20:12:47] ✅ Archivo leído: 20 leads encontrados
+[2025-10-13 20:12:47] 📋 Unificando columnas duplicadas...
+[2025-10-13 20:17:29] ============================================================
+[2025-10-13 20:17:29] 🚀 INICIANDO NORMALIZACIÓN DE LEADS
+[2025-10-13 20:17:29] ============================================================
+[2025-10-13 20:17:29] 📂 Leyendo archivo: datos/hubspot_export.csv
+[2025-10-13 20:17:29] ✅ Archivo leído: 20 leads encontrados
+[2025-10-13 20:17:29] 📋 Unificando columnas duplicadas...
+[2025-10-13 20:19:06] ============================================================
+[2025-10-13 20:19:06] 🚀 INICIANDO NORMALIZACIÓN DE LEADS
+[2025-10-13 20:19:06] ============================================================
+[2025-10-13 20:19:06] 📂 Leyendo archivo: datos/hubspot_export.csv
+[2025-10-13 20:19:06] ✅ Archivo leído: 20 leads encontrados
+[2025-10-13 20:19:06] 📋 Unificando columnas duplicadas...
+[2025-10-13 20:19:06] ✅ Columnas unificadas
+[2025-10-13 20:19:06] 📊 Leads nuevos: 20 | Leads existentes: 0
+[2025-10-13 20:19:06] 
+🏫 Normalizando colegios...
+[2025-10-13 20:19:06] Colegios únicos nuevos a procesar: 18
+[2025-10-13 20:19:06] 🤖 Consultando Claude para: 'Don Bosco'
+[2025-10-13 20:19:07] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6Hm5ecFLgGKiQ5YfZUd'}
+[2025-10-13 20:19:07] 🤖 Consultando Claude para: 'Prueba'
+[2025-10-13 20:19:07] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6Hm6SEfyHS2UpYdcFmY'}
+[2025-10-13 20:19:07] 🤖 Consultando Claude para: 'ninguno'
+[2025-10-13 20:19:07] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6Hm7APXTCxHVtbEM5eS'}
+[2025-10-13 20:19:07] 🤖 Consultando Claude para: 'Cooperativa'
+[2025-10-13 20:19:07] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6Hm7xmEFxrCnfmCeUVo'}
+[2025-10-13 20:19:07] 🤖 Consultando Claude para: 'INED'
+[2025-10-13 20:19:07] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6Hm8p7Phs6nc1fYGNsA'}
+[2025-10-13 20:19:07] 🤖 Consultando Claude para: 'Rafael Landivar'
+[2025-10-13 20:19:08] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6Hm9bjUUp646C4jN5sd'}
+[2025-10-13 20:19:08] 🤖 Consultando Claude para: 'Progreso'
+[2025-10-13 20:19:08] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmAL99MxszFmSzkmJW'}
+[2025-10-13 20:19:08] 🤖 Consultando Claude para: 'No estoy en estudiando'
+[2025-10-13 20:19:08] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmB8kpmdFJMXG5HQ2L'}
+[2025-10-13 20:19:08] 🤖 Consultando Claude para: 'Galileo'
+[2025-10-13 20:19:08] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmBvdezH4H3ndZqcrk'}
+[2025-10-13 20:19:08] 🤖 Consultando Claude para: 'Escuela Nacional Central de Formación Secretarial'
+[2025-10-13 20:19:08] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmCmjM9thPs2VvWUGz'}
+[2025-10-13 20:19:08] 🤖 Consultando Claude para: 'Universidad Galileo'
+[2025-10-13 20:19:09] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmDf4YvGNhDDKkE6GL'}
+[2025-10-13 20:19:09] 🤖 Consultando Claude para: 'Ici guatemala suchitepequez'
+[2025-10-13 20:19:09] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmESCKfeeEhRQ5w1cE'}
+[2025-10-13 20:19:09] 🤖 Consultando Claude para: 'Colegio Guatemalteco Bilingüe'
+[2025-10-13 20:19:09] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmFD5XXEH3g77LYnCZ'}
+[2025-10-13 20:19:09] ✓ Fuzzy match: 'Ninguno' → 'ninguno'
+[2025-10-13 20:19:09] 🤖 Consultando Claude para: 'Universidad Mariano Gálvez'
+[2025-10-13 20:19:09] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmGaBMKmbHgTfpdZLo'}
+[2025-10-13 20:19:09] 🤖 Consultando Claude para: 'Instituto Intercultural Mixto Santiago'
+[2025-10-13 20:19:09] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmHKL7e5RLxN2KnJ34'}
+[2025-10-13 20:19:09] 🤖 Consultando Claude para: 'Colegio La Asunción San Marcos'
+[2025-10-13 20:19:10] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmJ2zEh2wx755KXUfJ'}
+[2025-10-13 20:19:10] 🤖 Consultando Claude para: 'No'
+[2025-10-13 20:19:10] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmJo8bxUSYdVW166X9'}
+[2025-10-13 20:19:10] ✓ Fuzzy match: 'Ninguno' → 'ninguno'
+[2025-10-13 20:19:10] 
+🎓 Normalizando grados académicos...
+[2025-10-13 20:19:10] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmKam35GNYZr3LUWGE'}
+[2025-10-13 20:19:10] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmLQ7imaABoj9zCU9k'}
+[2025-10-13 20:19:10] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmMAkoYcdwt8FxLXrV'}
+[2025-10-13 20:19:11] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmMxddgvkZcCt54j3U'}
+[2025-10-13 20:19:11] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmNdZqWDNnd4PDondL'}
+[2025-10-13 20:19:11] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmPNhxxRzMGKQSXdU3'}
+[2025-10-13 20:19:11] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmQ6cwtv4RPevFreMV'}
+[2025-10-13 20:19:11] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmQrG4JyNhAmwZoqRG'}
+[2025-10-13 20:19:11] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmRZfxJbyPowiC1RbX'}
+[2025-10-13 20:19:11] 
+🔗 Limpiando URLs...
+[2025-10-13 20:19:12] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmSKKZuW5pyFNQzzaF'}
+[2025-10-13 20:19:12] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmT6hMaujYVLp5oGfv'}
+[2025-10-13 20:19:12] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmTtaNGPnoGSRURyKo'}
+[2025-10-13 20:19:12] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmUcjDcwPhsmgYS3aD'}
+[2025-10-13 20:19:12] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmVP7hp6jiousn1kE2'}
+[2025-10-13 20:19:12] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmWCj4Mcv7P3BibEYk'}
+[2025-10-13 20:19:13] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmWxck1W9wzuQeogQj'}
+[2025-10-13 20:19:13] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmXkFNUkrSXmAT7V1V'}
+[2025-10-13 20:19:13] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmYabqzrGdrRGokRbi'}
+[2025-10-13 20:19:13] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmZPih89d7krrMnn15'}
+[2025-10-13 20:19:13] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6Hma9cQE9JxyEGt42t3'}
+[2025-10-13 20:19:14] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6Hmas2DNMqmU31HyWZP'}
+[2025-10-13 20:19:14] ❌ Error en Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CU6HmbjcC2Q85WdTDSsRV'}
+[2025-10-13 20:19:14] ✅ Diccionario guardado con 17 colegios
+[2025-10-13 20:19:14] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-10-13 20:19:14] 
+============================================================
+[2025-10-13 20:19:14] ✅ PROCESO COMPLETADO
+[2025-10-13 20:19:14] ============================================================
+[2025-10-13 20:19:14] 📊 Total de leads procesados: 20
+[2025-10-13 20:19:14] 🆕 Normalizaciones nuevas: 26
+[2025-10-13 20:19:14] 🤖 Tokens usados: 0
+[2025-10-13 20:19:14] 💰 Costo aproximado: $0.0000
+[2025-10-13 20:19:14] 
+📝 NUEVAS NORMALIZACIONES:
+[2025-10-13 20:19:14]   • Colegio: Don Bosco → Don Bosco
+[2025-10-13 20:19:14]   • Colegio: Prueba → Prueba
+[2025-10-13 20:19:14]   • Colegio: ninguno → ninguno
+[2025-10-13 20:19:14]   • Colegio: Cooperativa → Cooperativa
+[2025-10-13 20:19:14]   • Colegio: INED → INED
+[2025-10-13 20:19:14]   • Colegio: Rafael Landivar → Rafael Landivar
+[2025-10-13 20:19:14]   • Colegio: Progreso → Progreso
+[2025-10-13 20:19:14]   • Colegio: No estoy en estudiando → No estoy en estudiando
+[2025-10-13 20:19:14]   • Colegio: Galileo → Galileo
+[2025-10-13 20:19:14]   • Colegio: Escuela Nacional Central de Formación Secretarial → Escuela Nacional Central de Formación Secretarial
+[2025-10-13 20:19:14]   • Colegio: Universidad Galileo → Universidad Galileo
+[2025-10-13 20:19:14]   • Colegio: Ici guatemala suchitepequez → Ici guatemala suchitepequez
+[2025-10-13 20:19:14]   • Colegio: Colegio Guatemalteco Bilingüe → Colegio Guatemalteco Bilingüe
+[2025-10-13 20:19:14]   • Colegio: Universidad Mariano Gálvez → Universidad Mariano Gálvez
+[2025-10-13 20:19:14]   • Colegio: Instituto Intercultural Mixto Santiago → Instituto Intercultural Mixto Santiago
+[2025-10-13 20:19:14]   • Colegio: Colegio La Asunción San Marcos → Colegio La Asunción San Marcos
+[2025-10-13 20:19:14]   • Colegio: No → No
+[2025-10-13 20:19:14]   • Grado: Bachiller → Bachiller
+[2025-10-13 20:19:14]   • Grado: Estudiante → Estudiante
+[2025-10-13 20:19:14]   • Grado: 6to → 6to
+[2025-10-13 20:19:14]   • Grado: 3ro Basico → 3ro Basico
+[2025-10-13 20:19:14]   • Grado: Sexto diversificado → Sexto diversificado
+[2025-10-13 20:19:14]   • Grado: Diversificado → Diversificado
+[2025-10-13 20:19:14]   • Grado: Tecnico universitario → Tecnico universitario
+[2025-10-13 20:19:14]   • Grado: Estudiante Universitario → Estudiante Universitario
+[2025-10-13 20:19:14]   • Grado: 6 → 6
+[2025-10-13 20:19:14] 
+✅ Archivo limpio guardado en: datos/datos_limpios.csv
+[2025-10-13 20:19:14] 🎉 ¡Listo para cargar en Power BI!
+[2025-10-13 20:27:46] ============================================================
+[2025-10-13 20:27:46] 🚀 INICIANDO NORMALIZACIÓN DE LEADS
+[2025-10-13 20:27:46] ============================================================
+[2025-10-13 20:27:46] 📂 Leyendo archivo: datos/hubspot_export.csv
+[2025-10-13 20:27:46] ✅ Archivo leído: 20 leads encontrados
+[2025-10-13 20:27:46] 📋 Unificando columnas duplicadas...
+[2025-10-13 20:27:46] ✅ Columnas unificadas
+[2025-10-13 20:27:46] 📊 Leads nuevos: 20 | Leads existentes: 0
+[2025-10-13 20:27:46] 
+🏫 Normalizando colegios...
+[2025-10-13 20:27:46] Colegios únicos nuevos a procesar: 18
+[2025-10-13 20:27:46] 🤖 Consultando Claude para: 'Don Bosco'
+[2025-10-13 20:28:01] 🤖 Consultando Claude para: 'Prueba'
+[2025-10-13 20:28:15] 🤖 Consultando Claude para: 'ninguno'
+[2025-10-13 20:28:25] 🤖 Consultando Claude para: 'Cooperativa'
+[2025-10-13 20:28:33] 🤖 Consultando Claude para: 'INED'
+[2025-10-13 20:28:40] 🤖 Consultando Claude para: 'Rafael Landivar'
+[2025-10-13 20:28:47] 🤖 Consultando Claude para: 'Progreso'
+[2025-10-13 20:28:53] 🤖 Consultando Claude para: 'No estoy en estudiando'
+[2025-10-13 20:29:07] 🤖 Consultando Claude para: 'Galileo'
+[2025-10-13 20:29:11] 🤖 Consultando Claude para: 'Escuela Nacional Central de Formación Secretarial'
+[2025-10-13 20:29:23] 🤖 Consultando Claude para: 'Universidad Galileo'
+[2025-10-13 20:29:25] 🤖 Consultando Claude para: 'Ici guatemala suchitepequez'
+[2025-10-13 20:29:36] 🤖 Consultando Claude para: 'Colegio Guatemalteco Bilingüe'
+[2025-10-13 20:29:39] ✓ Fuzzy match: 'Ninguno' → 'No puedo proporcionar un nombre oficial para "ninguno" ya que esta palabra indica la ausencia de un colegio específico, no es el nombre de una institución educativa.'
+[2025-10-13 20:29:39] 🤖 Consultando Claude para: 'Universidad Mariano Gálvez'
+[2025-10-13 20:29:52] 🤖 Consultando Claude para: 'Instituto Intercultural Mixto Santiago'
+[2025-10-13 20:29:54] 🤖 Consultando Claude para: 'Colegio La Asunción San Marcos'
+[2025-10-13 20:30:04] 🤖 Consultando Claude para: 'No'
+[2025-10-13 20:30:13] ✓ Fuzzy match: 'Ninguno' → 'No puedo proporcionar un nombre oficial para "ninguno" ya que esta palabra indica la ausencia de un colegio específico, no es el nombre de una institución educativa.'
+[2025-10-13 20:30:13] 
+🎓 Normalizando grados académicos...
+[2025-10-13 20:30:31] 
+🔗 Limpiando URLs...
+[2025-10-13 20:30:56] ✅ Diccionario guardado con 17 colegios
+[2025-10-13 20:30:56] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-10-13 20:30:56] 
+============================================================
+[2025-10-13 20:30:56] ✅ PROCESO COMPLETADO
+[2025-10-13 20:30:56] ============================================================
+[2025-10-13 20:30:56] 📊 Total de leads procesados: 20
+[2025-10-13 20:30:56] 🆕 Normalizaciones nuevas: 26
+[2025-10-13 20:30:56] 🤖 Tokens usados: 5249
+[2025-10-13 20:30:56] 💰 Costo aproximado: $0.0157
+[2025-10-13 20:30:56] 
+📝 NUEVAS NORMALIZACIONES:
+[2025-10-13 20:30:56]   • Colegio: Don Bosco → Colegio Don Bosco
+[2025-10-13 20:30:56]   • Colegio: Prueba → No puedo realizar búsquedas en internet en tiempo real. Basándome únicamente en el nombre "Prueba" que proporcionaste, este parece ser un nombre de ejemplo o placeholder más que el nombre real de un colegio establecido.
+
+Colegio Prueba
+[2025-10-13 20:30:56]   • Colegio: ninguno → No puedo proporcionar un nombre oficial para "ninguno" ya que esta palabra indica la ausencia de un colegio específico, no es el nombre de una institución educativa.
+[2025-10-13 20:30:56]   • Colegio: Cooperativa → No puedo buscar en internet en tiempo real. Con solo "Cooperativa" no es posible determinar el nombre oficial completo del colegio en Guatemala, ya que puede haber varios colegios cooperativos en el país.
+
+Colegio Cooperativo
+[2025-10-13 20:30:56]   • Colegio: INED → Instituto de Educación Diversificada
+[2025-10-13 20:30:56]   • Colegio: Rafael Landivar → Colegio San Rafael Landívar
+[2025-10-13 20:30:56]   • Colegio: Progreso → Colegio Progreso
+[2025-10-13 20:30:56]   • Colegio: No estoy en estudiando → No puedo encontrar un colegio en Guatemala con ese nombre exacto. El nombre "No estoy en estudiando" parece contener errores gramaticales y no corresponde a una institución educativa real.
+
+Instituto de Estudios Superiores
+[2025-10-13 20:30:56]   • Colegio: Galileo → Universidad Galileo
+[2025-10-13 20:30:56]   • Colegio: Escuela Nacional Central de Formación Secretarial → Escuela Nacional Central de Ciencias Comerciales
+[2025-10-13 20:30:56]   • Colegio: Universidad Galileo → Universidad Galileo
+[2025-10-13 20:30:56]   • Colegio: Ici guatemala suchitepequez → Instituto Centroamericano de Idiomas - ICI Guatemala Suchitepéquez
+[2025-10-13 20:30:56]   • Colegio: Colegio Guatemalteco Bilingüe → Colegio Guatemalteco Bilingüe
+[2025-10-13 20:30:56]   • Colegio: Universidad Mariano Gálvez → Universidad Mariano Gálvez de Guatemala
+[2025-10-13 20:30:56]   • Colegio: Instituto Intercultural Mixto Santiago → Instituto Intercultural Mixto Santiago
+[2025-10-13 20:30:56]   • Colegio: Colegio La Asunción San Marcos → Colegio La Asunción de San Marcos
+[2025-10-13 20:30:56]   • Colegio: No → No puedo encontrar información específica sobre un colegio llamado "No" en Guatemala, ya que este parece ser un nombre incompleto o una respuesta negativa más que el nombre real de una institución educativa.
+
+Sin información adicional, no puedo proporcionar el nombre oficial completo del colegio.
+[2025-10-13 20:30:56]   • Grado: Bachiller → Bachiller
+[2025-10-13 20:30:56]   • Grado: Estudiante → Estudiante
+[2025-10-13 20:30:56]   • Grado: 6to → 6to Primaria
+[2025-10-13 20:30:56]   • Grado: 3ro Basico → 3ro Básico
+[2025-10-13 20:30:56]   • Grado: Sexto diversificado → 6to Diversificado
+[2025-10-13 20:30:56]   • Grado: Diversificado → Diversificado
+[2025-10-13 20:30:56]   • Grado: Tecnico universitario → Técnico Universitario
+[2025-10-13 20:30:56]   • Grado: Estudiante Universitario → Estudiante Universitario
+[2025-10-13 20:30:56]   • Grado: 6 → 6to Primaria
+[2025-10-13 20:30:56] 
+✅ Archivo limpio guardado en: datos/datos_limpios.csv
+[2025-10-13 20:30:56] 🎉 ¡Listo para cargar en Power BI!
+[2025-10-14 13:05:33] ============================================================
+[2025-10-14 13:05:33] 🚀 INICIANDO NORMALIZACIÓN DE LEADS
+[2025-10-14 13:05:33] ============================================================
+[2025-10-14 13:05:33] 📂 Leyendo archivo: datos/hubspot_export.csv
+[2025-10-14 13:05:33] ✅ Archivo leído: 20 leads encontrados
+[2025-10-14 13:05:33] 📋 Unificando columnas duplicadas...
+[2025-10-14 13:05:33] ✅ Columnas unificadas
+[2025-10-14 13:05:33] 📊 Leads nuevos: 20 | Leads existentes: 0
+[2025-10-14 13:05:33] 
+🏫 Normalizando colegios...
+[2025-10-14 13:05:33] Colegios únicos nuevos a procesar: 18
+[2025-10-14 13:05:33] 🤖 Consultando Claude para: 'Don Bosco'
+[2025-10-14 13:05:39] 🤖 Consultando Claude para: 'Prueba'
+[2025-10-14 13:05:43] ⚠️ Respuesta inválida detectada: 'ninguno' → 'Otro'
+[2025-10-14 13:05:43] 🤖 Consultando Claude para: 'Cooperativa'
+[2025-10-14 13:05:47] 🤖 Consultando Claude para: 'INED'
+[2025-10-14 13:05:51] 🎓 Universidad detectada: 'Rafael Landivar' → 'Universidad Rafael Landívar'
+[2025-10-14 13:05:51] 🤖 Consultando Claude para: 'Progreso'
+[2025-10-14 13:05:57] ⚠️ Respuesta inválida detectada: 'No estoy en estudiando' → 'Otro'
+[2025-10-14 13:05:57] 🎓 Universidad detectada: 'Galileo' → 'Universidad Galileo'
+[2025-10-14 13:05:57] 🤖 Consultando Claude para: 'Escuela Nacional Central de Formación Secretarial'
+[2025-10-14 13:05:59] 🎓 Universidad detectada: 'Universidad Galileo' → 'Universidad Galileo'
+[2025-10-14 13:05:59] 🤖 Consultando Claude para: 'Ici guatemala suchitepequez'
+[2025-10-14 13:06:04] 🤖 Consultando Claude para: 'Colegio Guatemalteco Bilingüe'
+[2025-10-14 13:06:06] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-14 13:06:06] 🎓 Universidad detectada: 'Universidad Mariano Gálvez' → 'Universidad Mariano Gálvez'
+[2025-10-14 13:06:06] 🤖 Consultando Claude para: 'Instituto Intercultural Mixto Santiago'
+[2025-10-14 13:06:08] 🤖 Consultando Claude para: 'Colegio La Asunción San Marcos'
+[2025-10-14 13:06:11] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-14 13:06:11] ⚠️ Respuesta inválida detectada: 'ninguno' → 'Otro'
+[2025-10-14 13:06:11] ⚠️ Respuesta inválida detectada: 'No estoy en estudiando' → 'Otro'
+[2025-10-14 13:06:11] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-14 13:06:11] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-14 13:06:11] 
+🎓 Normalizando grados académicos...
+[2025-10-14 13:06:30] 
+🔗 Limpiando URLs...
+[2025-10-14 13:06:36] ✅ Eliminada columna redundante: En qué colegio estudias actualmente?
+[2025-10-14 13:06:36] ✅ Diccionario guardado con 18 colegios
+[2025-10-14 13:06:36] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-10-14 13:06:36] 
+============================================================
+[2025-10-14 13:06:36] ✅ PROCESO COMPLETADO
+[2025-10-14 13:06:36] ============================================================
+[2025-10-14 13:06:36] 📊 Total de leads procesados: 20
+[2025-10-14 13:06:36] 🆕 Normalizaciones nuevas: 23
+[2025-10-14 13:06:36] 🤖 Tokens usados: 4668
+[2025-10-14 13:06:36] 💰 Costo aproximado: $0.0140
+[2025-10-14 13:06:36] 
+📝 NUEVAS NORMALIZACIONES:
+[2025-10-14 13:06:36]   • Colegio: Don Bosco → Colegio Don Bosco
+[2025-10-14 13:06:36]   • Colegio: Prueba → Otro
+[2025-10-14 13:06:36]   • Colegio: Cooperativa → Otro
+[2025-10-14 13:06:36]   • Colegio: INED → Instituto Nacional de Educación Diversificada
+[2025-10-14 13:06:36]   • Colegio: Rafael Landivar → Universidad Rafael Landívar
+[2025-10-14 13:06:36]   • Colegio: Progreso → Colegio Progreso
+[2025-10-14 13:06:36]   • Colegio: Galileo → Universidad Galileo
+[2025-10-14 13:06:36]   • Colegio: Escuela Nacional Central de Formación Secretarial → Escuela Nacional Central de Formación Secretarial
+[2025-10-14 13:06:36]   • Colegio: Universidad Galileo → Universidad Galileo
+[2025-10-14 13:06:36]   • Colegio: Ici guatemala suchitepequez → Instituto de Ciencias e Idiomas (ICI) Guatemala Suchitepéquez
+[2025-10-14 13:06:36]   • Colegio: Colegio Guatemalteco Bilingüe → Colegio Guatemalteco Bilingüe
+[2025-10-14 13:06:36]   • Colegio: Universidad Mariano Gálvez → Universidad Mariano Gálvez
+[2025-10-14 13:06:36]   • Colegio: Instituto Intercultural Mixto Santiago → Instituto Intercultural Mixto Santiago
+[2025-10-14 13:06:36]   • Colegio: Colegio La Asunción San Marcos → Colegio La Asunción San Marcos
+[2025-10-14 13:06:36]   • Grado: Bachiller → Bachillerato
+[2025-10-14 13:06:36]   • Grado: Estudiante → Estudiante
+[2025-10-14 13:06:36]   • Grado: 6to → 6to Bachillerato
+[2025-10-14 13:06:36]   • Grado: 3ro Basico → 3ro Básico
+[2025-10-14 13:06:36]   • Grado: Sexto diversificado → 6to Diversificado
+[2025-10-14 13:06:36]   • Grado: Diversificado → Diversificado
+[2025-10-14 13:06:36]   • Grado: Tecnico universitario → Técnico Universitario
+[2025-10-14 13:06:36]   • Grado: Estudiante Universitario → Universitario
+[2025-10-14 13:06:36]   • Grado: 6 → 6to Bachillerato
+[2025-10-14 13:06:36] 
+✅ Archivo limpio guardado en: datos/datos_limpios.csv
+[2025-10-14 13:06:36] 🎉 ¡Listo para cargar en Power BI!
+[2025-10-14 13:15:51] ============================================================
+[2025-10-14 13:15:51] 🚀 INICIANDO NORMALIZACIÓN DE LEADS
+[2025-10-14 13:15:51] ============================================================
+[2025-10-14 13:15:51] 📂 Leyendo archivo: datos/hubspot_export.csv
+[2025-10-14 13:15:51] ✅ Archivo leído: 20 leads encontrados
+[2025-10-14 13:15:51] 📋 Unificando columnas duplicadas...
+[2025-10-14 13:15:51] ✅ Unificadas columnas: Grado Académico + Grado Académico.1
+[2025-10-14 13:15:51] ✅ Columnas unificadas
+[2025-10-14 13:15:51] 📊 Leads nuevos: 0 | Leads existentes: 20
+[2025-10-14 13:15:51] 
+🏫 Normalizando colegios...
+[2025-10-14 13:15:51] Colegios únicos nuevos a procesar: 0
+[2025-10-14 13:15:51] ⚠️ Respuesta inválida detectada: 'ninguno' → 'Otro'
+[2025-10-14 13:15:51] ⚠️ Respuesta inválida detectada: 'No estoy en estudiando' → 'Otro'
+[2025-10-14 13:15:51] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-14 13:15:51] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-14 13:15:51] 
+🎓 Normalizando grados académicos...
+[2025-10-14 13:16:00] 
+🔗 Limpiando URLs...
+[2025-10-14 13:16:00] ✅ Reemplazada columna: Grado Académico
+[2025-10-14 13:16:00] ✅ Eliminada columna duplicada: Grado Académico.1
+[2025-10-14 13:16:00] ✅ Reemplazada columna: Colegio Actual
+[2025-10-14 13:16:00] ✅ Eliminada columna redundante: En qué colegio estudias actualmente?
+[2025-10-14 13:16:00] ✅ Reemplazada columna: First Page Seen
+[2025-10-14 13:16:00] ✅ Reemplazada columna: Last Page Seen
+[2025-10-14 13:16:00] 💾 Backup creado: diccionario_backup_20251014_131600.json
+[2025-10-14 13:16:00] ✅ Diccionario guardado con 18 colegios
+[2025-10-14 13:16:00] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-10-14 13:16:00] 
+============================================================
+[2025-10-14 13:16:00] ✅ PROCESO COMPLETADO
+[2025-10-14 13:16:00] ============================================================
+[2025-10-14 13:16:00] 📊 Total de leads procesados: 20
+[2025-10-14 13:16:00] 🆕 Normalizaciones nuevas: 4
+[2025-10-14 13:16:00] 🤖 Tokens usados: 721
+[2025-10-14 13:16:00] 💰 Costo aproximado: $0.0022
+[2025-10-14 13:16:00] 
+📝 NUEVAS NORMALIZACIONES:
+[2025-10-14 13:16:00]   • Grado: graduado_diversificado → Graduado Diversificado
+[2025-10-14 13:16:00]   • Grado: estudiante_diversificado → Estudiante Diversificado
+[2025-10-14 13:16:00]   • Grado: Tecnico en Optometria → Técnico Universitario
+[2025-10-14 13:16:00]   • Grado: Cuarto perito contador → 4to Diversificado
+[2025-10-14 13:16:00] 
+✅ Archivo limpio guardado en: datos/datos_limpios.csv
+[2025-10-14 13:16:00] 🎉 ¡Listo para cargar en Power BI!
+[2025-10-14 13:44:18] ============================================================
+[2025-10-14 13:44:18] 🚀 INICIANDO NORMALIZACIÓN DE LEADS
+[2025-10-14 13:44:18] ============================================================
+[2025-10-14 13:44:18] 📂 Leyendo archivo: datos/hubspot_export.csv
+[2025-10-14 13:44:18] ✅ Archivo leído: 330 leads encontrados
+[2025-10-14 13:44:18] 📋 Unificando columnas duplicadas...
+[2025-10-14 13:44:18] ✅ Unificadas columnas: Grado Académico + Grado Académico.1
+[2025-10-14 13:44:18] ✅ Columnas unificadas
+[2025-10-14 13:44:18] 📊 Leads nuevos: 310 | Leads existentes: 20
+[2025-10-14 13:44:18] 
+🏫 Normalizando colegios...
+[2025-10-14 13:44:18] Colegios únicos nuevos a procesar: 235
+[2025-10-14 13:44:18] 🎓 Universidad detectada: 'Universidad Regional de Guatemala' → 'Universidad Mariano Gálvez'
+[2025-10-14 13:44:18] 🤖 Consultando Claude para: 'Graduada colegio verbo'
+[2025-10-14 13:44:21] 🤖 Consultando Claude para: 'Colegio fuente de vida'
+[2025-10-14 13:44:23] ⚠️ Respuesta inválida detectada: 'N/a' → 'Otro'
+[2025-10-14 13:44:23] 🤖 Consultando Claude para: 'INED San Pedro Sacatepéquez,. Guatemala'
+[2025-10-14 13:44:25] 🤖 Consultando Claude para: 'Graduada'
+[2025-10-14 13:44:26] 🤖 Consultando Claude para: 'Bilingüe el prado'
+[2025-10-14 13:44:28] 🤖 Consultando Claude para: 'IGpa'
+[2025-10-14 13:44:31] 🤖 Consultando Claude para: 'Colegio Mixto Belén Guatemala'
+[2025-10-14 13:44:33] 🤖 Consultando Claude para: 'Liceo Alpha y Omega'
+[2025-10-14 13:44:34] 🤖 Consultando Claude para: 'moderno jalpataguense'
+[2025-10-14 13:44:36] 🤖 Consultando Claude para: 'Ineb maría josefa rosado lara'
+[2025-10-14 13:44:38] 🤖 Consultando Claude para: 'Instituto diversificado Morazán el progreso'
+[2025-10-14 13:44:40] 🤖 Consultando Claude para: 'IMB-PC'
+[2025-10-14 13:44:42] 🤖 Consultando Claude para: 'Talita kumi'
+[2025-10-14 13:44:45] 🤖 Consultando Claude para: 'Isaac'
+[2025-10-14 13:44:47] 🎓 Universidad detectada: 'Universidad de San Carlos de Guatemala' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-14 13:44:47] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-14 13:44:47] 🤖 Consultando Claude para: 'Príncipe de Asturias'
+[2025-10-14 13:44:49] 🤖 Consultando Claude para: 'CDA Decroly Americano'
+[2025-10-14 13:44:51] 🤖 Consultando Claude para: 'INED Aldea Las Brisas Malacatán San Marcos'
+[2025-10-14 13:44:53] 🤖 Consultando Claude para: 'Asociación grupo ceiba'
+[2025-10-14 13:44:55] 🎓 Universidad detectada: 'UVG soy egresado' → 'Universidad del Valle de Guatemala'
+[2025-10-14 13:44:55] 🎓 Universidad detectada: 'universidad San Carlos Guatemala' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-14 13:44:55] 🤖 Consultando Claude para: 'colegio Jesús de Nazareth'
+[2025-10-14 13:44:57] 🤖 Consultando Claude para: 'Liceo privado mixto tumbadorense'
+[2025-10-14 13:44:59] 🤖 Consultando Claude para: 'ahorita no tengo la oportunidad de estar estudiando en ningún colegio'
+[2025-10-14 13:45:01] 🎓 Universidad detectada: 'ITEC Uvg altiplano' → 'Universidad del Valle de Guatemala'
+[2025-10-14 13:45:01] 🤖 Consultando Claude para: 'Instituto De Nacional De Educación Diversificada S.C.P'
+[2025-10-14 13:45:03] 🤖 Consultando Claude para: 'Colegio La Ilustración'
+[2025-10-14 13:45:04] 🤖 Consultando Claude para: 'IMENCE'
+[2025-10-14 13:45:06] 🤖 Consultando Claude para: 'Escuela normal central para varones'
+[2025-10-14 13:45:08] 🎓 Universidad detectada: 'USAc' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-14 13:45:08] 🤖 Consultando Claude para: 'colegio integral el saber'
+[2025-10-14 13:45:10] 🤖 Consultando Claude para: 'Perito en administración de empresas'
+[2025-10-14 13:45:12] 🎓 Universidad detectada: 'Da Vinci' → 'Universidad Da Vinci'
+[2025-10-14 13:45:12] 🤖 Consultando Claude para: 'Cooperativa el Recuerdo'
+[2025-10-14 13:45:14] 🤖 Consultando Claude para: 'Liceo tecnológico ciudad Quetzal'
+[2025-10-14 13:45:16] 🤖 Consultando Claude para: 'Iemcoop'
+[2025-10-14 13:45:18] 🤖 Consultando Claude para: 'Liceo Guatemala'
+[2025-10-14 13:45:20] 🤖 Consultando Claude para: 'Insar'
+[2025-10-14 13:45:23] ⚠️ Respuesta inválida detectada: 'Este año no estoy estudiando' → 'Otro'
+[2025-10-14 13:45:23] 🤖 Consultando Claude para: 'ISEA'
+[2025-10-14 13:45:25] 🤖 Consultando Claude para: 'Xd'
+[2025-10-14 13:45:27] 🎓 Universidad detectada: 'ITEC Uvg campus altiplano' → 'Universidad del Valle de Guatemala'
+[2025-10-14 13:45:27] ⚠️ Respuesta inválida detectada: 'Aun no estudio' → 'Otro'
+[2025-10-14 13:45:27] 🤖 Consultando Claude para: 'Instituto de Educación Diversificada por Cooperativa de Enseñanza "Playa Linda"'
+[2025-10-14 13:45:29] 🤖 Consultando Claude para: 'Colegio Rosario'
+[2025-10-14 13:45:30] 🤖 Consultando Claude para: 'CED-IECA'
+[2025-10-14 13:45:32] 🎓 Universidad detectada: 'UMG' → 'Universidad Mariano Gálvez'
+[2025-10-14 13:45:32] 🤖 Consultando Claude para: 'Suizo xela'
+[2025-10-14 13:45:34] 🤖 Consultando Claude para: 'Colegio Científico Montessori'
+[2025-10-14 13:45:37] 🤖 Consultando Claude para: 'Colegio americano nuestra familia'
+[2025-10-14 13:45:39] 🤖 Consultando Claude para: 'Aub no'
+[2025-10-14 13:45:41] 🤖 Consultando Claude para: 'colegio público'
+[2025-10-14 13:45:43] 🤖 Consultando Claude para: 'INEDCE'
+[2025-10-14 13:45:44] 🤖 Consultando Claude para: 'pronea'
+[2025-10-14 13:45:46] 🎓 Universidad detectada: 'Mariano Gálvez de Guatemala' → 'Universidad Mariano Gálvez'
+[2025-10-14 13:45:46] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-14 13:45:46] 🤖 Consultando Claude para: 'formación Integral'
+[2025-10-14 13:45:48] 🤖 Consultando Claude para: 'Colegio Mixto Integral, San Lucas Sacatepéquez'
+[2025-10-14 13:45:50] 🎓 Universidad detectada: 'Uvg altiplano' → 'Universidad del Valle de Guatemala'
+[2025-10-14 13:45:50] 🤖 Consultando Claude para: 'Centro Educativo Técnico Laboral KINAL'
+[2025-10-14 13:45:52] 🤖 Consultando Claude para: 'Injofc Tierra blanca'
+[2025-10-14 13:45:55] 🤖 Consultando Claude para: 'Estudie en el King David'
+[2025-10-14 13:45:57] 🤖 Consultando Claude para: 'IMB pc'
+[2025-10-14 13:45:59] ⚠️ Respuesta inválida detectada: 'No estoy estudiando por motivos de trabajo pero estuve en la Usac' → 'Otro'
+[2025-10-14 13:45:59] 🤖 Consultando Claude para: 'Colegio ciencia y desarrollo'
+[2025-10-14 13:46:01] 🎓 Universidad detectada: 'Panamericano' → 'Universidad Panamericana'
+[2025-10-14 13:46:01] 🤖 Consultando Claude para: 'compuceic'
+[2025-10-14 13:46:03] 🤖 Consultando Claude para: 'Escuela Normal Regional de Occidente'
+[2025-10-14 13:46:05] 🤖 Consultando Claude para: 'INEB'
+[2025-10-14 13:46:08] 🎓 Universidad detectada: 'Universidad Regional' → 'Universidad Galileo'
+[2025-10-14 13:46:08] 🤖 Consultando Claude para: 'IGS'
+[2025-10-14 13:46:10] 🤖 Consultando Claude para: 'LINSA'
+[2025-10-14 13:46:12] 🤖 Consultando Claude para: 'Infantes'
+[2025-10-14 13:46:14] 🤖 Consultando Claude para: 'Calvert Hudson Global School (USA)/Bibliotech Guatemala'
+[2025-10-14 13:46:16] 🤖 Consultando Claude para: 'La Vid Verdadera'
+[2025-10-14 13:46:18] 🤖 Consultando Claude para: 'Instituto de educación básica y Bachillerato por madurez   La Democracia'
+[2025-10-14 13:46:20] 🤖 Consultando Claude para: 'Colegio Valverde'
+[2025-10-14 13:46:22] 🎓 Universidad detectada: 'URL' → 'Universidad Rafael Landívar'
+[2025-10-14 13:46:22] 🤖 Consultando Claude para: 'instituto Miguel de Cervantes'
+[2025-10-14 13:46:24] 🤖 Consultando Claude para: 'Liceo Rotterdam'
+[2025-10-14 13:46:26] 🤖 Consultando Claude para: 'Fase'
+[2025-10-14 13:46:28] 🤖 Consultando Claude para: 'Colegio Privado Mixto Santa Catalina'
+[2025-10-14 13:46:30] 🤖 Consultando Claude para: 'Hola hay maestria?'
+[2025-10-14 13:46:32] 🤖 Consultando Claude para: 'Colegio Privado Mixto "El paraíso"'
+[2025-10-14 13:46:34] ✓ Fuzzy match: 'Isea' → 'Instituto Superior de Educación Abierta (ISEA)'
+[2025-10-14 13:46:34] 🤖 Consultando Claude para: 'colegio CEPREC'
+[2025-10-14 13:46:36] 🤖 Consultando Claude para: 'Bethesda'
+[2025-10-14 13:46:38] 🤖 Consultando Claude para: 'Colegio Mixto Belen'
+[2025-10-14 13:46:40] 🤖 Consultando Claude para: 'Instituto putzey guillermo Alvarez'
+[2025-10-14 13:46:42] 🤖 Consultando Claude para: 'instituto privado mixto ORIZABA'
+[2025-10-14 13:46:44] 🤖 Consultando Claude para: 'soy egresado del ifj'
+[2025-10-14 13:46:46] 🤖 Consultando Claude para: 'Impo Superación'
+[2025-10-14 13:46:48] 🤖 Consultando Claude para: 'Colegio Mixto Nuestra Patria'
+[2025-10-14 13:46:50] 🎓 Universidad detectada: 'UVG Sur' → 'Universidad del Valle de Guatemala'
+[2025-10-14 13:46:50] 🤖 Consultando Claude para: 'Colegio Capouilliez'
+[2025-10-14 13:46:53] ⚠️ Respuesta inválida detectada: 'no estudio' → 'Otro'
+[2025-10-14 13:46:53] 🤖 Consultando Claude para: 'colegio itvo amatitlan'
+[2025-10-14 13:46:55] 🤖 Consultando Claude para: 'Liceo de ciencias y técnicas'
+[2025-10-14 13:46:57] ✓ Fuzzy match: 'Instituto Nacional de Educación diversificada INEDI' → 'Instituto Nacional de Educación Diversificada S.C.P'
+[2025-10-14 13:46:57] 🤖 Consultando Claude para: 'diversificado tohaman sibinal san Marcos'
+[2025-10-14 13:46:59] 🤖 Consultando Claude para: 'Colegio liceo san Luis'
+[2025-10-14 13:47:01] 🤖 Consultando Claude para: 'INEB Río Bravo Suchitepéquez, Guatemala'
+[2025-10-14 13:47:05] 🤖 Consultando Claude para: 'colegio técnico integrado'
+[2025-10-14 13:47:07] 🤖 Consultando Claude para: 'Colegio mixto llano largo'
+[2025-10-14 13:47:09] 🎓 Universidad detectada: 'En la universidad Mariano Gálvez' → 'Universidad Mariano Gálvez'
+[2025-10-14 13:47:09] 🤖 Consultando Claude para: 'Liceo técnico industrial Maya Tikal'
+[2025-10-14 13:47:11] 🤖 Consultando Claude para: 'E993CDX'
+[2025-10-14 13:47:13] 🎓 Universidad detectada: 'Uvg' → 'Universidad del Valle de Guatemala'
+[2025-10-14 13:47:13] 🤖 Consultando Claude para: 'instituto mixto Verapaz Impave'
+[2025-10-14 13:47:15] ⚠️ Respuesta inválida detectada: 'No estudio ya me gradué' → 'Otro'
+[2025-10-14 13:47:15] 🎓 Universidad detectada: 'Umg' → 'Universidad Mariano Gálvez'
+[2025-10-14 13:47:15] 🤖 Consultando Claude para: 'Instituto Normal Para Señoritas Centro América'
+[2025-10-14 13:47:17] 🎓 Universidad detectada: 'URURAL' → 'Universidad Rural'
+[2025-10-14 13:47:17] ✓ Fuzzy match: 'Graduado' → 'Otro'
+[2025-10-14 13:47:17] 🤖 Consultando Claude para: 'Instituto tecnológico catarina'
+[2025-10-14 13:47:19] 🤖 Consultando Claude para: 'Colegio Amigos en la ciudad de Chiquimula'
+[2025-10-14 13:47:21] 🤖 Consultando Claude para: 'Sagrado corazón naranjo'
+[2025-10-14 13:47:23] 🤖 Consultando Claude para: 'Continental americano'
+[2025-10-14 13:47:25] 🤖 Consultando Claude para: 'Trabajo en san matin'
+[2025-10-14 13:47:27] 🤖 Consultando Claude para: 'Escuela nacional de ciencias comerciales no 3'
+[2025-10-14 13:47:29] 🤖 Consultando Claude para: 'Liceo Mixto Pinulteco'
+[2025-10-14 13:47:31] 🤖 Consultando Claude para: 'colegio privado san Andrés'
+[2025-10-14 13:47:33] 🤖 Consultando Claude para: 'Colegio John Harvard'
+[2025-10-14 13:47:34] 🤖 Consultando Claude para: 'Perito en industria de alimentos'
+[2025-10-14 13:47:36] 🤖 Consultando Claude para: 'Colegio en computación San José 2'
+[2025-10-14 13:47:38] 🤖 Consultando Claude para: 'institito "villa de las niñas" Guatemala'
+[2025-10-14 13:47:40] 🎓 Universidad detectada: 'Mariano Galvez' → 'Universidad Mariano Gálvez'
+[2025-10-14 13:47:40] 🤖 Consultando Claude para: 'Liceo Cristiano Nazareth'
+[2025-10-14 13:47:42] 🤖 Consultando Claude para: 'Colegio Esdeo'
+[2025-10-14 13:47:44] ✓ Fuzzy match: 'Iga' → 'Instituto de Educación por Cooperativa de Enseñanza Guatemala (IGpa)'
+[2025-10-14 13:47:44] 🤖 Consultando Claude para: 'Liceo técnico de ciencias y tecnología'
+[2025-10-14 13:47:46] 🎓 Universidad detectada: 'Universidad Mesoamericana' → 'Universidad Mesoamericana'
+[2025-10-14 13:47:46] 🤖 Consultando Claude para: 'Divertido Ined'
+[2025-10-14 13:47:48] 🤖 Consultando Claude para: 'colegio macdermont'
+[2025-10-14 13:47:50] 🎓 Universidad detectada: 'USAC' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-14 13:47:50] 🤖 Consultando Claude para: 'san Pablo de Guatemala'
+[2025-10-14 13:47:52] 🤖 Consultando Claude para: 'Gerardi'
+[2025-10-14 13:47:54] 🤖 Consultando Claude para: 'Itce'
+[2025-10-14 13:47:56] 🤖 Consultando Claude para: 'Liceo Canadiense'
+[2025-10-14 13:47:58] 🤖 Consultando Claude para: 'Instituto privado guatemala de la asuncion'
+[2025-10-14 13:48:00] 🎓 Universidad detectada: 'UVG Atiplano' → 'Universidad del Valle de Guatemala'
+[2025-10-14 13:48:00] 🤖 Consultando Claude para: 'kids Academy'
+[2025-10-14 13:48:02] 🎓 Universidad detectada: 'Universidad Mariano Galvez de Guatemala' → 'Universidad Mariano Gálvez'
+[2025-10-14 13:48:02] ⚠️ Respuesta inválida detectada: 'no' → 'Otro'
+[2025-10-14 13:48:02] 🤖 Consultando Claude para: 'Certificado en ecommerce'
+[2025-10-14 13:48:04] 🤖 Consultando Claude para: 'Colegio Cristiano Verbo 1'
+[2025-10-14 13:48:06] ⚠️ Respuesta inválida detectada: 'ya no estudio' → 'Otro'
+[2025-10-14 13:48:06] ⚠️ Respuesta inválida detectada: 'No estoy estudiando' → 'Otro'
+[2025-10-14 13:48:06] 🤖 Consultando Claude para: 'Colegio Dr Rodolfo Robles'
+[2025-10-14 13:48:08] 🎓 Universidad detectada: 'Valle colonial' → 'Universidad del Valle de Guatemala'
+[2025-10-14 13:48:08] 🤖 Consultando Claude para: 'Instituto Emiliani Somascos'
+[2025-10-14 13:48:10] 🤖 Consultando Claude para: 'Liceo frater'
+[2025-10-14 13:48:12] 🤖 Consultando Claude para: 'Sagrado corazón de Jesús'
+[2025-10-14 13:48:14] ✓ Fuzzy match: 'Escuela Normal central para varones Ined Anexo' → 'Escuela Normal Central para Varones'
+[2025-10-14 13:48:14] 🤖 Consultando Claude para: 'Instituto normal central para señoritas belen'
+[2025-10-14 13:48:16] 🤖 Consultando Claude para: 'Colegio interamericano'
+[2025-10-14 13:48:18] 🤖 Consultando Claude para: 'Universidad Completa'
+[2025-10-14 13:48:20] 🤖 Consultando Claude para: 'Estudié en el colegio americano Huehuetenango'
+[2025-10-14 13:48:22] 🤖 Consultando Claude para: 'Panamerican business school'
+[2025-10-14 13:48:23] ⚠️ Respuesta inválida detectada: 'Por el momento no estudio' → 'Otro'
+[2025-10-14 13:48:23] 🤖 Consultando Claude para: 'pajariro. rpjo'
+[2025-10-14 13:48:26] ✓ Fuzzy match: 'Centro Educativo Técnico Laboral Kinal' → 'Centro Educativo Técnico Laboral KINAL'
+[2025-10-14 13:48:26] 🤖 Consultando Claude para: 'liceo bressani'
+[2025-10-14 13:48:28] 🤖 Consultando Claude para: 'solo necesito información'
+[2025-10-14 13:48:30] 🤖 Consultando Claude para: 'Ya me gradué del Instituto Guillermo Putzeys Álvarez'
+[2025-10-14 13:48:32] ✓ Fuzzy match: 'n estudio' → 'Otro'
+[2025-10-14 13:48:32] 🤖 Consultando Claude para: 'Centro educativo Aparicio'
+[2025-10-14 13:48:34] 🤖 Consultando Claude para: 'Colegio IPTCE'
+[2025-10-14 13:48:36] 🤖 Consultando Claude para: 'CCB'
+[2025-10-14 13:48:38] 🤖 Consultando Claude para: 'UDEO'
+[2025-10-14 13:48:40] 🤖 Consultando Claude para: 'Frances'
+[2025-10-14 13:48:42] 🎓 Universidad detectada: 'universidad regional' → 'Universidad Galileo'
+[2025-10-14 13:48:42] 🤖 Consultando Claude para: 'Edúcate'
+[2025-10-14 13:48:44] 🤖 Consultando Claude para: 'Liceo cristiano Antioquia'
+[2025-10-14 13:48:46] 🤖 Consultando Claude para: 'Liceo Chapero'
+[2025-10-14 13:48:48] ⚠️ Respuesta inválida detectada: 'Ninguno  Estoy viendo opciones' → 'Otro'
+[2025-10-14 13:48:48] ⚠️ Respuesta inválida detectada: 'No estudio actualmente' → 'Otro'
+[2025-10-14 13:48:48] 🎓 Universidad detectada: 'universidad rural' → 'Universidad Rural'
+[2025-10-14 13:48:48] 🎓 Universidad detectada: 'usac' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-14 13:48:48] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-14 13:48:48] ✓ Fuzzy match: 'no estudip' → 'Otro'
+[2025-10-14 13:48:48] ⚠️ Respuesta inválida detectada: '.' → 'Otro'
+[2025-10-14 13:48:48] 🎓 Universidad detectada: 'Landivar' → 'Universidad Rafael Landívar'
+[2025-10-14 13:48:48] 🤖 Consultando Claude para: 'Campo Alto'
+[2025-10-14 13:48:50] 🤖 Consultando Claude para: 'IDEACOP-PAJUIL'
+[2025-10-14 13:48:54] 🎓 Universidad detectada: 'galileo' → 'Universidad Galileo'
+[2025-10-14 13:48:54] 🤖 Consultando Claude para: 'Liceo Javier'
+[2025-10-14 13:48:55] 🤖 Consultando Claude para: 'liceo mixto'
+[2025-10-14 13:48:57] 🤖 Consultando Claude para: 'Arenales Catalán'
+[2025-10-14 13:48:59] 🎓 Universidad detectada: 'Mariano Gálvez' → 'Universidad Mariano Gálvez'
+[2025-10-14 13:48:59] 🤖 Consultando Claude para: 'colegio sinai'
+[2025-10-14 13:49:01] 🤖 Consultando Claude para: 'Usar'
+[2025-10-14 13:49:03] 🤖 Consultando Claude para: 'Keystone pensylvania'
+[2025-10-14 13:49:05] 🎓 Universidad detectada: 'Mariano  galvez de giatemala' → 'Universidad Mariano Gálvez'
+[2025-10-14 13:49:05] ⚠️ Respuesta inválida detectada: 'No estoy estudiando.' → 'Otro'
+[2025-10-14 13:49:05] 🤖 Consultando Claude para: 'colegio privado mixto ELITE'
+[2025-10-14 13:49:08] 🤖 Consultando Claude para: 'Sagrado corazon'
+[2025-10-14 13:49:09] ✓ Fuzzy match: 'IGPA' → 'Instituto de Educación por Cooperativa de Enseñanza Guatemala (IGpa)'
+[2025-10-14 13:49:09] 🤖 Consultando Claude para: 'diversificado por cooperativa'
+[2025-10-14 13:49:11] 🤖 Consultando Claude para: 'Termine mi diversificado en el liceo de computación css'
+[2025-10-14 13:49:13] 🤖 Consultando Claude para: 'Graduated from AAUN'
+[2025-10-14 13:49:15] 🤖 Consultando Claude para: 'IPGA'
+[2025-10-14 13:49:17] 🤖 Consultando Claude para: 'Ex alumna IGA'
+[2025-10-14 13:49:19] 🎓 Universidad detectada: 'mo' → 'Universidad del Istmo'
+[2025-10-14 13:49:19] 🎓 Universidad detectada: 'Universidad da Vinci de Guatemala' → 'Universidad Da Vinci'
+[2025-10-14 13:49:19] 🎓 Universidad detectada: 'Usac' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-14 13:49:19] 🎓 Universidad detectada: 'UVG ALTIPANO' → 'Universidad del Valle de Guatemala'
+[2025-10-14 13:49:19] 🤖 Consultando Claude para: 'Italiano de Guatemala'
+[2025-10-14 13:49:21] 🤖 Consultando Claude para: 'Ecc'
+[2025-10-14 13:49:23] 🤖 Consultando Claude para: 'Winbrigde'
+[2025-10-14 13:49:25] 🤖 Consultando Claude para: 'Aden'
+[2025-10-14 13:49:27] 🎓 Universidad detectada: 'Universidad Rafael Landivar' → 'Universidad Rafael Landívar'
+[2025-10-14 13:49:27] 🤖 Consultando Claude para: 'Colegio Montenevado'
+[2025-10-14 13:49:29] ⚠️ Respuesta inválida detectada: 'No estudio, ya me gradue del Colegio Monte Maria' → 'Otro'
+[2025-10-14 13:49:29] 🤖 Consultando Claude para: 'Liceo mixto técnicas integrales'
+[2025-10-14 13:49:31] 🤖 Consultando Claude para: 'itv'
+[2025-10-14 13:49:33] 🤖 Consultando Claude para: 'ALTIPLANO'
+[2025-10-14 13:49:35] 🎓 Universidad detectada: 'Universidad Da Vinci' → 'Universidad Da Vinci'
+[2025-10-14 13:49:35] 🤖 Consultando Claude para: 'finalizado'
+[2025-10-14 13:49:37] 🤖 Consultando Claude para: 'Colegio Viena Guatemalteco'
+[2025-10-14 13:49:40] 🎓 Universidad detectada: 'Universidad Mariano Gálvez de Guatemala' → 'Universidad Mariano Gálvez'
+[2025-10-14 13:49:40] 🤖 Consultando Claude para: 'Me gradué el colegio el año pasado'
+[2025-10-14 13:49:42] 🤖 Consultando Claude para: 'Ya me gradué'
+[2025-10-14 13:49:44] 🤖 Consultando Claude para: 'Diseño grafico'
+[2025-10-14 13:49:46] 🤖 Consultando Claude para: 'Academia avanza'
+[2025-10-14 13:49:48] 🤖 Consultando Claude para: 'Ingenieria'
+[2025-10-14 13:49:50] 🤖 Consultando Claude para: 'itec'
+[2025-10-14 13:49:52] 🤖 Consultando Claude para: 'Ya tengo Maestria'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'ninguno' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'No estoy en estudiando' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'N/a' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'Este año no estoy estudiando' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'Aun no estudio' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'No estoy estudiando por motivos de trabajo pero estuve en la Usac' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-14 13:49:54] ✓ Fuzzy match: 'Isea' → 'Instituto Superior de Educación Abierta (ISEA)'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'no estudio' → 'Otro'
+[2025-10-14 13:49:54] ✓ Fuzzy match: 'Instituto Nacional de Educación diversificada INEDI' → 'Instituto Nacional de Educación Diversificada S.C.P'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'No estudio ya me gradué' → 'Otro'
+[2025-10-14 13:49:54] ✓ Fuzzy match: 'Graduado' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'no estudio' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-14 13:49:54] ✓ Fuzzy match: 'Iga' → 'Instituto de Educación por Cooperativa de Enseñanza Guatemala (IGpa)'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'no' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'ya no estudio' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'No estoy estudiando' → 'Otro'
+[2025-10-14 13:49:54] ✓ Fuzzy match: 'Escuela Normal central para varones Ined Anexo' → 'Escuela Normal Central para Varones'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'Por el momento no estudio' → 'Otro'
+[2025-10-14 13:49:54] ✓ Fuzzy match: 'Centro Educativo Técnico Laboral Kinal' → 'Centro Educativo Técnico Laboral KINAL'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'no estudio' → 'Otro'
+[2025-10-14 13:49:54] ✓ Fuzzy match: 'n estudio' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'Ninguno  Estoy viendo opciones' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'No estudio actualmente' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-14 13:49:54] ✓ Fuzzy match: 'no estudip' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: '.' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'No estoy estudiando.' → 'Otro'
+[2025-10-14 13:49:54] ✓ Fuzzy match: 'IGPA' → 'Instituto de Educación por Cooperativa de Enseñanza Guatemala (IGpa)'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: '.' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'no estudio' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'No estudio, ya me gradue del Colegio Monte Maria' → 'Otro'
+[2025-10-14 13:49:54] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-14 13:49:54] 
+🎓 Normalizando grados académicos...
+[2025-10-14 13:50:07] 
+🔗 Limpiando URLs...
+[2025-10-14 13:50:39] ✅ Reemplazada columna: Grado Académico
+[2025-10-14 13:50:39] ✅ Eliminada columna duplicada: Grado Académico.1
+[2025-10-14 13:50:39] ✅ Reemplazada columna: Colegio Actual
+[2025-10-14 13:50:39] ✅ Eliminada columna redundante: En qué colegio estudias actualmente?
+[2025-10-14 13:50:39] ✅ Reemplazada columna: First Page Seen
+[2025-10-14 13:50:39] ✅ Reemplazada columna: Last Page Seen
+[2025-10-14 13:50:39] 💾 Backup creado: diccionario_backup_20251014_135039.json
+[2025-10-14 13:50:40] ✅ Diccionario guardado con 238 colegios
+[2025-10-14 13:50:40] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-10-14 13:50:40] 
+============================================================
+[2025-10-14 13:50:40] ✅ PROCESO COMPLETADO
+[2025-10-14 13:50:40] ============================================================
+[2025-10-14 13:50:40] 📊 Total de leads procesados: 330
+[2025-10-14 13:50:40] 🆕 Normalizaciones nuevas: 210
+[2025-10-14 13:50:40] 🤖 Tokens usados: 43743
+[2025-10-14 13:50:40] 💰 Costo aproximado: $0.1312
+[2025-10-14 13:50:40] 
+📝 NUEVAS NORMALIZACIONES:
+[2025-10-14 13:50:40]   • Colegio: Universidad Regional de Guatemala → Universidad Mariano Gálvez
+[2025-10-14 13:50:40]   • Colegio: Graduada colegio verbo → Colegio Verbo
+[2025-10-14 13:50:40]   • Colegio: Colegio fuente de vida → Colegio Fuente de Vida
+[2025-10-14 13:50:40]   • Colegio: INED San Pedro Sacatepéquez,. Guatemala → INED San Pedro Sacatepéquez
+[2025-10-14 13:50:40]   • Colegio: Graduada → Otro
+[2025-10-14 13:50:40]   • Colegio: Bilingüe el prado → Colegio Bilingüe El Prado
+[2025-10-14 13:50:40]   • Colegio: IGpa → Instituto de Educación por Cooperativa de Enseñanza Guatemala (IGpa)
+[2025-10-14 13:50:40]   • Colegio: Colegio Mixto Belén Guatemala → Colegio Mixto Belén
+[2025-10-14 13:50:40]   • Colegio: Liceo Alpha y Omega → Liceo Alpha y Omega
+[2025-10-14 13:50:40]   • Colegio: moderno jalpataguense → Instituto Moderno Jalpataguense
+[2025-10-14 13:50:40]   • Colegio: Ineb maría josefa rosado lara → Instituto Nacional de Educación Básica María Josefa Rosado Lara
+[2025-10-14 13:50:40]   • Colegio: Instituto diversificado Morazán el progreso → Instituto Diversificado Morazán El Progreso
+[2025-10-14 13:50:40]   • Colegio: IMB-PC → IMB-PC
+[2025-10-14 13:50:40]   • Colegio: Talita kumi → Talita Kumi
+[2025-10-14 13:50:40]   • Colegio: Isaac → Colegio Isaac
+[2025-10-14 13:50:40]   • Colegio: Universidad de San Carlos de Guatemala → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-14 13:50:40]   • Colegio: Príncipe de Asturias → Colegio Príncipe de Asturias
+[2025-10-14 13:50:40]   • Colegio: CDA Decroly Americano → CDA Decroly Americano
+[2025-10-14 13:50:40]   • Colegio: INED Aldea Las Brisas Malacatán San Marcos → INED Aldea Las Brisas Malacatán San Marcos
+[2025-10-14 13:50:40]   • Colegio: Asociación grupo ceiba → Otro
+[2025-10-14 13:50:40]   • Colegio: UVG soy egresado → Universidad del Valle de Guatemala
+[2025-10-14 13:50:40]   • Colegio: universidad San Carlos Guatemala → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-14 13:50:40]   • Colegio: colegio Jesús de Nazareth → Colegio Jesús de Nazareth
+[2025-10-14 13:50:40]   • Colegio: Liceo privado mixto tumbadorense → Liceo Privado Mixto Tumbadorense
+[2025-10-14 13:50:40]   • Colegio: ahorita no tengo la oportunidad de estar estudiando en ningún colegio → Otro
+[2025-10-14 13:50:40]   • Colegio: ITEC Uvg altiplano → Universidad del Valle de Guatemala
+[2025-10-14 13:50:40]   • Colegio: Instituto De Nacional De Educación Diversificada S.C.P → Instituto Nacional de Educación Diversificada S.C.P
+[2025-10-14 13:50:40]   • Colegio: Colegio La Ilustración → Colegio La Ilustración
+[2025-10-14 13:50:40]   • Colegio: IMENCE → IMENCE
+[2025-10-14 13:50:40]   • Colegio: Escuela normal central para varones → Escuela Normal Central para Varones
+[2025-10-14 13:50:40]   • Colegio: USAc → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-14 13:50:40]   • Colegio: colegio integral el saber → Colegio Integral El Saber
+[2025-10-14 13:50:40]   • Colegio: Perito en administración de empresas → Otro
+[2025-10-14 13:50:40]   • Colegio: Da Vinci → Universidad Da Vinci
+[2025-10-14 13:50:40]   • Colegio: Cooperativa el Recuerdo → Otro
+[2025-10-14 13:50:40]   • Colegio: Liceo tecnológico ciudad Quetzal → Liceo Tecnológico Ciudad Quetzal
+[2025-10-14 13:50:40]   • Colegio: Iemcoop → Instituto de Educación Media Cooperativo (IEMCOOP)
+[2025-10-14 13:50:40]   • Colegio: Liceo Guatemala → Liceo Guatemala
+[2025-10-14 13:50:40]   • Colegio: Insar → Instituto Nacional de Seguros (INSAR)
+[2025-10-14 13:50:40]   • Colegio: ISEA → Instituto Superior de Educación Abierta (ISEA)
+[2025-10-14 13:50:40]   • Colegio: Xd → Otro
+[2025-10-14 13:50:40]   • Colegio: ITEC Uvg campus altiplano → Universidad del Valle de Guatemala
+[2025-10-14 13:50:40]   • Colegio: Instituto de Educación Diversificada por Cooperativa de Enseñanza "Playa Linda" → Instituto de Educación Diversificada por Cooperativa de Enseñanza Playa Linda
+[2025-10-14 13:50:40]   • Colegio: Colegio Rosario → Colegio Rosario
+[2025-10-14 13:50:40]   • Colegio: CED-IECA → CED-IECA
+[2025-10-14 13:50:40]   • Colegio: UMG → Universidad Mariano Gálvez
+[2025-10-14 13:50:40]   • Colegio: Suizo xela → Colegio Suizo Americano de Quetzaltenango
+[2025-10-14 13:50:40]   • Colegio: Colegio Científico Montessori → Colegio Científico Montessori
+[2025-10-14 13:50:40]   • Colegio: Colegio americano nuestra familia → Colegio Americano Nuestra Familia
+[2025-10-14 13:50:40]   • Colegio: Aub no → Otro
+[2025-10-14 13:50:40]   • Colegio: colegio público → Colegio Público
+[2025-10-14 13:50:40]   • Colegio: INEDCE → INEDCE
+[2025-10-14 13:50:40]   • Colegio: pronea → Otro
+[2025-10-14 13:50:40]   • Colegio: Mariano Gálvez de Guatemala → Universidad Mariano Gálvez
+[2025-10-14 13:50:40]   • Colegio: formación Integral → Colegio Formación Integral
+[2025-10-14 13:50:40]   • Colegio: Colegio Mixto Integral, San Lucas Sacatepéquez → Colegio Mixto Integral San Lucas Sacatepéquez
+[2025-10-14 13:50:40]   • Colegio: Uvg altiplano → Universidad del Valle de Guatemala
+[2025-10-14 13:50:40]   • Colegio: Centro Educativo Técnico Laboral KINAL → Centro Educativo Técnico Laboral KINAL
+[2025-10-14 13:50:40]   • Colegio: Injofc Tierra blanca → Instituto Nacional de Educación Básica (INEB) Tierra Blanca
+[2025-10-14 13:50:40]   • Colegio: Estudie en el King David → Colegio King David
+[2025-10-14 13:50:40]   • Colegio: IMB pc → IMB
+[2025-10-14 13:50:40]   • Colegio: Colegio ciencia y desarrollo → Colegio Ciencia y Desarrollo
+[2025-10-14 13:50:40]   • Colegio: Panamericano → Universidad Panamericana
+[2025-10-14 13:50:40]   • Colegio: compuceic → COMPUCEIC
+[2025-10-14 13:50:40]   • Colegio: Escuela Normal Regional de Occidente → Escuela Normal Regional de Occidente
+[2025-10-14 13:50:40]   • Colegio: INEB → Instituto Nacional de Educación Básica (INEB)
+[2025-10-14 13:50:40]   • Colegio: Universidad Regional → Universidad Galileo
+[2025-10-14 13:50:40]   • Colegio: IGS → Instituto Guatemalteco de Seguridad Social (IGSS)
+[2025-10-14 13:50:40]   • Colegio: LINSA → LINSA
+[2025-10-14 13:50:40]   • Colegio: Infantes → Colegio Infantes
+[2025-10-14 13:50:40]   • Colegio: Calvert Hudson Global School (USA)/Bibliotech Guatemala → Calvert Hudson Global School
+[2025-10-14 13:50:40]   • Colegio: La Vid Verdadera → La Vid Verdadera
+[2025-10-14 13:50:40]   • Colegio: Instituto de educación básica y Bachillerato por madurez   La Democracia → Instituto de Educación Básica y Bachillerato por Madurez La Democracia
+[2025-10-14 13:50:40]   • Colegio: Colegio Valverde → Colegio Valverde
+[2025-10-14 13:50:40]   • Colegio: URL → Universidad Rafael Landívar
+[2025-10-14 13:50:40]   • Colegio: instituto Miguel de Cervantes → Instituto Miguel de Cervantes
+[2025-10-14 13:50:40]   • Colegio: Liceo Rotterdam → Liceo Rotterdam
+[2025-10-14 13:50:40]   • Colegio: Fase → Otro
+[2025-10-14 13:50:40]   • Colegio: Colegio Privado Mixto Santa Catalina → Colegio Santa Catalina
+[2025-10-14 13:50:40]   • Colegio: Hola hay maestria? → Otro
+[2025-10-14 13:50:40]   • Colegio: Colegio Privado Mixto "El paraíso" → Colegio Privado Mixto El Paraíso
+[2025-10-14 13:50:40]   • Colegio: colegio CEPREC → Colegio CEPREC
+[2025-10-14 13:50:40]   • Colegio: Bethesda → Colegio Bethesda
+[2025-10-14 13:50:40]   • Colegio: Colegio Mixto Belen → Colegio Mixto Belén
+[2025-10-14 13:50:40]   • Colegio: Instituto putzey guillermo Alvarez → Instituto Putzey Guillermo Alvarez
+[2025-10-14 13:50:40]   • Colegio: instituto privado mixto ORIZABA → Instituto Privado Mixto Orizaba
+[2025-10-14 13:50:40]   • Colegio: soy egresado del ifj → Instituto de Formación Juvenil (IFJ)
+[2025-10-14 13:50:40]   • Colegio: Impo Superación → Otro
+[2025-10-14 13:50:40]   • Colegio: Colegio Mixto Nuestra Patria → Colegio Mixto Nuestra Patria
+[2025-10-14 13:50:40]   • Colegio: UVG Sur → Universidad del Valle de Guatemala
+[2025-10-14 13:50:40]   • Colegio: Colegio Capouilliez → Colegio Capouilliez
+[2025-10-14 13:50:40]   • Colegio: colegio itvo amatitlan → Colegio ITVO Amatitlán
+[2025-10-14 13:50:40]   • Colegio: Liceo de ciencias y técnicas → Liceo de Ciencias y Técnicas
+[2025-10-14 13:50:40]   • Colegio: diversificado tohaman sibinal san Marcos → Instituto Diversificado Tohmán, Sibinal, San Marcos
+[2025-10-14 13:50:40]   • Colegio: Colegio liceo san Luis → Colegio Liceo San Luis
+[2025-10-14 13:50:40]   • Colegio: INEB Río Bravo Suchitepéquez, Guatemala → INEB Río Bravo Suchitepéquez
+[2025-10-14 13:50:40]   • Colegio: colegio técnico integrado → Colegio Técnico Integrado
+[2025-10-14 13:50:40]   • Colegio: Colegio mixto llano largo → Colegio Mixto Llano Largo
+[2025-10-14 13:50:40]   • Colegio: En la universidad Mariano Gálvez → Universidad Mariano Gálvez
+[2025-10-14 13:50:40]   • Colegio: Liceo técnico industrial Maya Tikal → Liceo Técnico Industrial Maya Tikal
+[2025-10-14 13:50:40]   • Colegio: E993CDX → Otro
+[2025-10-14 13:50:40]   • Colegio: Uvg → Universidad del Valle de Guatemala
+[2025-10-14 13:50:40]   • Colegio: instituto mixto Verapaz Impave → Instituto Mixto Verapaz (IMPAVE)
+[2025-10-14 13:50:40]   • Colegio: Umg → Universidad Mariano Gálvez
+[2025-10-14 13:50:40]   • Colegio: Instituto Normal Para Señoritas Centro América → Instituto Normal Para Señoritas Centro América
+[2025-10-14 13:50:40]   • Colegio: URURAL → Universidad Rural
+[2025-10-14 13:50:40]   • Colegio: Instituto tecnológico catarina → Instituto Tecnológico Catarina
+[2025-10-14 13:50:40]   • Colegio: Colegio Amigos en la ciudad de Chiquimula → Colegio Amigos
+[2025-10-14 13:50:40]   • Colegio: Sagrado corazón naranjo → Colegio Sagrado Corazón Naranjo
+[2025-10-14 13:50:40]   • Colegio: Continental americano → Universidad Continental Americana
+[2025-10-14 13:50:40]   • Colegio: Trabajo en san matin → Otro
+[2025-10-14 13:50:40]   • Colegio: Escuela nacional de ciencias comerciales no 3 → Escuela Nacional de Ciencias Comerciales No. 3
+[2025-10-14 13:50:40]   • Colegio: Liceo Mixto Pinulteco → Liceo Mixto Pinulteco
+[2025-10-14 13:50:40]   • Colegio: colegio privado san Andrés → Colegio Privado San Andrés
+[2025-10-14 13:50:40]   • Colegio: Colegio John Harvard → Colegio John Harvard
+[2025-10-14 13:50:40]   • Colegio: Perito en industria de alimentos → Otro
+[2025-10-14 13:50:40]   • Colegio: Colegio en computación San José 2 → Colegio en Computación San José 2
+[2025-10-14 13:50:40]   • Colegio: institito "villa de las niñas" Guatemala → Instituto Villa de las Niñas
+[2025-10-14 13:50:40]   • Colegio: Mariano Galvez → Universidad Mariano Gálvez
+[2025-10-14 13:50:40]   • Colegio: Liceo Cristiano Nazareth → Liceo Cristiano Nazareth
+[2025-10-14 13:50:40]   • Colegio: Colegio Esdeo → Colegio Esdeo
+[2025-10-14 13:50:40]   • Colegio: Liceo técnico de ciencias y tecnología → Liceo Técnico de Ciencias y Tecnología
+[2025-10-14 13:50:40]   • Colegio: Universidad Mesoamericana → Universidad Mesoamericana
+[2025-10-14 13:50:40]   • Colegio: Divertido Ined → Instituto Nacional de Educación Diversificada (INED)
+[2025-10-14 13:50:40]   • Colegio: colegio macdermont → Colegio MacDermott
+[2025-10-14 13:50:40]   • Colegio: USAC → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-14 13:50:40]   • Colegio: san Pablo de Guatemala → Colegio San Pablo
+[2025-10-14 13:50:40]   • Colegio: Gerardi → Instituto Nacional de Educación Básica Juan José Gerardi Conedera
+[2025-10-14 13:50:40]   • Colegio: Itce → Instituto Técnico de Capacitación y Productividad (INTECAP)
+[2025-10-14 13:50:40]   • Colegio: Liceo Canadiense → Liceo Canadiense
+[2025-10-14 13:50:40]   • Colegio: Instituto privado guatemala de la asuncion → Instituto Privado Guatemala de la Asunción
+[2025-10-14 13:50:40]   • Colegio: UVG Atiplano → Universidad del Valle de Guatemala
+[2025-10-14 13:50:40]   • Colegio: kids Academy → Kids Academy
+[2025-10-14 13:50:40]   • Colegio: Universidad Mariano Galvez de Guatemala → Universidad Mariano Gálvez
+[2025-10-14 13:50:40]   • Colegio: Certificado en ecommerce → Otro
+[2025-10-14 13:50:40]   • Colegio: Colegio Cristiano Verbo 1 → Colegio Cristiano Verbo
+[2025-10-14 13:50:40]   • Colegio: Colegio Dr Rodolfo Robles → Colegio Dr. Rodolfo Robles
+[2025-10-14 13:50:40]   • Colegio: Valle colonial → Universidad del Valle de Guatemala
+[2025-10-14 13:50:40]   • Colegio: Instituto Emiliani Somascos → Instituto Emiliani Somascos
+[2025-10-14 13:50:40]   • Colegio: Liceo frater → Liceo Frater
+[2025-10-14 13:50:40]   • Colegio: Sagrado corazón de Jesús → Colegio Sagrado Corazón de Jesús
+[2025-10-14 13:50:40]   • Colegio: Instituto normal central para señoritas belen → Instituto Normal Central para Señoritas Belén
+[2025-10-14 13:50:40]   • Colegio: Colegio interamericano → Colegio Interamericano
+[2025-10-14 13:50:40]   • Colegio: Universidad Completa → Otro
+[2025-10-14 13:50:40]   • Colegio: Estudié en el colegio americano Huehuetenango → Colegio Americano de Huehuetenango
+[2025-10-14 13:50:40]   • Colegio: Panamerican business school → Panamerican Business School
+[2025-10-14 13:50:40]   • Colegio: pajariro. rpjo → Otro
+[2025-10-14 13:50:40]   • Colegio: liceo bressani → Liceo Javier Bressani
+[2025-10-14 13:50:40]   • Colegio: solo necesito información → Entendido. Estoy listo para procesar el nombre de la institución educativa de Guatemala según las reglas establecidas. Por favor proporciona el nombre de la institución.
+[2025-10-14 13:50:40]   • Colegio: Ya me gradué del Instituto Guillermo Putzeys Álvarez → Instituto Guillermo Putzeys Álvarez
+[2025-10-14 13:50:40]   • Colegio: Centro educativo Aparicio → Centro Educativo Aparicio
+[2025-10-14 13:50:40]   • Colegio: Colegio IPTCE → Colegio IPTCE
+[2025-10-14 13:50:40]   • Colegio: CCB → Colegio Cristiano Bilingüe
+[2025-10-14 13:50:40]   • Colegio: UDEO → Universidad de Occidente
+[2025-10-14 13:50:40]   • Colegio: Frances → Colegio Frances
+[2025-10-14 13:50:40]   • Colegio: universidad regional → Universidad Galileo
+[2025-10-14 13:50:40]   • Colegio: Edúcate → Edúcate
+[2025-10-14 13:50:40]   • Colegio: Liceo cristiano Antioquia → Liceo Cristiano Antioquia
+[2025-10-14 13:50:40]   • Colegio: Liceo Chapero → Liceo Chapero
+[2025-10-14 13:50:40]   • Colegio: universidad rural → Universidad Rural
+[2025-10-14 13:50:40]   • Colegio: usac → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-14 13:50:40]   • Colegio: Landivar → Universidad Rafael Landívar
+[2025-10-14 13:50:40]   • Colegio: Campo Alto → Colegio Campo Alto
+[2025-10-14 13:50:40]   • Colegio: IDEACOP-PAJUIL → IDEACOP-PAJUIL
+[2025-10-14 13:50:40]   • Colegio: galileo → Universidad Galileo
+[2025-10-14 13:50:40]   • Colegio: Liceo Javier → Liceo Javier
+[2025-10-14 13:50:40]   • Colegio: liceo mixto → Liceo Mixto
+[2025-10-14 13:50:40]   • Colegio: Arenales Catalán → Colegio Arenales Catalán
+[2025-10-14 13:50:40]   • Colegio: Mariano Gálvez → Universidad Mariano Gálvez
+[2025-10-14 13:50:40]   • Colegio: colegio sinai → Colegio Sinaí
+[2025-10-14 13:50:40]   • Colegio: Usar → Otro
+[2025-10-14 13:50:40]   • Colegio: Keystone pensylvania → Keystone Pennsylvania
+[2025-10-14 13:50:40]   • Colegio: Mariano  galvez de giatemala → Universidad Mariano Gálvez
+[2025-10-14 13:50:40]   • Colegio: colegio privado mixto ELITE → Colegio Privado Mixto Elite
+[2025-10-14 13:50:40]   • Colegio: Sagrado corazon → Colegio Sagrado Corazón
+[2025-10-14 13:50:40]   • Colegio: diversificado por cooperativa → Instituto Diversificado por Cooperativa
+[2025-10-14 13:50:40]   • Colegio: Termine mi diversificado en el liceo de computación css → Liceo de Computación CSS
+[2025-10-14 13:50:40]   • Colegio: Graduated from AAUN → Otro
+[2025-10-14 13:50:40]   • Colegio: IPGA → Instituto Privado Guatemala Américas
+[2025-10-14 13:50:40]   • Colegio: Ex alumna IGA → Instituto Guatemalteco Americano (IGA)
+[2025-10-14 13:50:40]   • Colegio: mo → Universidad del Istmo
+[2025-10-14 13:50:40]   • Colegio: Universidad da Vinci de Guatemala → Universidad Da Vinci
+[2025-10-14 13:50:40]   • Colegio: Usac → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-14 13:50:40]   • Colegio: UVG ALTIPANO → Universidad del Valle de Guatemala
+[2025-10-14 13:50:40]   • Colegio: Italiano de Guatemala → Colegio Italiano de Guatemala
+[2025-10-14 13:50:40]   • Colegio: Ecc → Otro
+[2025-10-14 13:50:40]   • Colegio: Winbrigde → Winbridge School
+[2025-10-14 13:50:40]   • Colegio: Aden → Aden Business School
+[2025-10-14 13:50:40]   • Colegio: Universidad Rafael Landivar → Universidad Rafael Landívar
+[2025-10-14 13:50:40]   • Colegio: Colegio Montenevado → Colegio Montenevado
+[2025-10-14 13:50:40]   • Colegio: Liceo mixto técnicas integrales → Liceo Mixto Técnicas Integrales
+[2025-10-14 13:50:40]   • Colegio: itv → Instituto Técnico de Capacitación y Productividad (INTECAP)
+[2025-10-14 13:50:40]   • Colegio: ALTIPLANO → Universidad del Altiplano
+[2025-10-14 13:50:40]   • Colegio: Universidad Da Vinci → Universidad Da Vinci
+[2025-10-14 13:50:40]   • Colegio: finalizado → Otro
+[2025-10-14 13:50:40]   • Colegio: Colegio Viena Guatemalteco → Colegio Viena Guatemalteco
+[2025-10-14 13:50:40]   • Colegio: Universidad Mariano Gálvez de Guatemala → Universidad Mariano Gálvez
+[2025-10-14 13:50:40]   • Colegio: Me gradué el colegio el año pasado → Otro
+[2025-10-14 13:50:40]   • Colegio: Ya me gradué → Otro
+[2025-10-14 13:50:40]   • Colegio: Diseño grafico → Otro
+[2025-10-14 13:50:40]   • Colegio: Academia avanza → Academia Avanza
+[2025-10-14 13:50:40]   • Colegio: Ingenieria → Otro
+[2025-10-14 13:50:40]   • Colegio: itec → ITEC
+[2025-10-14 13:50:40]   • Colegio: Ya tengo Maestria → Otro
+[2025-10-14 13:50:40]   • Grado: Séptimo semestre → Universitario
+[2025-10-14 13:50:40]   • Grado: graduado_universitario → Graduado Universitario
+[2025-10-14 13:50:40]   • Grado: 4to Bachillerato → 4to Bachillerato
+[2025-10-14 13:50:40]   • Grado: 5to. Perito en Mercadotecnia y Publicidad → 5to Perito en Mercadotecnia y Publicidad
+[2025-10-14 13:50:40]   • Grado: PEM en Inglés → PEM en Inglés
+[2025-10-14 13:50:40]   • Grado: Licenciatura → Licenciatura
+[2025-10-14 13:50:40] 
+✅ Archivo limpio guardado en: datos/datos_limpios.csv
+[2025-10-14 13:50:40] 🎉 ¡Listo para cargar en Power BI!
+[2025-10-15 12:31:46] ============================================================
+[2025-10-15 12:31:46] 🚀 INICIANDO NORMALIZACIÓN DE LEADS
+[2025-10-15 12:31:46] ============================================================
+[2025-10-15 12:31:46] 📂 Leyendo archivo: datos/hubspot_export.csv
+[2025-10-15 12:31:46] ✅ Archivo leído: 335 leads encontrados
+[2025-10-15 12:31:46] 📋 Unificando columnas duplicadas...
+[2025-10-15 12:31:46] ✅ Unificadas columnas: Grado Académico + Grado Académico.1
+[2025-10-15 12:31:46] ✅ Columnas unificadas
+[2025-10-15 12:31:46] 
+🏫 Normalizando colegios...
+[2025-10-15 12:31:46] Colegios únicos a procesar: 252
+[2025-10-15 12:31:46] 🤖 Consultando Claude para: 'Don Bosco'
+[2025-10-15 12:34:37] 🤖 Consultando Claude para: 'Prueba'
+[2025-10-15 12:34:42] ⚠️ Respuesta inválida detectada: 'ninguno' → 'Otro'
+[2025-10-15 12:34:42] 🤖 Consultando Claude para: 'Cooperativa'
+[2025-10-15 12:34:51] 🤖 Consultando Claude para: 'INED'
+[2025-10-15 12:34:55] 🎓 Universidad detectada: 'Rafael Landivar' → 'Universidad Rafael Landívar'
+[2025-10-15 12:34:55] 🤖 Consultando Claude para: 'Progreso'
+[2025-10-15 12:35:03] ⚠️ Respuesta inválida detectada: 'No estoy en estudiando' → 'Otro'
+[2025-10-15 12:35:03] 🎓 Universidad detectada: 'Galileo' → 'Universidad Galileo'
+[2025-10-15 12:35:03] 🤖 Consultando Claude para: 'Escuela Nacional Central de Formación Secretarial'
+[2025-10-15 12:35:05] 🎓 Universidad detectada: 'Universidad Galileo' → 'Universidad Galileo'
+[2025-10-15 12:35:05] 🤖 Consultando Claude para: 'Ici guatemala suchitepequez'
+[2025-10-15 12:35:11] 🤖 Consultando Claude para: 'Colegio Guatemalteco Bilingüe'
+[2025-10-15 12:35:13] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 12:35:13] 🎓 Universidad detectada: 'Universidad Mariano Gálvez' → 'Universidad Mariano Gálvez'
+[2025-10-15 12:35:13] 🤖 Consultando Claude para: 'Instituto Intercultural Mixto Santiago'
+[2025-10-15 12:35:15] 🤖 Consultando Claude para: 'Colegio La Asunción San Marcos'
+[2025-10-15 12:35:17] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-15 12:35:17] 🎓 Universidad detectada: 'Universidad Regional de Guatemala' → 'Universidad Mariano Gálvez'
+[2025-10-15 12:35:17] 🤖 Consultando Claude para: 'Colegio santa monica'
+[2025-10-15 12:35:21] ⚠️ Respuesta inválida detectada: 'Ya no estoy estudiando' → 'Otro'
+[2025-10-15 12:35:21] 🤖 Consultando Claude para: 'escuela de formación secretarial'
+[2025-10-15 12:35:23] 🤖 Consultando Claude para: 'magisterio'
+[2025-10-15 12:35:25] 🎓 Universidad detectada: 'Liceo comercial entre valles' → 'Universidad del Valle de Guatemala'
+[2025-10-15 12:35:25] 🤖 Consultando Claude para: 'Graduada colegio verbo'
+[2025-10-15 12:35:27] 🤖 Consultando Claude para: 'Colegio fuente de vida'
+[2025-10-15 12:35:29] ⚠️ Respuesta inválida detectada: 'N/a' → 'Otro'
+[2025-10-15 12:35:29] 🤖 Consultando Claude para: 'INED San Pedro Sacatepéquez,. Guatemala'
+[2025-10-15 12:35:31] 🤖 Consultando Claude para: 'Graduada'
+[2025-10-15 12:35:33] 🤖 Consultando Claude para: 'Bilingüe el prado'
+[2025-10-15 12:35:35] 🤖 Consultando Claude para: 'IGpa'
+[2025-10-15 12:35:37] 🤖 Consultando Claude para: 'Colegio Mixto Belén Guatemala'
+[2025-10-15 12:35:39] 🤖 Consultando Claude para: 'Liceo Alpha y Omega'
+[2025-10-15 12:35:41] 🤖 Consultando Claude para: 'moderno jalpataguense'
+[2025-10-15 12:35:43] 🤖 Consultando Claude para: 'Ineb maría josefa rosado lara'
+[2025-10-15 12:35:45] 🤖 Consultando Claude para: 'Instituto diversificado Morazán el progreso'
+[2025-10-15 12:35:47] 🤖 Consultando Claude para: 'IMB-PC'
+[2025-10-15 12:35:49] 🤖 Consultando Claude para: 'Talita kumi'
+[2025-10-15 12:35:51] 🤖 Consultando Claude para: 'Isaac'
+[2025-10-15 12:35:54] 🎓 Universidad detectada: 'Universidad de San Carlos de Guatemala' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-15 12:35:54] 🤖 Consultando Claude para: 'Príncipe de Asturias'
+[2025-10-15 12:35:55] 🤖 Consultando Claude para: 'CDA Decroly Americano'
+[2025-10-15 12:35:58] 🤖 Consultando Claude para: 'INED Aldea Las Brisas Malacatán San Marcos'
+[2025-10-15 12:35:59] 🤖 Consultando Claude para: 'Asociación grupo ceiba'
+[2025-10-15 12:36:01] 🎓 Universidad detectada: 'UVG soy egresado' → 'Universidad del Valle de Guatemala'
+[2025-10-15 12:36:01] 🎓 Universidad detectada: 'universidad San Carlos Guatemala' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-15 12:36:01] 🤖 Consultando Claude para: 'colegio Jesús de Nazareth'
+[2025-10-15 12:36:05] 🤖 Consultando Claude para: 'Liceo privado mixto tumbadorense'
+[2025-10-15 12:36:07] 🤖 Consultando Claude para: 'ahorita no tengo la oportunidad de estar estudiando en ningún colegio'
+[2025-10-15 12:36:09] 🎓 Universidad detectada: 'ITEC Uvg altiplano' → 'Universidad del Valle de Guatemala'
+[2025-10-15 12:36:09] 🤖 Consultando Claude para: 'Instituto De Nacional De Educación Diversificada S.C.P'
+[2025-10-15 12:36:12] 🤖 Consultando Claude para: 'Colegio La Ilustración'
+[2025-10-15 12:36:13] 🤖 Consultando Claude para: 'IMENCE'
+[2025-10-15 12:36:15] 🤖 Consultando Claude para: 'Escuela normal central para varones'
+[2025-10-15 12:36:17] 🎓 Universidad detectada: 'USAc' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-15 12:36:17] 🤖 Consultando Claude para: 'colegio integral el saber'
+[2025-10-15 12:36:19] 🤖 Consultando Claude para: 'Perito en administración de empresas'
+[2025-10-15 12:36:21] 🎓 Universidad detectada: 'Da Vinci' → 'Universidad Da Vinci'
+[2025-10-15 12:36:21] 🤖 Consultando Claude para: 'Cooperativa el Recuerdo'
+[2025-10-15 12:36:23] 🤖 Consultando Claude para: 'Liceo tecnológico ciudad Quetzal'
+[2025-10-15 12:36:25] 🤖 Consultando Claude para: 'Iemcoop'
+[2025-10-15 12:36:27] 🤖 Consultando Claude para: 'Liceo Guatemala'
+[2025-10-15 12:36:29] 🤖 Consultando Claude para: 'Insar'
+[2025-10-15 12:36:30] ⚠️ Respuesta inválida detectada: 'Este año no estoy estudiando' → 'Otro'
+[2025-10-15 12:36:30] 🤖 Consultando Claude para: 'ISEA'
+[2025-10-15 12:36:33] 🤖 Consultando Claude para: 'Xd'
+[2025-10-15 12:36:35] 🎓 Universidad detectada: 'ITEC Uvg campus altiplano' → 'Universidad del Valle de Guatemala'
+[2025-10-15 12:36:35] ⚠️ Respuesta inválida detectada: 'Aun no estudio' → 'Otro'
+[2025-10-15 12:36:35] 🤖 Consultando Claude para: 'Instituto de Educación Diversificada por Cooperativa de Enseñanza "Playa Linda"'
+[2025-10-15 12:36:38] 🤖 Consultando Claude para: 'Colegio Rosario'
+[2025-10-15 12:36:40] 🤖 Consultando Claude para: 'CED-IECA'
+[2025-10-15 12:36:41] 🎓 Universidad detectada: 'UMG' → 'Universidad Mariano Gálvez'
+[2025-10-15 12:36:41] 🤖 Consultando Claude para: 'Suizo xela'
+[2025-10-15 12:36:43] 🤖 Consultando Claude para: 'Colegio Científico Montessori'
+[2025-10-15 12:36:45] 🤖 Consultando Claude para: 'Colegio americano nuestra familia'
+[2025-10-15 12:36:48] 🤖 Consultando Claude para: 'Aub no'
+[2025-10-15 12:36:49] 🤖 Consultando Claude para: 'colegio público'
+[2025-10-15 12:36:51] 🤖 Consultando Claude para: 'INEDCE'
+[2025-10-15 12:36:53] 🤖 Consultando Claude para: 'pronea'
+[2025-10-15 12:36:56] 🎓 Universidad detectada: 'Mariano Gálvez de Guatemala' → 'Universidad Mariano Gálvez'
+[2025-10-15 12:36:56] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-15 12:36:56] 🤖 Consultando Claude para: 'formación Integral'
+[2025-10-15 12:36:58] 🤖 Consultando Claude para: 'Colegio Mixto Integral, San Lucas Sacatepéquez'
+[2025-10-15 12:37:00] 🎓 Universidad detectada: 'Uvg altiplano' → 'Universidad del Valle de Guatemala'
+[2025-10-15 12:37:00] 🤖 Consultando Claude para: 'Centro Educativo Técnico Laboral KINAL'
+[2025-10-15 12:37:02] 🤖 Consultando Claude para: 'Injofc Tierra blanca'
+[2025-10-15 12:37:04] 🤖 Consultando Claude para: 'Estudie en el King David'
+[2025-10-15 12:37:06] 🤖 Consultando Claude para: 'IMB pc'
+[2025-10-15 12:37:08] ⚠️ Respuesta inválida detectada: 'No estoy estudiando por motivos de trabajo pero estuve en la Usac' → 'Otro'
+[2025-10-15 12:37:08] 🤖 Consultando Claude para: 'Colegio ciencia y desarrollo'
+[2025-10-15 12:37:10] 🎓 Universidad detectada: 'Panamericano' → 'Universidad Panamericana'
+[2025-10-15 12:37:10] 🤖 Consultando Claude para: 'compuceic'
+[2025-10-15 12:37:12] 🤖 Consultando Claude para: 'Escuela Normal Regional de Occidente'
+[2025-10-15 12:37:14] 🤖 Consultando Claude para: 'INEB'
+[2025-10-15 12:37:16] 🎓 Universidad detectada: 'Universidad Regional' → 'Universidad Galileo'
+[2025-10-15 12:37:16] 🤖 Consultando Claude para: 'IGS'
+[2025-10-15 12:37:18] 🤖 Consultando Claude para: 'LINSA'
+[2025-10-15 12:37:20] 🤖 Consultando Claude para: 'Infantes'
+[2025-10-15 12:37:22] 🤖 Consultando Claude para: 'Calvert Hudson Global School (USA)/Bibliotech Guatemala'
+[2025-10-15 12:37:24] 🤖 Consultando Claude para: 'La Vid Verdadera'
+[2025-10-15 12:37:26] 🤖 Consultando Claude para: 'Instituto de educación básica y Bachillerato por madurez   La Democracia'
+[2025-10-15 12:37:27] 🤖 Consultando Claude para: 'Colegio Valverde'
+[2025-10-15 12:37:29] 🎓 Universidad detectada: 'URL' → 'Universidad Rafael Landívar'
+[2025-10-15 12:37:29] 🤖 Consultando Claude para: 'instituto Miguel de Cervantes'
+[2025-10-15 12:37:32] 🤖 Consultando Claude para: 'Liceo Rotterdam'
+[2025-10-15 12:37:34] 🤖 Consultando Claude para: 'Fase'
+[2025-10-15 12:37:36] 🤖 Consultando Claude para: 'Colegio Privado Mixto Santa Catalina'
+[2025-10-15 12:37:39] 🤖 Consultando Claude para: 'Hola hay maestria?'
+[2025-10-15 12:37:41] 🤖 Consultando Claude para: 'Colegio Privado Mixto "El paraíso"'
+[2025-10-15 12:37:42] ✓ Fuzzy match: 'Isea' → 'Instituto Superior de Educación Abierta (ISEA)'
+[2025-10-15 12:37:42] 🤖 Consultando Claude para: 'colegio CEPREC'
+[2025-10-15 12:37:44] 🤖 Consultando Claude para: 'Bethesda'
+[2025-10-15 12:37:46] 🤖 Consultando Claude para: 'Colegio Mixto Belen'
+[2025-10-15 12:37:48] 🤖 Consultando Claude para: 'Instituto putzey guillermo Alvarez'
+[2025-10-15 12:37:50] 🤖 Consultando Claude para: 'instituto privado mixto ORIZABA'
+[2025-10-15 12:37:52] 🤖 Consultando Claude para: 'soy egresado del ifj'
+[2025-10-15 12:37:55] 🤖 Consultando Claude para: 'Impo Superación'
+[2025-10-15 12:37:57] 🤖 Consultando Claude para: 'Colegio Mixto Nuestra Patria'
+[2025-10-15 12:37:59] 🎓 Universidad detectada: 'UVG Sur' → 'Universidad del Valle de Guatemala'
+[2025-10-15 12:37:59] 🤖 Consultando Claude para: 'Colegio Capouilliez'
+[2025-10-15 12:38:01] ⚠️ Respuesta inválida detectada: 'no estudio' → 'Otro'
+[2025-10-15 12:38:01] 🤖 Consultando Claude para: 'colegio itvo amatitlan'
+[2025-10-15 12:38:02] 🤖 Consultando Claude para: 'Liceo de ciencias y técnicas'
+[2025-10-15 12:38:04] ✓ Fuzzy match: 'Instituto Nacional de Educación diversificada INEDI' → 'Instituto Nacional de Educación Diversificada S.C.P'
+[2025-10-15 12:38:04] 🤖 Consultando Claude para: 'diversificado tohaman sibinal san Marcos'
+[2025-10-15 12:38:06] 🤖 Consultando Claude para: 'Colegio liceo san Luis'
+[2025-10-15 12:38:08] 🤖 Consultando Claude para: 'INEB Río Bravo Suchitepéquez, Guatemala'
+[2025-10-15 12:38:10] 🤖 Consultando Claude para: 'colegio técnico integrado'
+[2025-10-15 12:38:12] 🤖 Consultando Claude para: 'Colegio mixto llano largo'
+[2025-10-15 12:38:14] 🎓 Universidad detectada: 'En la universidad Mariano Gálvez' → 'Universidad Mariano Gálvez'
+[2025-10-15 12:38:14] 🤖 Consultando Claude para: 'Liceo técnico industrial Maya Tikal'
+[2025-10-15 12:38:16] 🤖 Consultando Claude para: 'E993CDX'
+[2025-10-15 12:38:18] 🎓 Universidad detectada: 'Uvg' → 'Universidad del Valle de Guatemala'
+[2025-10-15 12:38:18] 🤖 Consultando Claude para: 'instituto mixto Verapaz Impave'
+[2025-10-15 12:38:20] ⚠️ Respuesta inválida detectada: 'No estudio ya me gradué' → 'Otro'
+[2025-10-15 12:38:20] 🎓 Universidad detectada: 'Umg' → 'Universidad Mariano Gálvez'
+[2025-10-15 12:38:20] 🤖 Consultando Claude para: 'Instituto Normal Para Señoritas Centro América'
+[2025-10-15 12:38:22] 🎓 Universidad detectada: 'URURAL' → 'Universidad Rural'
+[2025-10-15 12:38:22] ✓ Fuzzy match: 'Graduado' → 'Otro'
+[2025-10-15 12:38:22] 🤖 Consultando Claude para: 'Instituto tecnológico catarina'
+[2025-10-15 12:38:24] 🤖 Consultando Claude para: 'Colegio Amigos en la ciudad de Chiquimula'
+[2025-10-15 12:38:26] 🤖 Consultando Claude para: 'Sagrado corazón naranjo'
+[2025-10-15 12:38:28] 🤖 Consultando Claude para: 'Continental americano'
+[2025-10-15 12:38:31] 🤖 Consultando Claude para: 'Trabajo en san matin'
+[2025-10-15 12:38:33] 🤖 Consultando Claude para: 'Escuela nacional de ciencias comerciales no 3'
+[2025-10-15 12:38:34] 🤖 Consultando Claude para: 'Liceo Mixto Pinulteco'
+[2025-10-15 12:38:36] 🤖 Consultando Claude para: 'colegio privado san Andrés'
+[2025-10-15 12:38:39] 🤖 Consultando Claude para: 'Colegio John Harvard'
+[2025-10-15 12:38:41] 🤖 Consultando Claude para: 'Perito en industria de alimentos'
+[2025-10-15 12:38:42] 🤖 Consultando Claude para: 'Colegio en computación San José 2'
+[2025-10-15 12:38:44] 🤖 Consultando Claude para: 'institito "villa de las niñas" Guatemala'
+[2025-10-15 12:38:46] 🎓 Universidad detectada: 'Mariano Galvez' → 'Universidad Mariano Gálvez'
+[2025-10-15 12:38:46] 🤖 Consultando Claude para: 'Liceo Cristiano Nazareth'
+[2025-10-15 12:38:48] 🤖 Consultando Claude para: 'Colegio Esdeo'
+[2025-10-15 12:38:49] ✓ Fuzzy match: 'Iga' → 'IGpa'
+[2025-10-15 12:38:49] 🤖 Consultando Claude para: 'Liceo técnico de ciencias y tecnología'
+[2025-10-15 12:38:51] 🎓 Universidad detectada: 'Universidad Mesoamericana' → 'Universidad Mesoamericana'
+[2025-10-15 12:38:51] 🤖 Consultando Claude para: 'Divertido Ined'
+[2025-10-15 12:38:53] 🤖 Consultando Claude para: 'colegio macdermont'
+[2025-10-15 12:38:55] 🎓 Universidad detectada: 'USAC' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-15 12:38:55] 🤖 Consultando Claude para: 'san Pablo de Guatemala'
+[2025-10-15 12:38:57] 🤖 Consultando Claude para: 'Gerardi'
+[2025-10-15 12:38:59] 🤖 Consultando Claude para: 'Itce'
+[2025-10-15 12:39:02] 🤖 Consultando Claude para: 'Liceo Canadiense'
+[2025-10-15 12:39:04] 🤖 Consultando Claude para: 'Instituto privado guatemala de la asuncion'
+[2025-10-15 12:39:06] 🎓 Universidad detectada: 'UVG Atiplano' → 'Universidad del Valle de Guatemala'
+[2025-10-15 12:39:06] 🤖 Consultando Claude para: 'kids Academy'
+[2025-10-15 12:39:08] 🎓 Universidad detectada: 'Universidad Mariano Galvez de Guatemala' → 'Universidad Mariano Gálvez'
+[2025-10-15 12:39:08] ⚠️ Respuesta inválida detectada: 'no' → 'Otro'
+[2025-10-15 12:39:08] 🤖 Consultando Claude para: 'Certificado en ecommerce'
+[2025-10-15 12:39:10] 🤖 Consultando Claude para: 'Colegio Cristiano Verbo 1'
+[2025-10-15 12:39:12] ⚠️ Respuesta inválida detectada: 'ya no estudio' → 'Otro'
+[2025-10-15 12:39:12] ⚠️ Respuesta inválida detectada: 'No estoy estudiando' → 'Otro'
+[2025-10-15 12:39:12] 🤖 Consultando Claude para: 'Colegio Dr Rodolfo Robles'
+[2025-10-15 12:39:14] 🎓 Universidad detectada: 'Valle colonial' → 'Universidad del Valle de Guatemala'
+[2025-10-15 12:39:14] 🤖 Consultando Claude para: 'Instituto Emiliani Somascos'
+[2025-10-15 12:39:16] 🤖 Consultando Claude para: 'Liceo frater'
+[2025-10-15 12:39:18] 🤖 Consultando Claude para: 'Sagrado corazón de Jesús'
+[2025-10-15 12:39:20] ✓ Fuzzy match: 'Escuela Normal central para varones Ined Anexo' → 'Escuela Normal Central para Varones'
+[2025-10-15 12:39:20] 🤖 Consultando Claude para: 'Instituto normal central para señoritas belen'
+[2025-10-15 12:39:22] 🤖 Consultando Claude para: 'Colegio interamericano'
+[2025-10-15 12:39:24] 🤖 Consultando Claude para: 'Universidad Completa'
+[2025-10-15 12:39:26] 🤖 Consultando Claude para: 'Estudié en el colegio americano Huehuetenango'
+[2025-10-15 12:39:28] 🤖 Consultando Claude para: 'Panamerican business school'
+[2025-10-15 12:39:30] ⚠️ Respuesta inválida detectada: 'Por el momento no estudio' → 'Otro'
+[2025-10-15 12:39:30] 🤖 Consultando Claude para: 'pajariro. rpjo'
+[2025-10-15 12:39:31] ✓ Fuzzy match: 'Centro Educativo Técnico Laboral Kinal' → 'Centro Educativo Técnico Laboral KINAL'
+[2025-10-15 12:39:31] 🤖 Consultando Claude para: 'liceo bressani'
+[2025-10-15 12:39:33] 🤖 Consultando Claude para: 'solo necesito información'
+[2025-10-15 12:39:36] 🤖 Consultando Claude para: 'Ya me gradué del Instituto Guillermo Putzeys Álvarez'
+[2025-10-15 12:39:38] ✓ Fuzzy match: 'n estudio' → 'Otro'
+[2025-10-15 12:39:38] 🤖 Consultando Claude para: 'Centro educativo Aparicio'
+[2025-10-15 12:39:41] 🤖 Consultando Claude para: 'Colegio IPTCE'
+[2025-10-15 12:39:44] 🤖 Consultando Claude para: 'CCB'
+[2025-10-15 12:39:46] 🤖 Consultando Claude para: 'UDEO'
+[2025-10-15 12:39:48] 🤖 Consultando Claude para: 'Frances'
+[2025-10-15 12:39:49] 🎓 Universidad detectada: 'universidad regional' → 'Universidad Galileo'
+[2025-10-15 12:39:49] 🤖 Consultando Claude para: 'Edúcate'
+[2025-10-15 12:39:51] 🤖 Consultando Claude para: 'Liceo cristiano Antioquia'
+[2025-10-15 12:39:53] 🤖 Consultando Claude para: 'Liceo Chapero'
+[2025-10-15 12:39:55] ⚠️ Respuesta inválida detectada: 'Ninguno  Estoy viendo opciones' → 'Otro'
+[2025-10-15 12:39:55] ⚠️ Respuesta inválida detectada: 'No estudio actualmente' → 'Otro'
+[2025-10-15 12:39:55] 🎓 Universidad detectada: 'universidad rural' → 'Universidad Rural'
+[2025-10-15 12:39:55] 🎓 Universidad detectada: 'usac' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-15 12:39:55] ✓ Fuzzy match: 'no estudip' → 'Otro'
+[2025-10-15 12:39:55] ⚠️ Respuesta inválida detectada: '.' → 'Otro'
+[2025-10-15 12:39:55] 🎓 Universidad detectada: 'Landivar' → 'Universidad Rafael Landívar'
+[2025-10-15 12:39:55] 🤖 Consultando Claude para: 'Campo Alto'
+[2025-10-15 12:39:57] 🤖 Consultando Claude para: 'IDEACOP-PAJUIL'
+[2025-10-15 12:39:59] 🎓 Universidad detectada: 'galileo' → 'Universidad Galileo'
+[2025-10-15 12:39:59] 🤖 Consultando Claude para: 'Liceo Javier'
+[2025-10-15 12:40:01] 🤖 Consultando Claude para: 'liceo mixto'
+[2025-10-15 12:40:04] 🤖 Consultando Claude para: 'Arenales Catalán'
+[2025-10-15 12:40:06] 🎓 Universidad detectada: 'Mariano Gálvez' → 'Universidad Mariano Gálvez'
+[2025-10-15 12:40:06] 🤖 Consultando Claude para: 'colegio sinai'
+[2025-10-15 12:40:08] 🤖 Consultando Claude para: 'Usar'
+[2025-10-15 12:40:10] 🤖 Consultando Claude para: 'Keystone pensylvania'
+[2025-10-15 12:40:13] 🎓 Universidad detectada: 'Mariano  galvez de giatemala' → 'Universidad Mariano Gálvez'
+[2025-10-15 12:40:13] ⚠️ Respuesta inválida detectada: 'No estoy estudiando.' → 'Otro'
+[2025-10-15 12:40:13] 🤖 Consultando Claude para: 'colegio privado mixto ELITE'
+[2025-10-15 12:40:15] 🤖 Consultando Claude para: 'Sagrado corazon'
+[2025-10-15 12:40:16] ✓ Fuzzy match: 'IGPA' → 'IGpa'
+[2025-10-15 12:40:16] 🤖 Consultando Claude para: 'diversificado por cooperativa'
+[2025-10-15 12:40:18] 🤖 Consultando Claude para: 'Termine mi diversificado en el liceo de computación css'
+[2025-10-15 12:40:21] 🤖 Consultando Claude para: 'Graduated from AAUN'
+[2025-10-15 12:40:22] 🤖 Consultando Claude para: 'IPGA'
+[2025-10-15 12:40:24] 🤖 Consultando Claude para: 'Ex alumna IGA'
+[2025-10-15 12:40:26] 🎓 Universidad detectada: 'mo' → 'Universidad del Istmo'
+[2025-10-15 12:40:26] 🎓 Universidad detectada: 'Universidad da Vinci de Guatemala' → 'Universidad Da Vinci'
+[2025-10-15 12:40:26] 🎓 Universidad detectada: 'Usac' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-15 12:40:26] 🎓 Universidad detectada: 'UVG ALTIPANO' → 'Universidad del Valle de Guatemala'
+[2025-10-15 12:40:26] 🤖 Consultando Claude para: 'Italiano de Guatemala'
+[2025-10-15 12:40:28] 🤖 Consultando Claude para: 'Ecc'
+[2025-10-15 12:40:31] 🤖 Consultando Claude para: 'Winbrigde'
+[2025-10-15 12:40:33] 🤖 Consultando Claude para: 'Aden'
+[2025-10-15 12:40:35] 🎓 Universidad detectada: 'Universidad Rafael Landivar' → 'Universidad Rafael Landívar'
+[2025-10-15 12:40:35] 🤖 Consultando Claude para: 'Colegio Montenevado'
+[2025-10-15 12:40:37] ⚠️ Respuesta inválida detectada: 'No estudio, ya me gradue del Colegio Monte Maria' → 'Otro'
+[2025-10-15 12:40:37] 🤖 Consultando Claude para: 'Liceo mixto técnicas integrales'
+[2025-10-15 12:40:39] 🤖 Consultando Claude para: 'itv'
+[2025-10-15 12:40:41] 🤖 Consultando Claude para: 'ALTIPLANO'
+[2025-10-15 12:40:43] 🎓 Universidad detectada: 'Universidad Da Vinci' → 'Universidad Da Vinci'
+[2025-10-15 12:40:43] 🤖 Consultando Claude para: 'finalizado'
+[2025-10-15 12:40:46] 🤖 Consultando Claude para: 'Colegio Viena Guatemalteco'
+[2025-10-15 12:40:48] 🎓 Universidad detectada: 'Universidad Mariano Gálvez de Guatemala' → 'Universidad Mariano Gálvez'
+[2025-10-15 12:40:48] 🤖 Consultando Claude para: 'Me gradué el colegio el año pasado'
+[2025-10-15 12:40:49] 🤖 Consultando Claude para: 'Ya me gradué'
+[2025-10-15 12:40:51] 🤖 Consultando Claude para: 'Diseño grafico'
+[2025-10-15 12:40:53] 🤖 Consultando Claude para: 'Academia avanza'
+[2025-10-15 12:40:55] 🤖 Consultando Claude para: 'Ingenieria'
+[2025-10-15 12:40:57] 🤖 Consultando Claude para: 'itec'
+[2025-10-15 12:40:59] 🤖 Consultando Claude para: 'Ya tengo Maestria'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'ninguno' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'No estoy en estudiando' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'Ya no estoy estudiando' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'N/a' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'Este año no estoy estudiando' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'Aun no estudio' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'No estoy estudiando por motivos de trabajo pero estuve en la Usac' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 12:41:01] ✓ Fuzzy match: 'Isea' → 'Instituto Superior de Educación Abierta (ISEA)'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'no estudio' → 'Otro'
+[2025-10-15 12:41:01] ✓ Fuzzy match: 'Instituto Nacional de Educación diversificada INEDI' → 'Instituto Nacional de Educación Diversificada S.C.P'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'No estudio ya me gradué' → 'Otro'
+[2025-10-15 12:41:01] ✓ Fuzzy match: 'Graduado' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'no estudio' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 12:41:01] ✓ Fuzzy match: 'Iga' → 'IGpa'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'no' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'ya no estudio' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'No estoy estudiando' → 'Otro'
+[2025-10-15 12:41:01] ✓ Fuzzy match: 'Escuela Normal central para varones Ined Anexo' → 'Escuela Normal Central para Varones'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'Por el momento no estudio' → 'Otro'
+[2025-10-15 12:41:01] ✓ Fuzzy match: 'Centro Educativo Técnico Laboral Kinal' → 'Centro Educativo Técnico Laboral KINAL'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'no estudio' → 'Otro'
+[2025-10-15 12:41:01] ✓ Fuzzy match: 'n estudio' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'Ninguno  Estoy viendo opciones' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'No estudio actualmente' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-15 12:41:01] ✓ Fuzzy match: 'no estudip' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: '.' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'No estoy estudiando.' → 'Otro'
+[2025-10-15 12:41:01] ✓ Fuzzy match: 'IGPA' → 'IGpa'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: '.' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'no estudio' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'No estudio, ya me gradue del Colegio Monte Maria' → 'Otro'
+[2025-10-15 12:41:01] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 12:41:01] 
+🎓 Normalizando grados académicos...
+[2025-10-15 12:41:01] 
+📝 Procesando Associated Form Submission...
+[2025-10-15 12:41:01] 
+🎯 Completando Carrera de Interés...
+[2025-10-15 12:41:01] 
+🔗 Categorizando URLs por palabras clave...
+[2025-10-15 12:41:01] ✅ Reemplazada columna: Grado Académico
+[2025-10-15 12:41:01] ✅ Eliminada columna duplicada: Grado Académico.1
+[2025-10-15 12:41:01] ✅ Reemplazada columna: Colegio Actual
+[2025-10-15 12:41:01] ✅ Eliminada columna redundante: En qué colegio estudias actualmente?
+[2025-10-15 12:41:01] ✅ Reemplazada columna: Carrera de Interés
+[2025-10-15 12:41:01] ✅ Reemplazada columna: First Page Seen
+[2025-10-15 12:41:01] ✅ Reemplazada columna: Last Page Seen
+[2025-10-15 12:41:01] ✅ Diccionario guardado con 243 colegios
+[2025-10-15 12:41:01] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-10-15 12:41:01] 
+============================================================
+[2025-10-15 12:41:01] ✅ PROCESO COMPLETADO
+[2025-10-15 12:41:01] ============================================================
+[2025-10-15 12:41:01] 📊 Total de leads procesados: 335
+[2025-10-15 12:41:01] 🆕 Normalizaciones nuevas: 222
+[2025-10-15 12:41:01] 🤖 Tokens usados: 45781
+[2025-10-15 12:41:01] 💰 Costo aproximado: $0.1373
+[2025-10-15 12:41:01] 
+📝 NUEVAS NORMALIZACIONES:
+[2025-10-15 12:41:01]   • Colegio: Don Bosco → Colegio Don Bosco
+[2025-10-15 12:41:01]   • Colegio: Prueba → Otro
+[2025-10-15 12:41:01]   • Colegio: Cooperativa → Otro
+[2025-10-15 12:41:01]   • Colegio: INED → Instituto Nacional de Educación Diversificada (INED)
+[2025-10-15 12:41:01]   • Colegio: Rafael Landivar → Universidad Rafael Landívar
+[2025-10-15 12:41:01]   • Colegio: Progreso → Colegio Progreso
+[2025-10-15 12:41:01]   • Colegio: Galileo → Universidad Galileo
+[2025-10-15 12:41:01]   • Colegio: Escuela Nacional Central de Formación Secretarial → Escuela Nacional Central de Formación Secretarial
+[2025-10-15 12:41:01]   • Colegio: Universidad Galileo → Universidad Galileo
+[2025-10-15 12:41:01]   • Colegio: Ici guatemala suchitepequez → Instituto de Computación de Guatemala (ICI) - Suchitepéquez
+[2025-10-15 12:41:01]   • Colegio: Colegio Guatemalteco Bilingüe → Colegio Guatemalteco Bilingüe
+[2025-10-15 12:41:01]   • Colegio: Universidad Mariano Gálvez → Universidad Mariano Gálvez
+[2025-10-15 12:41:01]   • Colegio: Instituto Intercultural Mixto Santiago → Instituto Intercultural Mixto Santiago
+[2025-10-15 12:41:01]   • Colegio: Colegio La Asunción San Marcos → Colegio La Asunción San Marcos
+[2025-10-15 12:41:01]   • Colegio: Universidad Regional de Guatemala → Universidad Mariano Gálvez
+[2025-10-15 12:41:01]   • Colegio: Colegio santa monica → Colegio Santa Mónica
+[2025-10-15 12:41:01]   • Colegio: escuela de formación secretarial → Escuela de Formación Secretarial
+[2025-10-15 12:41:01]   • Colegio: magisterio → Escuela Normal de Maestros
+[2025-10-15 12:41:01]   • Colegio: Liceo comercial entre valles → Universidad del Valle de Guatemala
+[2025-10-15 12:41:01]   • Colegio: Graduada colegio verbo → Colegio Verbo
+[2025-10-15 12:41:01]   • Colegio: Colegio fuente de vida → Colegio Fuente de Vida
+[2025-10-15 12:41:01]   • Colegio: INED San Pedro Sacatepéquez,. Guatemala → INED San Pedro Sacatepéquez
+[2025-10-15 12:41:01]   • Colegio: Graduada → Otro
+[2025-10-15 12:41:01]   • Colegio: Bilingüe el prado → Colegio Bilingüe El Prado
+[2025-10-15 12:41:01]   • Colegio: IGpa → IGpa
+[2025-10-15 12:41:01]   • Colegio: Colegio Mixto Belén Guatemala → Colegio Mixto Belén
+[2025-10-15 12:41:01]   • Colegio: Liceo Alpha y Omega → Liceo Alpha y Omega
+[2025-10-15 12:41:01]   • Colegio: moderno jalpataguense → Colegio Moderno Jalpataguense
+[2025-10-15 12:41:01]   • Colegio: Ineb maría josefa rosado lara → Instituto Nacional de Educación Básica María Josefa Rosado Lara
+[2025-10-15 12:41:01]   • Colegio: Instituto diversificado Morazán el progreso → Instituto Diversificado Morazán El Progreso
+[2025-10-15 12:41:01]   • Colegio: IMB-PC → IMB-PC
+[2025-10-15 12:41:01]   • Colegio: Talita kumi → Talita Kumi
+[2025-10-15 12:41:01]   • Colegio: Isaac → Instituto Nacional de Educación Básica Isaac
+[2025-10-15 12:41:01]   • Colegio: Universidad de San Carlos de Guatemala → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-15 12:41:01]   • Colegio: Príncipe de Asturias → Colegio Príncipe de Asturias
+[2025-10-15 12:41:01]   • Colegio: CDA Decroly Americano → CDA Decroly Americano
+[2025-10-15 12:41:01]   • Colegio: INED Aldea Las Brisas Malacatán San Marcos → INED Aldea Las Brisas Malacatán San Marcos
+[2025-10-15 12:41:01]   • Colegio: Asociación grupo ceiba → Otro
+[2025-10-15 12:41:01]   • Colegio: UVG soy egresado → Universidad del Valle de Guatemala
+[2025-10-15 12:41:01]   • Colegio: universidad San Carlos Guatemala → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-15 12:41:01]   • Colegio: colegio Jesús de Nazareth → Colegio Jesús de Nazareth
+[2025-10-15 12:41:01]   • Colegio: Liceo privado mixto tumbadorense → Liceo Privado Mixto Tumbadorense
+[2025-10-15 12:41:01]   • Colegio: ahorita no tengo la oportunidad de estar estudiando en ningún colegio → Otro
+[2025-10-15 12:41:01]   • Colegio: ITEC Uvg altiplano → Universidad del Valle de Guatemala
+[2025-10-15 12:41:01]   • Colegio: Instituto De Nacional De Educación Diversificada S.C.P → Instituto Nacional de Educación Diversificada S.C.P
+[2025-10-15 12:41:01]   • Colegio: Colegio La Ilustración → Colegio La Ilustración
+[2025-10-15 12:41:01]   • Colegio: IMENCE → IMENCE
+[2025-10-15 12:41:01]   • Colegio: Escuela normal central para varones → Escuela Normal Central para Varones
+[2025-10-15 12:41:01]   • Colegio: USAc → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-15 12:41:01]   • Colegio: colegio integral el saber → Colegio Integral El Saber
+[2025-10-15 12:41:01]   • Colegio: Perito en administración de empresas → Otro
+[2025-10-15 12:41:01]   • Colegio: Da Vinci → Universidad Da Vinci
+[2025-10-15 12:41:01]   • Colegio: Cooperativa el Recuerdo → Otro
+[2025-10-15 12:41:01]   • Colegio: Liceo tecnológico ciudad Quetzal → Liceo Tecnológico Ciudad Quetzal
+[2025-10-15 12:41:01]   • Colegio: Iemcoop → Instituto Especializado en Mecánica Cooperativa
+[2025-10-15 12:41:01]   • Colegio: Liceo Guatemala → Liceo Guatemala
+[2025-10-15 12:41:01]   • Colegio: Insar → Instituto Nacional de Seguros (INSAR)
+[2025-10-15 12:41:01]   • Colegio: ISEA → Instituto Superior de Educación Abierta (ISEA)
+[2025-10-15 12:41:01]   • Colegio: Xd → Otro
+[2025-10-15 12:41:01]   • Colegio: ITEC Uvg campus altiplano → Universidad del Valle de Guatemala
+[2025-10-15 12:41:01]   • Colegio: Instituto de Educación Diversificada por Cooperativa de Enseñanza "Playa Linda" → Instituto de Educación Diversificada por Cooperativa de Enseñanza Playa Linda
+[2025-10-15 12:41:01]   • Colegio: Colegio Rosario → Colegio Nuestra Señora del Rosario
+[2025-10-15 12:41:01]   • Colegio: CED-IECA → CED-IECA
+[2025-10-15 12:41:01]   • Colegio: UMG → Universidad Mariano Gálvez
+[2025-10-15 12:41:01]   • Colegio: Suizo xela → Colegio Suizo Americano de Quetzaltenango
+[2025-10-15 12:41:01]   • Colegio: Colegio Científico Montessori → Colegio Científico Montessori
+[2025-10-15 12:41:01]   • Colegio: Colegio americano nuestra familia → Colegio Americano Nuestra Familia
+[2025-10-15 12:41:01]   • Colegio: Aub no → Otro
+[2025-10-15 12:41:01]   • Colegio: colegio público → Colegio Público
+[2025-10-15 12:41:01]   • Colegio: INEDCE → Otro
+[2025-10-15 12:41:01]   • Colegio: pronea → Programa Nacional de Educación Alternativa (PRONEA)
+[2025-10-15 12:41:01]   • Colegio: Mariano Gálvez de Guatemala → Universidad Mariano Gálvez
+[2025-10-15 12:41:01]   • Colegio: formación Integral → Formación Integral
+[2025-10-15 12:41:01]   • Colegio: Colegio Mixto Integral, San Lucas Sacatepéquez → Colegio Mixto Integral, San Lucas Sacatepéquez
+[2025-10-15 12:41:01]   • Colegio: Uvg altiplano → Universidad del Valle de Guatemala
+[2025-10-15 12:41:01]   • Colegio: Centro Educativo Técnico Laboral KINAL → Centro Educativo Técnico Laboral KINAL
+[2025-10-15 12:41:01]   • Colegio: Injofc Tierra blanca → Injofc Tierra Blanca
+[2025-10-15 12:41:01]   • Colegio: Estudie en el King David → King David
+[2025-10-15 12:41:01]   • Colegio: IMB pc → IMB PC
+[2025-10-15 12:41:01]   • Colegio: Colegio ciencia y desarrollo → Colegio Ciencia y Desarrollo
+[2025-10-15 12:41:01]   • Colegio: Panamericano → Universidad Panamericana
+[2025-10-15 12:41:01]   • Colegio: compuceic → COMPUCEIC
+[2025-10-15 12:41:01]   • Colegio: Escuela Normal Regional de Occidente → Escuela Normal Regional de Occidente
+[2025-10-15 12:41:01]   • Colegio: INEB → Instituto Nacional de Educación Básica (INEB)
+[2025-10-15 12:41:01]   • Colegio: Universidad Regional → Universidad Galileo
+[2025-10-15 12:41:01]   • Colegio: IGS → Instituto Guatemalteco de Seguridad Social (IGSS)
+[2025-10-15 12:41:01]   • Colegio: LINSA → LINSA
+[2025-10-15 12:41:01]   • Colegio: Infantes → Colegio Infantes
+[2025-10-15 12:41:01]   • Colegio: Calvert Hudson Global School (USA)/Bibliotech Guatemala → Calvert Hudson Global School
+[2025-10-15 12:41:01]   • Colegio: La Vid Verdadera → La Vid Verdadera
+[2025-10-15 12:41:01]   • Colegio: Instituto de educación básica y Bachillerato por madurez   La Democracia → Instituto de Educación Básica y Bachillerato por Madurez La Democracia
+[2025-10-15 12:41:01]   • Colegio: Colegio Valverde → Colegio Valverde
+[2025-10-15 12:41:01]   • Colegio: URL → Universidad Rafael Landívar
+[2025-10-15 12:41:01]   • Colegio: instituto Miguel de Cervantes → Instituto Miguel de Cervantes
+[2025-10-15 12:41:01]   • Colegio: Liceo Rotterdam → Liceo Rotterdam
+[2025-10-15 12:41:01]   • Colegio: Fase → Otro
+[2025-10-15 12:41:01]   • Colegio: Colegio Privado Mixto Santa Catalina → Colegio Santa Catalina
+[2025-10-15 12:41:01]   • Colegio: Hola hay maestria? → Otro
+[2025-10-15 12:41:01]   • Colegio: Colegio Privado Mixto "El paraíso" → Colegio Privado Mixto El Paraíso
+[2025-10-15 12:41:01]   • Colegio: colegio CEPREC → Colegio CEPREC
+[2025-10-15 12:41:01]   • Colegio: Bethesda → Colegio Bethesda
+[2025-10-15 12:41:01]   • Colegio: Colegio Mixto Belen → Colegio Mixto Belén
+[2025-10-15 12:41:01]   • Colegio: Instituto putzey guillermo Alvarez → Instituto Guillermo Putzeys Álvarez
+[2025-10-15 12:41:01]   • Colegio: instituto privado mixto ORIZABA → Instituto Privado Mixto Orizaba
+[2025-10-15 12:41:01]   • Colegio: soy egresado del ifj → Instituto Federal de Justicia (IFJ)
+[2025-10-15 12:41:01]   • Colegio: Impo Superación → Impo Superación
+[2025-10-15 12:41:01]   • Colegio: Colegio Mixto Nuestra Patria → Colegio Mixto Nuestra Patria
+[2025-10-15 12:41:01]   • Colegio: UVG Sur → Universidad del Valle de Guatemala
+[2025-10-15 12:41:01]   • Colegio: Colegio Capouilliez → Colegio Capouilliez
+[2025-10-15 12:41:01]   • Colegio: colegio itvo amatitlan → Colegio ITVO Amatitlán
+[2025-10-15 12:41:01]   • Colegio: Liceo de ciencias y técnicas → Liceo de Ciencias y Técnicas
+[2025-10-15 12:41:01]   • Colegio: diversificado tohaman sibinal san Marcos → Instituto Diversificado Tohaman Sibinal San Marcos
+[2025-10-15 12:41:01]   • Colegio: Colegio liceo san Luis → Colegio Liceo San Luis
+[2025-10-15 12:41:01]   • Colegio: INEB Río Bravo Suchitepéquez, Guatemala → INEB Río Bravo Suchitepéquez
+[2025-10-15 12:41:01]   • Colegio: colegio técnico integrado → Colegio Técnico Integrado
+[2025-10-15 12:41:01]   • Colegio: Colegio mixto llano largo → Colegio Mixto Llano Largo
+[2025-10-15 12:41:01]   • Colegio: En la universidad Mariano Gálvez → Universidad Mariano Gálvez
+[2025-10-15 12:41:01]   • Colegio: Liceo técnico industrial Maya Tikal → Liceo Técnico Industrial Maya Tikal
+[2025-10-15 12:41:01]   • Colegio: E993CDX → Otro
+[2025-10-15 12:41:01]   • Colegio: Uvg → Universidad del Valle de Guatemala
+[2025-10-15 12:41:01]   • Colegio: instituto mixto Verapaz Impave → Instituto Mixto Verapaz (IMPAVE)
+[2025-10-15 12:41:01]   • Colegio: Umg → Universidad Mariano Gálvez
+[2025-10-15 12:41:01]   • Colegio: Instituto Normal Para Señoritas Centro América → Instituto Normal Para Señoritas Centro América
+[2025-10-15 12:41:01]   • Colegio: URURAL → Universidad Rural
+[2025-10-15 12:41:01]   • Colegio: Instituto tecnológico catarina → Instituto Tecnológico Catarina
+[2025-10-15 12:41:01]   • Colegio: Colegio Amigos en la ciudad de Chiquimula → Colegio Amigos
+[2025-10-15 12:41:01]   • Colegio: Sagrado corazón naranjo → Colegio Sagrado Corazón Naranjo
+[2025-10-15 12:41:01]   • Colegio: Continental americano → Universidad Continental Americana
+[2025-10-15 12:41:01]   • Colegio: Trabajo en san matin → Otro
+[2025-10-15 12:41:01]   • Colegio: Escuela nacional de ciencias comerciales no 3 → Escuela Nacional de Ciencias Comerciales No. 3
+[2025-10-15 12:41:01]   • Colegio: Liceo Mixto Pinulteco → Liceo Mixto Pinulteco
+[2025-10-15 12:41:01]   • Colegio: colegio privado san Andrés → Colegio Privado San Andrés
+[2025-10-15 12:41:01]   • Colegio: Colegio John Harvard → Colegio John Harvard
+[2025-10-15 12:41:01]   • Colegio: Perito en industria de alimentos → Otro
+[2025-10-15 12:41:01]   • Colegio: Colegio en computación San José 2 → Colegio San José 2
+[2025-10-15 12:41:01]   • Colegio: institito "villa de las niñas" Guatemala → Instituto Villa de las Niñas
+[2025-10-15 12:41:01]   • Colegio: Mariano Galvez → Universidad Mariano Gálvez
+[2025-10-15 12:41:01]   • Colegio: Liceo Cristiano Nazareth → Liceo Cristiano Nazareth
+[2025-10-15 12:41:01]   • Colegio: Colegio Esdeo → Colegio Esdeo
+[2025-10-15 12:41:01]   • Colegio: Liceo técnico de ciencias y tecnología → Liceo Técnico de Ciencias y Tecnología
+[2025-10-15 12:41:01]   • Colegio: Universidad Mesoamericana → Universidad Mesoamericana
+[2025-10-15 12:41:01]   • Colegio: Divertido Ined → Otro
+[2025-10-15 12:41:01]   • Colegio: colegio macdermont → Colegio MacDermott
+[2025-10-15 12:41:01]   • Colegio: USAC → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-15 12:41:01]   • Colegio: san Pablo de Guatemala → Colegio San Pablo
+[2025-10-15 12:41:01]   • Colegio: Gerardi → Universidad Gerardi
+[2025-10-15 12:41:01]   • Colegio: Itce → Instituto Técnico de Capacitación y Productividad (INTECAP)
+[2025-10-15 12:41:01]   • Colegio: Liceo Canadiense → Liceo Canadiense
+[2025-10-15 12:41:01]   • Colegio: Instituto privado guatemala de la asuncion → Instituto Privado Guatemala de la Asunción
+[2025-10-15 12:41:01]   • Colegio: UVG Atiplano → Universidad del Valle de Guatemala
+[2025-10-15 12:41:01]   • Colegio: kids Academy → Kids Academy
+[2025-10-15 12:41:01]   • Colegio: Universidad Mariano Galvez de Guatemala → Universidad Mariano Gálvez
+[2025-10-15 12:41:01]   • Colegio: Certificado en ecommerce → Otro
+[2025-10-15 12:41:01]   • Colegio: Colegio Cristiano Verbo 1 → Colegio Cristiano Verbo
+[2025-10-15 12:41:01]   • Colegio: Colegio Dr Rodolfo Robles → Colegio Dr. Rodolfo Robles
+[2025-10-15 12:41:01]   • Colegio: Valle colonial → Universidad del Valle de Guatemala
+[2025-10-15 12:41:01]   • Colegio: Instituto Emiliani Somascos → Instituto Emiliani Somascos
+[2025-10-15 12:41:01]   • Colegio: Liceo frater → Liceo Frater
+[2025-10-15 12:41:01]   • Colegio: Sagrado corazón de Jesús → Colegio Sagrado Corazón de Jesús
+[2025-10-15 12:41:01]   • Colegio: Instituto normal central para señoritas belen → Instituto Normal Central para Señoritas Belén
+[2025-10-15 12:41:01]   • Colegio: Colegio interamericano → Colegio Interamericano
+[2025-10-15 12:41:01]   • Colegio: Universidad Completa → Otro
+[2025-10-15 12:41:01]   • Colegio: Estudié en el colegio americano Huehuetenango → Colegio Americano de Huehuetenango
+[2025-10-15 12:41:01]   • Colegio: Panamerican business school → Panamerican Business School
+[2025-10-15 12:41:01]   • Colegio: pajariro. rpjo → Otro
+[2025-10-15 12:41:01]   • Colegio: liceo bressani → Liceo Bressani
+[2025-10-15 12:41:01]   • Colegio: solo necesito información → Entendido. Estoy listo para procesar el nombre de la institución educativa de Guatemala según las reglas establecidas. Por favor, proporciona el nombre de la institución.
+[2025-10-15 12:41:01]   • Colegio: Ya me gradué del Instituto Guillermo Putzeys Álvarez → Instituto Guillermo Putzeys Álvarez
+[2025-10-15 12:41:01]   • Colegio: Centro educativo Aparicio → Centro Educativo Aparicio
+[2025-10-15 12:41:01]   • Colegio: Colegio IPTCE → Colegio IPTCE
+[2025-10-15 12:41:01]   • Colegio: CCB → Centro Cristiano de Bachillerato
+[2025-10-15 12:41:01]   • Colegio: UDEO → UDEO
+[2025-10-15 12:41:01]   • Colegio: Frances → Colegio Francés
+[2025-10-15 12:41:01]   • Colegio: universidad regional → Universidad Galileo
+[2025-10-15 12:41:01]   • Colegio: Edúcate → Otro
+[2025-10-15 12:41:01]   • Colegio: Liceo cristiano Antioquia → Liceo Cristiano Antioquia
+[2025-10-15 12:41:01]   • Colegio: Liceo Chapero → Liceo Chapero
+[2025-10-15 12:41:01]   • Colegio: universidad rural → Universidad Rural
+[2025-10-15 12:41:01]   • Colegio: usac → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-15 12:41:01]   • Colegio: Landivar → Universidad Rafael Landívar
+[2025-10-15 12:41:01]   • Colegio: Campo Alto → Campo Alto
+[2025-10-15 12:41:01]   • Colegio: IDEACOP-PAJUIL → IDEACOP-PAJUIL
+[2025-10-15 12:41:01]   • Colegio: galileo → Universidad Galileo
+[2025-10-15 12:41:01]   • Colegio: Liceo Javier → Liceo Javier
+[2025-10-15 12:41:01]   • Colegio: liceo mixto → Liceo Mixto
+[2025-10-15 12:41:01]   • Colegio: Arenales Catalán → Colegio Arenales Catalán
+[2025-10-15 12:41:01]   • Colegio: Mariano Gálvez → Universidad Mariano Gálvez
+[2025-10-15 12:41:01]   • Colegio: colegio sinai → Colegio Sinaí
+[2025-10-15 12:41:01]   • Colegio: Usar → Otro
+[2025-10-15 12:41:01]   • Colegio: Keystone pensylvania → Keystone Pennsylvania
+[2025-10-15 12:41:01]   • Colegio: Mariano  galvez de giatemala → Universidad Mariano Gálvez
+[2025-10-15 12:41:01]   • Colegio: colegio privado mixto ELITE → Colegio Privado Mixto Elite
+[2025-10-15 12:41:01]   • Colegio: Sagrado corazon → Colegio del Sagrado Corazón
+[2025-10-15 12:41:01]   • Colegio: diversificado por cooperativa → Instituto Básico por Cooperativa
+[2025-10-15 12:41:01]   • Colegio: Termine mi diversificado en el liceo de computación css → Liceo de Computación CSS
+[2025-10-15 12:41:01]   • Colegio: Graduated from AAUN → Otro
+[2025-10-15 12:41:01]   • Colegio: IPGA → Instituto Privado Guatemala América (IPGA)
+[2025-10-15 12:41:01]   • Colegio: Ex alumna IGA → Instituto Guatemalteco Americano (IGA)
+[2025-10-15 12:41:01]   • Colegio: mo → Universidad del Istmo
+[2025-10-15 12:41:01]   • Colegio: Universidad da Vinci de Guatemala → Universidad Da Vinci
+[2025-10-15 12:41:01]   • Colegio: Usac → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-15 12:41:01]   • Colegio: UVG ALTIPANO → Universidad del Valle de Guatemala
+[2025-10-15 12:41:01]   • Colegio: Italiano de Guatemala → Colegio Italiano de Guatemala
+[2025-10-15 12:41:01]   • Colegio: Ecc → Otro
+[2025-10-15 12:41:01]   • Colegio: Winbrigde → Winbridge
+[2025-10-15 12:41:01]   • Colegio: Aden → Aden Business School
+[2025-10-15 12:41:01]   • Colegio: Universidad Rafael Landivar → Universidad Rafael Landívar
+[2025-10-15 12:41:01]   • Colegio: Colegio Montenevado → Colegio Montenevado
+[2025-10-15 12:41:01]   • Colegio: Liceo mixto técnicas integrales → Liceo Mixto Técnicas Integrales
+[2025-10-15 12:41:01]   • Colegio: itv → Instituto Técnico de Capacitación y Productividad (INTECAP)
+[2025-10-15 12:41:01]   • Colegio: ALTIPLANO → Universidad del Altiplano
+[2025-10-15 12:41:01]   • Colegio: Universidad Da Vinci → Universidad Da Vinci
+[2025-10-15 12:41:01]   • Colegio: finalizado → Otro
+[2025-10-15 12:41:01]   • Colegio: Colegio Viena Guatemalteco → Colegio Viena Guatemalteco
+[2025-10-15 12:41:01]   • Colegio: Universidad Mariano Gálvez de Guatemala → Universidad Mariano Gálvez
+[2025-10-15 12:41:01]   • Colegio: Me gradué el colegio el año pasado → Otro
+[2025-10-15 12:41:01]   • Colegio: Ya me gradué → Otro
+[2025-10-15 12:41:01]   • Colegio: Diseño grafico → Otro
+[2025-10-15 12:41:01]   • Colegio: Academia avanza → Academia Avanza
+[2025-10-15 12:41:01]   • Colegio: Ingenieria → Otro
+[2025-10-15 12:41:01]   • Colegio: itec → Instituto Técnico de Capacitación y Productividad (INTECAP)
+[2025-10-15 12:41:01]   • Colegio: Ya tengo Maestria → Otro
+[2025-10-15 12:41:01] 
+✅ Archivo limpio guardado en: datos/datos_limpios.csv
+[2025-10-15 12:41:01] 🎉 ¡Listo para cargar en Power BI!
+[2025-10-15 13:32:33] ============================================================
+[2025-10-15 13:32:33] 🚀 INICIANDO NORMALIZACIÓN DE LEADS
+[2025-10-15 13:32:33] ============================================================
+[2025-10-15 13:32:33] 📂 Leyendo archivo: datos/hubspot_export.csv
+[2025-10-15 13:32:33] ✅ Archivo leído: 335 leads encontrados
+[2025-10-15 13:32:33] 📋 Unificando columnas duplicadas...
+[2025-10-15 13:32:33] ✅ Unificadas columnas: Grado Académico + Grado Académico.1
+[2025-10-15 13:32:33] ✅ Columnas unificadas
+[2025-10-15 13:32:33] 
+🏫 Normalizando colegios...
+[2025-10-15 13:32:33] Colegios únicos a procesar: 252
+[2025-10-15 13:32:33] 🤖 Consultando Claude para: 'Don Bosco'
+[2025-10-15 13:32:56] 🤖 Consultando Claude para: 'Prueba'
+[2025-10-15 13:32:59] ⚠️ Respuesta inválida detectada: 'ninguno' → 'Otro'
+[2025-10-15 13:32:59] ⚠️ No es un colegio detectado: 'Cooperativa' → 'Otro'
+[2025-10-15 13:32:59] 🤖 Consultando Claude para: 'INED'
+[2025-10-15 13:33:00] 🎓 Universidad detectada: 'Rafael Landivar' → 'Universidad Rafael Landívar'
+[2025-10-15 13:33:00] 🤖 Consultando Claude para: 'Progreso'
+[2025-10-15 13:33:05] ⚠️ Respuesta inválida detectada: 'No estoy en estudiando' → 'Otro'
+[2025-10-15 13:33:05] 🎓 Universidad detectada: 'Galileo' → 'Universidad Galileo'
+[2025-10-15 13:33:05] 🤖 Consultando Claude para: 'Escuela Nacional Central de Formación Secretarial'
+[2025-10-15 13:33:08] 🎓 Universidad detectada: 'Universidad Galileo' → 'Universidad Galileo'
+[2025-10-15 13:33:08] 🤖 Consultando Claude para: 'Ici guatemala suchitepequez'
+[2025-10-15 13:33:22] 🤖 Consultando Claude para: 'Colegio Guatemalteco Bilingüe'
+[2025-10-15 13:33:24] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 13:33:24] 🎓 Universidad detectada: 'Universidad Mariano Gálvez' → 'Universidad Mariano Gálvez'
+[2025-10-15 13:33:24] 🤖 Consultando Claude para: 'Instituto Intercultural Mixto Santiago'
+[2025-10-15 13:33:27] 🤖 Consultando Claude para: 'Colegio La Asunción San Marcos'
+[2025-10-15 13:33:29] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-15 13:33:29] 🎓 Universidad detectada: 'Universidad Regional de Guatemala' → 'Universidad Mariano Gálvez'
+[2025-10-15 13:33:29] 🤖 Consultando Claude para: 'Colegio santa monica'
+[2025-10-15 13:33:35] ⚠️ Respuesta inválida detectada: 'Ya no estoy estudiando' → 'Otro'
+[2025-10-15 13:33:35] 🤖 Consultando Claude para: 'escuela de formación secretarial'
+[2025-10-15 13:33:38] 🤖 Consultando Claude para: 'magisterio'
+[2025-10-15 13:33:40] 🎓 Universidad detectada: 'Liceo comercial entre valles' → 'Universidad del Valle de Guatemala'
+[2025-10-15 13:33:40] 🤖 Consultando Claude para: 'Graduada colegio verbo'
+[2025-10-15 13:33:42] 🤖 Consultando Claude para: 'Colegio fuente de vida'
+[2025-10-15 13:33:44] ⚠️ Respuesta inválida detectada: 'N/a' → 'Otro'
+[2025-10-15 13:33:44] 🤖 Consultando Claude para: 'INED San Pedro Sacatepéquez,. Guatemala'
+[2025-10-15 13:33:46] ⚠️ Respuesta inválida detectada: 'Graduada' → 'Otro'
+[2025-10-15 13:33:46] 🤖 Consultando Claude para: 'Bilingüe el prado'
+[2025-10-15 13:33:48] 🤖 Consultando Claude para: 'IGpa'
+[2025-10-15 13:33:50] 🤖 Consultando Claude para: 'Colegio Mixto Belén Guatemala'
+[2025-10-15 13:33:52] 🤖 Consultando Claude para: 'Liceo Alpha y Omega'
+[2025-10-15 13:33:54] 🤖 Consultando Claude para: 'moderno jalpataguense'
+[2025-10-15 13:33:56] 🤖 Consultando Claude para: 'Ineb maría josefa rosado lara'
+[2025-10-15 13:33:58] 🤖 Consultando Claude para: 'Instituto diversificado Morazán el progreso'
+[2025-10-15 13:34:00] 🤖 Consultando Claude para: 'IMB-PC'
+[2025-10-15 13:34:04] 🤖 Consultando Claude para: 'Talita kumi'
+[2025-10-15 13:34:06] 🤖 Consultando Claude para: 'Isaac'
+[2025-10-15 13:34:08] 🎓 Universidad detectada: 'Universidad de San Carlos de Guatemala' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-15 13:34:08] 🤖 Consultando Claude para: 'Príncipe de Asturias'
+[2025-10-15 13:34:10] 🤖 Consultando Claude para: 'CDA Decroly Americano'
+[2025-10-15 13:34:12] 🤖 Consultando Claude para: 'INED Aldea Las Brisas Malacatán San Marcos'
+[2025-10-15 13:34:14] ⚠️ No es un colegio detectado: 'Asociación grupo ceiba' → 'Otro'
+[2025-10-15 13:34:14] 🎓 Universidad detectada: 'UVG soy egresado' → 'Universidad del Valle de Guatemala'
+[2025-10-15 13:34:14] 🎓 Universidad detectada: 'universidad San Carlos Guatemala' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-15 13:34:14] 🤖 Consultando Claude para: 'colegio Jesús de Nazareth'
+[2025-10-15 13:34:16] 🤖 Consultando Claude para: 'Liceo privado mixto tumbadorense'
+[2025-10-15 13:34:18] ⚠️ Respuesta inválida detectada: 'ahorita no tengo la oportunidad de estar estudiando en ningún colegio' → 'Otro'
+[2025-10-15 13:34:18] 🎓 Universidad detectada: 'ITEC Uvg altiplano' → 'Universidad del Valle de Guatemala'
+[2025-10-15 13:34:18] 🤖 Consultando Claude para: 'Instituto De Nacional De Educación Diversificada S.C.P'
+[2025-10-15 13:34:20] 🤖 Consultando Claude para: 'Colegio La Ilustración'
+[2025-10-15 13:34:22] 🤖 Consultando Claude para: 'IMENCE'
+[2025-10-15 13:34:24] 🤖 Consultando Claude para: 'Escuela normal central para varones'
+[2025-10-15 13:34:26] 🎓 Universidad detectada: 'USAc' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-15 13:34:26] 🤖 Consultando Claude para: 'colegio integral el saber'
+[2025-10-15 13:34:28] ⚠️ Respuesta inválida detectada: 'Perito en administración de empresas' → 'Otro'
+[2025-10-15 13:34:28] 🎓 Universidad detectada: 'Da Vinci' → 'Universidad Da Vinci'
+[2025-10-15 13:34:28] ⚠️ No es un colegio detectado: 'Cooperativa el Recuerdo' → 'Otro'
+[2025-10-15 13:34:28] 🤖 Consultando Claude para: 'Liceo tecnológico ciudad Quetzal'
+[2025-10-15 13:34:30] 🤖 Consultando Claude para: 'Iemcoop'
+[2025-10-15 13:34:32] 🤖 Consultando Claude para: 'Liceo Guatemala'
+[2025-10-15 13:34:34] 🔍 Sigla ambigua detectada: 'Insar'
+[2025-10-15 13:34:34] ⚠️ Respuesta inválida detectada: 'Este año no estoy estudiando' → 'Otro'
+[2025-10-15 13:34:34] 🤖 Consultando Claude para: 'ISEA'
+[2025-10-15 13:34:37] 🔍 Sigla ambigua detectada: 'Xd'
+[2025-10-15 13:34:37] 🎓 Universidad detectada: 'ITEC Uvg campus altiplano' → 'Universidad del Valle de Guatemala'
+[2025-10-15 13:34:37] ⚠️ Respuesta inválida detectada: 'Aun no estudio' → 'Otro'
+[2025-10-15 13:34:37] ⚠️ No es un colegio detectado: 'Instituto de Educación Diversificada por Cooperativa de Enseñanza "Playa Linda"' → 'Otro'
+[2025-10-15 13:34:37] 🤖 Consultando Claude para: 'Colegio Rosario'
+[2025-10-15 13:34:39] 🤖 Consultando Claude para: 'CED-IECA'
+[2025-10-15 13:34:41] 🎓 Universidad detectada: 'UMG' → 'Universidad Mariano Gálvez'
+[2025-10-15 13:34:41] 🤖 Consultando Claude para: 'Suizo xela'
+[2025-10-15 13:34:43] 🤖 Consultando Claude para: 'Colegio Científico Montessori'
+[2025-10-15 13:34:46] 🤖 Consultando Claude para: 'Colegio americano nuestra familia'
+[2025-10-15 13:34:49] 🔍 Sigla ambigua detectada: 'Aub no'
+[2025-10-15 13:34:49] 🤖 Consultando Claude para: 'colegio público'
+[2025-10-15 13:34:51] 🤖 Consultando Claude para: 'INEDCE'
+[2025-10-15 13:34:53] 🤖 Consultando Claude para: 'pronea'
+[2025-10-15 13:34:55] 🎓 Universidad detectada: 'Mariano Gálvez de Guatemala' → 'Universidad Mariano Gálvez'
+[2025-10-15 13:34:55] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-15 13:34:55] 🤖 Consultando Claude para: 'formación Integral'
+[2025-10-15 13:34:57] 🤖 Consultando Claude para: 'Colegio Mixto Integral, San Lucas Sacatepéquez'
+[2025-10-15 13:34:59] 🎓 Universidad detectada: 'Uvg altiplano' → 'Universidad del Valle de Guatemala'
+[2025-10-15 13:34:59] 🤖 Consultando Claude para: 'Centro Educativo Técnico Laboral KINAL'
+[2025-10-15 13:35:01] 🤖 Consultando Claude para: 'Injofc Tierra blanca'
+[2025-10-15 13:35:03] 🤖 Consultando Claude para: 'Estudie en el King David'
+[2025-10-15 13:35:05] 🤖 Consultando Claude para: 'IMB pc'
+[2025-10-15 13:35:08] ⚠️ Respuesta inválida detectada: 'No estoy estudiando por motivos de trabajo pero estuve en la Usac' → 'Otro'
+[2025-10-15 13:35:08] 🤖 Consultando Claude para: 'Colegio ciencia y desarrollo'
+[2025-10-15 13:35:10] 🎓 Universidad detectada: 'Panamericano' → 'Universidad Panamericana'
+[2025-10-15 13:35:10] 🤖 Consultando Claude para: 'compuceic'
+[2025-10-15 13:35:13] 🤖 Consultando Claude para: 'Escuela Normal Regional de Occidente'
+[2025-10-15 13:35:15] 🤖 Consultando Claude para: 'INEB'
+[2025-10-15 13:35:16] 🎓 Universidad detectada: 'Universidad Regional' → 'Universidad Galileo'
+[2025-10-15 13:35:16] 🔍 Sigla ambigua detectada: 'IGS'
+[2025-10-15 13:35:16] 🤖 Consultando Claude para: 'LINSA'
+[2025-10-15 13:35:19] 🤖 Consultando Claude para: 'Infantes'
+[2025-10-15 13:35:21] 🤖 Consultando Claude para: 'Calvert Hudson Global School (USA)/Bibliotech Guatemala'
+[2025-10-15 13:35:22] 🤖 Consultando Claude para: 'La Vid Verdadera'
+[2025-10-15 13:35:25] 🤖 Consultando Claude para: 'Instituto de educación básica y Bachillerato por madurez   La Democracia'
+[2025-10-15 13:35:28] 🤖 Consultando Claude para: 'Colegio Valverde'
+[2025-10-15 13:35:30] 🎓 Universidad detectada: 'URL' → 'Universidad Rafael Landívar'
+[2025-10-15 13:35:30] 🤖 Consultando Claude para: 'instituto Miguel de Cervantes'
+[2025-10-15 13:35:32] 🤖 Consultando Claude para: 'Liceo Rotterdam'
+[2025-10-15 13:35:34] 🔍 Sigla ambigua detectada: 'Fase'
+[2025-10-15 13:35:34] 🤖 Consultando Claude para: 'Colegio Privado Mixto Santa Catalina'
+[2025-10-15 13:35:36] 🤖 Consultando Claude para: 'Hola hay maestria?'
+[2025-10-15 13:35:38] 🤖 Consultando Claude para: 'Colegio Privado Mixto "El paraíso"'
+[2025-10-15 13:35:40] ✓ Fuzzy match: 'Isea' → 'ISEA'
+[2025-10-15 13:35:40] 🤖 Consultando Claude para: 'colegio CEPREC'
+[2025-10-15 13:35:42] 🤖 Consultando Claude para: 'Bethesda'
+[2025-10-15 13:35:44] 🤖 Consultando Claude para: 'Colegio Mixto Belen'
+[2025-10-15 13:35:46] 🤖 Consultando Claude para: 'Instituto putzey guillermo Alvarez'
+[2025-10-15 13:35:48] 🤖 Consultando Claude para: 'instituto privado mixto ORIZABA'
+[2025-10-15 13:35:51] 🤖 Consultando Claude para: 'soy egresado del ifj'
+[2025-10-15 13:35:54] 🤖 Consultando Claude para: 'Impo Superación'
+[2025-10-15 13:35:56] 🤖 Consultando Claude para: 'Colegio Mixto Nuestra Patria'
+[2025-10-15 13:35:57] 🎓 Universidad detectada: 'UVG Sur' → 'Universidad del Valle de Guatemala'
+[2025-10-15 13:35:57] 🤖 Consultando Claude para: 'Colegio Capouilliez'
+[2025-10-15 13:35:59] ⚠️ Respuesta inválida detectada: 'no estudio' → 'Otro'
+[2025-10-15 13:35:59] 🤖 Consultando Claude para: 'colegio itvo amatitlan'
+[2025-10-15 13:36:02] 🤖 Consultando Claude para: 'Liceo de ciencias y técnicas'
+[2025-10-15 13:36:04] ✓ Fuzzy match: 'Instituto Nacional de Educación diversificada INEDI' → 'Instituto Nacional de Educación Diversificada S.C.P'
+[2025-10-15 13:36:04] 🤖 Consultando Claude para: 'diversificado tohaman sibinal san Marcos'
+[2025-10-15 13:36:06] 🤖 Consultando Claude para: 'Colegio liceo san Luis'
+[2025-10-15 13:36:09] 🤖 Consultando Claude para: 'INEB Río Bravo Suchitepéquez, Guatemala'
+[2025-10-15 13:36:11] 🤖 Consultando Claude para: 'colegio técnico integrado'
+[2025-10-15 13:36:13] 🤖 Consultando Claude para: 'Colegio mixto llano largo'
+[2025-10-15 13:36:16] 🎓 Universidad detectada: 'En la universidad Mariano Gálvez' → 'Universidad Mariano Gálvez'
+[2025-10-15 13:36:16] 🤖 Consultando Claude para: 'Liceo técnico industrial Maya Tikal'
+[2025-10-15 13:36:18] 🤖 Consultando Claude para: 'E993CDX'
+[2025-10-15 13:36:21] 🎓 Universidad detectada: 'Uvg' → 'Universidad del Valle de Guatemala'
+[2025-10-15 13:36:21] 🤖 Consultando Claude para: 'instituto mixto Verapaz Impave'
+[2025-10-15 13:36:23] ⚠️ Respuesta inválida detectada: 'No estudio ya me gradué' → 'Otro'
+[2025-10-15 13:36:23] 🎓 Universidad detectada: 'Umg' → 'Universidad Mariano Gálvez'
+[2025-10-15 13:36:23] 🤖 Consultando Claude para: 'Instituto Normal Para Señoritas Centro América'
+[2025-10-15 13:36:25] 🎓 Universidad detectada: 'URURAL' → 'Universidad Rural'
+[2025-10-15 13:36:25] ⚠️ Respuesta inválida detectada: 'Graduado' → 'Otro'
+[2025-10-15 13:36:25] 🤖 Consultando Claude para: 'Instituto tecnológico catarina'
+[2025-10-15 13:36:28] 🤖 Consultando Claude para: 'Colegio Amigos en la ciudad de Chiquimula'
+[2025-10-15 13:36:30] 🤖 Consultando Claude para: 'Sagrado corazón naranjo'
+[2025-10-15 13:36:33] 🤖 Consultando Claude para: 'Continental americano'
+[2025-10-15 13:36:35] ⚠️ Respuesta inválida detectada: 'Trabajo en san matin' → 'Otro'
+[2025-10-15 13:36:35] 🤖 Consultando Claude para: 'Escuela nacional de ciencias comerciales no 3'
+[2025-10-15 13:36:37] 🤖 Consultando Claude para: 'Liceo Mixto Pinulteco'
+[2025-10-15 13:36:40] 🤖 Consultando Claude para: 'colegio privado san Andrés'
+[2025-10-15 13:36:43] 🤖 Consultando Claude para: 'Colegio John Harvard'
+[2025-10-15 13:36:49] ⚠️ Respuesta inválida detectada: 'Perito en industria de alimentos' → 'Otro'
+[2025-10-15 13:36:49] 🤖 Consultando Claude para: 'Colegio en computación San José 2'
+[2025-10-15 13:36:51] 🤖 Consultando Claude para: 'institito "villa de las niñas" Guatemala'
+[2025-10-15 13:36:53] 🎓 Universidad detectada: 'Mariano Galvez' → 'Universidad Mariano Gálvez'
+[2025-10-15 13:36:53] 🤖 Consultando Claude para: 'Liceo Cristiano Nazareth'
+[2025-10-15 13:36:55] 🤖 Consultando Claude para: 'Colegio Esdeo'
+[2025-10-15 13:36:58] ✓ Fuzzy match: 'Iga' → 'IGpa'
+[2025-10-15 13:36:58] 🤖 Consultando Claude para: 'Liceo técnico de ciencias y tecnología'
+[2025-10-15 13:37:00] 🎓 Universidad detectada: 'Universidad Mesoamericana' → 'Universidad Mesoamericana'
+[2025-10-15 13:37:00] 🤖 Consultando Claude para: 'Divertido Ined'
+[2025-10-15 13:37:03] 🤖 Consultando Claude para: 'colegio macdermont'
+[2025-10-15 13:37:05] 🎓 Universidad detectada: 'USAC' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-15 13:37:05] 🤖 Consultando Claude para: 'san Pablo de Guatemala'
+[2025-10-15 13:37:55] 🤖 Consultando Claude para: 'Gerardi'
+[2025-10-15 13:37:57] 🔍 Sigla ambigua detectada: 'Itce'
+[2025-10-15 13:37:57] 🤖 Consultando Claude para: 'Liceo Canadiense'
+[2025-10-15 13:38:00] 🤖 Consultando Claude para: 'Instituto privado guatemala de la asuncion'
+[2025-10-15 13:38:02] 🎓 Universidad detectada: 'UVG Atiplano' → 'Universidad del Valle de Guatemala'
+[2025-10-15 13:38:02] 🤖 Consultando Claude para: 'kids Academy'
+[2025-10-15 13:38:04] 🎓 Universidad detectada: 'Universidad Mariano Galvez de Guatemala' → 'Universidad Mariano Gálvez'
+[2025-10-15 13:38:04] ⚠️ Respuesta inválida detectada: 'no' → 'Otro'
+[2025-10-15 13:38:04] ⚠️ Respuesta inválida detectada: 'Certificado en ecommerce' → 'Otro'
+[2025-10-15 13:38:04] 🤖 Consultando Claude para: 'Colegio Cristiano Verbo 1'
+[2025-10-15 13:38:08] ⚠️ Respuesta inválida detectada: 'ya no estudio' → 'Otro'
+[2025-10-15 13:38:08] ⚠️ Respuesta inválida detectada: 'No estoy estudiando' → 'Otro'
+[2025-10-15 13:38:08] 🤖 Consultando Claude para: 'Colegio Dr Rodolfo Robles'
+[2025-10-15 13:38:10] 🎓 Universidad detectada: 'Valle colonial' → 'Universidad del Valle de Guatemala'
+[2025-10-15 13:38:10] 🤖 Consultando Claude para: 'Instituto Emiliani Somascos'
+[2025-10-15 13:38:12] 🤖 Consultando Claude para: 'Liceo frater'
+[2025-10-15 13:38:14] 🤖 Consultando Claude para: 'Sagrado corazón de Jesús'
+[2025-10-15 13:38:16] ✓ Fuzzy match: 'Escuela Normal central para varones Ined Anexo' → 'Escuela Normal Central para Varones'
+[2025-10-15 13:38:16] 🤖 Consultando Claude para: 'Instituto normal central para señoritas belen'
+[2025-10-15 13:38:20] 🤖 Consultando Claude para: 'Colegio interamericano'
+[2025-10-15 13:38:29] ⚠️ Respuesta inválida detectada: 'Universidad Completa' → 'Otro'
+[2025-10-15 13:38:29] 🤖 Consultando Claude para: 'Estudié en el colegio americano Huehuetenango'
+[2025-10-15 13:38:31] 🤖 Consultando Claude para: 'Panamerican business school'
+[2025-10-15 13:38:33] ⚠️ Respuesta inválida detectada: 'Por el momento no estudio' → 'Otro'
+[2025-10-15 13:38:33] 🤖 Consultando Claude para: 'pajariro. rpjo'
+[2025-10-15 13:38:35] ✓ Fuzzy match: 'Centro Educativo Técnico Laboral Kinal' → 'Centro Educativo Técnico Laboral KINAL'
+[2025-10-15 13:38:35] 🤖 Consultando Claude para: 'liceo bressani'
+[2025-10-15 13:38:37] ⚠️ Respuesta inválida detectada: 'solo necesito información' → 'Otro'
+[2025-10-15 13:38:37] ⚠️ Respuesta inválida detectada: 'Ya me gradué del Instituto Guillermo Putzeys Álvarez' → 'Otro'
+[2025-10-15 13:38:37] ✓ Fuzzy match: 'n estudio' → 'Otro'
+[2025-10-15 13:38:37] 🤖 Consultando Claude para: 'Centro educativo Aparicio'
+[2025-10-15 13:38:39] 🤖 Consultando Claude para: 'Colegio IPTCE'
+[2025-10-15 13:38:41] 🔍 Sigla ambigua detectada: 'CCB'
+[2025-10-15 13:38:41] 🤖 Consultando Claude para: 'UDEO'
+[2025-10-15 13:38:43] 🤖 Consultando Claude para: 'Frances'
+[2025-10-15 13:38:45] 🎓 Universidad detectada: 'universidad regional' → 'Universidad Galileo'
+[2025-10-15 13:38:45] 🔍 Sigla ambigua detectada: 'Edúcate'
+[2025-10-15 13:38:45] 🤖 Consultando Claude para: 'Liceo cristiano Antioquia'
+[2025-10-15 13:38:47] 🤖 Consultando Claude para: 'Liceo Chapero'
+[2025-10-15 13:38:50] ⚠️ Respuesta inválida detectada: 'Ninguno  Estoy viendo opciones' → 'Otro'
+[2025-10-15 13:38:50] ⚠️ Respuesta inválida detectada: 'No estudio actualmente' → 'Otro'
+[2025-10-15 13:38:50] 🎓 Universidad detectada: 'universidad rural' → 'Universidad Rural'
+[2025-10-15 13:38:50] 🎓 Universidad detectada: 'usac' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-15 13:38:50] ✓ Fuzzy match: 'no estudip' → 'Otro'
+[2025-10-15 13:38:50] ⚠️ Respuesta inválida detectada: '.' → 'Otro'
+[2025-10-15 13:38:50] 🎓 Universidad detectada: 'Landivar' → 'Universidad Rafael Landívar'
+[2025-10-15 13:38:50] 🤖 Consultando Claude para: 'Campo Alto'
+[2025-10-15 13:38:51] 🤖 Consultando Claude para: 'IDEACOP-PAJUIL'
+[2025-10-15 13:38:54] 🎓 Universidad detectada: 'galileo' → 'Universidad Galileo'
+[2025-10-15 13:38:54] 🤖 Consultando Claude para: 'Liceo Javier'
+[2025-10-15 13:38:55] 🤖 Consultando Claude para: 'liceo mixto'
+[2025-10-15 13:38:57] 🤖 Consultando Claude para: 'Arenales Catalán'
+[2025-10-15 13:38:59] 🎓 Universidad detectada: 'Mariano Gálvez' → 'Universidad Mariano Gálvez'
+[2025-10-15 13:38:59] 🤖 Consultando Claude para: 'colegio sinai'
+[2025-10-15 13:39:01] 🔍 Sigla ambigua detectada: 'Usar'
+[2025-10-15 13:39:01] 🤖 Consultando Claude para: 'Keystone pensylvania'
+[2025-10-15 13:39:03] 🎓 Universidad detectada: 'Mariano  galvez de giatemala' → 'Universidad Mariano Gálvez'
+[2025-10-15 13:39:03] ⚠️ Respuesta inválida detectada: 'No estoy estudiando.' → 'Otro'
+[2025-10-15 13:39:03] 🤖 Consultando Claude para: 'colegio privado mixto ELITE'
+[2025-10-15 13:39:05] 🤖 Consultando Claude para: 'Sagrado corazon'
+[2025-10-15 13:39:07] ✓ Fuzzy match: 'IGPA' → 'IGpa'
+[2025-10-15 13:39:07] ⚠️ No es un colegio detectado: 'diversificado por cooperativa' → 'Otro'
+[2025-10-15 13:39:07] 🤖 Consultando Claude para: 'Termine mi diversificado en el liceo de computación css'
+[2025-10-15 13:39:09] ⚠️ Respuesta inválida detectada: 'Graduated from AAUN' → 'Otro'
+[2025-10-15 13:39:09] 🤖 Consultando Claude para: 'IPGA'
+[2025-10-15 13:39:11] ⚠️ Respuesta inválida detectada: 'Ex alumna IGA' → 'Otro'
+[2025-10-15 13:39:11] 🎓 Universidad detectada: 'mo' → 'Universidad del Istmo'
+[2025-10-15 13:39:11] 🎓 Universidad detectada: 'Universidad da Vinci de Guatemala' → 'Universidad Da Vinci'
+[2025-10-15 13:39:11] 🎓 Universidad detectada: 'Usac' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-15 13:39:11] 🎓 Universidad detectada: 'UVG ALTIPANO' → 'Universidad del Valle de Guatemala'
+[2025-10-15 13:39:11] 🤖 Consultando Claude para: 'Italiano de Guatemala'
+[2025-10-15 13:39:13] 🔍 Sigla ambigua detectada: 'Ecc'
+[2025-10-15 13:39:13] 🤖 Consultando Claude para: 'Winbrigde'
+[2025-10-15 13:39:16] 🤖 Consultando Claude para: 'Aden'
+[2025-10-15 13:39:17] 🎓 Universidad detectada: 'Universidad Rafael Landivar' → 'Universidad Rafael Landívar'
+[2025-10-15 13:39:17] 🤖 Consultando Claude para: 'Colegio Montenevado'
+[2025-10-15 13:39:19] ⚠️ Respuesta inválida detectada: 'No estudio, ya me gradue del Colegio Monte Maria' → 'Otro'
+[2025-10-15 13:39:19] 🤖 Consultando Claude para: 'Liceo mixto técnicas integrales'
+[2025-10-15 13:39:21] 🔍 Sigla ambigua detectada: 'itv'
+[2025-10-15 13:39:21] 🔍 Sigla ambigua detectada: 'ALTIPLANO'
+[2025-10-15 13:39:21] 🎓 Universidad detectada: 'Universidad Da Vinci' → 'Universidad Da Vinci'
+[2025-10-15 13:39:21] ⚠️ Respuesta inválida detectada: 'finalizado' → 'Otro'
+[2025-10-15 13:39:21] 🤖 Consultando Claude para: 'Colegio Viena Guatemalteco'
+[2025-10-15 13:39:25] 🎓 Universidad detectada: 'Universidad Mariano Gálvez de Guatemala' → 'Universidad Mariano Gálvez'
+[2025-10-15 13:39:25] 🤖 Consultando Claude para: 'Me gradué el colegio el año pasado'
+[2025-10-15 13:39:26] ⚠️ Respuesta inválida detectada: 'Ya me gradué' → 'Otro'
+[2025-10-15 13:39:26] ⚠️ Respuesta inválida detectada: 'Diseño grafico' → 'Otro'
+[2025-10-15 13:39:26] 🤖 Consultando Claude para: 'Academia avanza'
+[2025-10-15 13:39:28] ⚠️ Respuesta inválida detectada: 'Ingenieria' → 'Otro'
+[2025-10-15 13:39:28] 🤖 Consultando Claude para: 'itec'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ya tengo Maestria' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'ninguno' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ No es un colegio detectado: 'Cooperativa' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'No estoy en estudiando' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ya no estoy estudiando' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'N/a' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Graduada' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ No es un colegio detectado: 'Asociación grupo ceiba' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'ahorita no tengo la oportunidad de estar estudiando en ningún colegio' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Perito en administración de empresas' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ No es un colegio detectado: 'Cooperativa el Recuerdo' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Este año no estoy estudiando' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Aun no estudio' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ No es un colegio detectado: 'Instituto de Educación Diversificada por Cooperativa de Enseñanza "Playa Linda"' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'No estoy estudiando por motivos de trabajo pero estuve en la Usac' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 13:39:30] ✓ Fuzzy match: 'Isea' → 'ISEA'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'no estudio' → 'Otro'
+[2025-10-15 13:39:30] ✓ Fuzzy match: 'Instituto Nacional de Educación diversificada INEDI' → 'Instituto Nacional de Educación Diversificada S.C.P'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'No estudio ya me gradué' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Graduado' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Trabajo en san matin' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'no estudio' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Perito en industria de alimentos' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 13:39:30] ✓ Fuzzy match: 'Iga' → 'IGpa'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'no' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Certificado en ecommerce' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'ya no estudio' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'No estoy estudiando' → 'Otro'
+[2025-10-15 13:39:30] ✓ Fuzzy match: 'Escuela Normal central para varones Ined Anexo' → 'Escuela Normal Central para Varones'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Universidad Completa' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Por el momento no estudio' → 'Otro'
+[2025-10-15 13:39:30] ✓ Fuzzy match: 'Centro Educativo Técnico Laboral Kinal' → 'Centro Educativo Técnico Laboral KINAL'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'solo necesito información' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'no estudio' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ya me gradué del Instituto Guillermo Putzeys Álvarez' → 'Otro'
+[2025-10-15 13:39:30] ✓ Fuzzy match: 'n estudio' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ninguno  Estoy viendo opciones' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'No estudio actualmente' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-15 13:39:30] ✓ Fuzzy match: 'no estudip' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: '.' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'No estoy estudiando.' → 'Otro'
+[2025-10-15 13:39:30] ✓ Fuzzy match: 'IGPA' → 'IGpa'
+[2025-10-15 13:39:30] ⚠️ No es un colegio detectado: 'diversificado por cooperativa' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: '.' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'no estudio' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Graduated from AAUN' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ex alumna IGA' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'No estudio, ya me gradue del Colegio Monte Maria' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Graduada' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'finalizado' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ya me gradué' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Diseño grafico' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ingenieria' → 'Otro'
+[2025-10-15 13:39:30] ⚠️ Respuesta inválida detectada: 'Ya tengo Maestria' → 'Otro'
+[2025-10-15 13:39:30] 
+🎓 Normalizando grados académicos...
+[2025-10-15 13:39:30] 
+📝 Procesando Associated Form Submission...
+[2025-10-15 13:39:30] 
+🎓 Identificando formularios únicos...
+[2025-10-15 13:39:30] Formularios únicos encontrados: 0
+[2025-10-15 13:39:30] 
+🎯 Completando Carrera de Interés...
+[2025-10-15 13:39:30] 
+🔗 Identificando URLs únicas...
+[2025-10-15 13:39:30] URLs únicas encontradas: 31
+[2025-10-15 13:39:30] 
+🔗 Categorizando URLs...
+[2025-10-15 13:39:30] ✅ Reemplazada columna: Grado Académico
+[2025-10-15 13:39:30] ✅ Eliminada columna duplicada: Grado Académico.1
+[2025-10-15 13:39:30] ✅ Reemplazada columna: Colegio Actual
+[2025-10-15 13:39:30] ✅ Eliminada columna redundante: En qué colegio estudias actualmente?
+[2025-10-15 13:39:30] ✅ Reemplazada columna: Carrera de Interés
+[2025-10-15 13:39:30] ✅ Reemplazada columna: First Page Seen
+[2025-10-15 13:39:30] ✅ Reemplazada columna: Last Page Seen
+[2025-10-15 13:39:30] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-10-15 13:39:30] 
+============================================================
+[2025-10-15 13:39:30] ✅ PROCESO COMPLETADO
+[2025-10-15 13:39:30] ============================================================
+[2025-10-15 13:39:30] 📊 Total de leads procesados: 335
+[2025-10-15 13:39:30] 🆕 Normalizaciones nuevas (colegios): 189
+[2025-10-15 13:39:30] 🔗 URLs nuevas categorizadas: 0
+[2025-10-15 13:39:30] 📝 Formularios nuevos mapeados: 0
+[2025-10-15 13:39:30] 🤖 Tokens usados: 45906
+[2025-10-15 13:39:30] 💰 Costo aproximado: $0.1377
+[2025-10-15 13:39:30] 
+📝 NUEVAS NORMALIZACIONES (COLEGIOS):
+[2025-10-15 13:39:30]   • Colegio: Don Bosco → Colegio Don Bosco
+[2025-10-15 13:39:30]   • Colegio: Prueba → Prueba
+[2025-10-15 13:39:30]   • Colegio: INED → INED
+[2025-10-15 13:39:30]   • Colegio: Rafael Landivar → Universidad Rafael Landívar
+[2025-10-15 13:39:30]   • Colegio: Progreso → Colegio El Progreso
+[2025-10-15 13:39:30]   • Colegio: Galileo → Universidad Galileo
+[2025-10-15 13:39:30]   • Colegio: Escuela Nacional Central de Formación Secretarial → Escuela Nacional Central de Formación Secretarial
+[2025-10-15 13:39:30]   • Colegio: Universidad Galileo → Universidad Galileo
+[2025-10-15 13:39:30]   • Colegio: Ici guatemala suchitepequez → ICI Guatemala Suchitepéquez
+[2025-10-15 13:39:30]   • Colegio: Colegio Guatemalteco Bilingüe → Colegio Guatemalteco Bilingüe
+[2025-10-15 13:39:30]   • Colegio: Universidad Mariano Gálvez → Universidad Mariano Gálvez
+[2025-10-15 13:39:30]   • Colegio: Instituto Intercultural Mixto Santiago → Instituto Intercultural Mixto Santiago
+[2025-10-15 13:39:30]   • Colegio: Colegio La Asunción San Marcos → Colegio La Asunción San Marcos
+[2025-10-15 13:39:30]   • Colegio: Universidad Regional de Guatemala → Universidad Mariano Gálvez
+[2025-10-15 13:39:30]   • Colegio: Colegio santa monica → Colegio Santa Mónica
+[2025-10-15 13:39:30]   • Colegio: escuela de formación secretarial → Escuela de Formación Secretarial
+[2025-10-15 13:39:30]   • Colegio: magisterio → Escuela Nacional de Ciencias Comerciales
+[2025-10-15 13:39:30]   • Colegio: Liceo comercial entre valles → Universidad del Valle de Guatemala
+[2025-10-15 13:39:30]   • Colegio: Graduada colegio verbo → Colegio Verbo
+[2025-10-15 13:39:30]   • Colegio: Colegio fuente de vida → Colegio Fuente de Vida
+[2025-10-15 13:39:30]   • Colegio: INED San Pedro Sacatepéquez,. Guatemala → INED San Pedro Sacatepéquez
+[2025-10-15 13:39:30]   • Colegio: Bilingüe el prado → Colegio Bilingüe El Prado
+[2025-10-15 13:39:30]   • Colegio: IGpa → IGpa
+[2025-10-15 13:39:30]   • Colegio: Colegio Mixto Belén Guatemala → Colegio Mixto Belén
+[2025-10-15 13:39:30]   • Colegio: Liceo Alpha y Omega → Liceo Alpha y Omega
+[2025-10-15 13:39:30]   • Colegio: moderno jalpataguense → Colegio Moderno Jalpatagüense
+[2025-10-15 13:39:30]   • Colegio: Ineb maría josefa rosado lara → Instituto Nacional de Educación Básica María Josefa Rosado Lara
+[2025-10-15 13:39:30]   • Colegio: Instituto diversificado Morazán el progreso → Instituto Diversificado Morazán El Progreso
+[2025-10-15 13:39:30]   • Colegio: IMB-PC → IMB-PC
+[2025-10-15 13:39:30]   • Colegio: Talita kumi → Colegio Talita Kumi
+[2025-10-15 13:39:30]   • Colegio: Isaac → Isaac Newton
+[2025-10-15 13:39:30]   • Colegio: Universidad de San Carlos de Guatemala → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-15 13:39:30]   • Colegio: Príncipe de Asturias → Colegio Príncipe de Asturias
+[2025-10-15 13:39:30]   • Colegio: CDA Decroly Americano → CDA Decroly Americano
+[2025-10-15 13:39:30]   • Colegio: INED Aldea Las Brisas Malacatán San Marcos → INED Aldea Las Brisas Malacatán San Marcos
+[2025-10-15 13:39:30]   • Colegio: UVG soy egresado → Universidad del Valle de Guatemala
+[2025-10-15 13:39:30]   • Colegio: universidad San Carlos Guatemala → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-15 13:39:30]   • Colegio: colegio Jesús de Nazareth → Colegio Jesús de Nazareth
+[2025-10-15 13:39:30]   • Colegio: Liceo privado mixto tumbadorense → Liceo Privado Mixto Tumbadorense
+[2025-10-15 13:39:30]   • Colegio: ITEC Uvg altiplano → Universidad del Valle de Guatemala
+[2025-10-15 13:39:30]   • Colegio: Instituto De Nacional De Educación Diversificada S.C.P → Instituto Nacional de Educación Diversificada S.C.P
+[2025-10-15 13:39:30]   • Colegio: Colegio La Ilustración → Colegio La Ilustración
+[2025-10-15 13:39:30]   • Colegio: IMENCE → IMENCE
+[2025-10-15 13:39:30]   • Colegio: Escuela normal central para varones → Escuela Normal Central para Varones
+[2025-10-15 13:39:30]   • Colegio: USAc → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-15 13:39:30]   • Colegio: colegio integral el saber → Colegio Integral El Saber
+[2025-10-15 13:39:30]   • Colegio: Da Vinci → Universidad Da Vinci
+[2025-10-15 13:39:30]   • Colegio: Liceo tecnológico ciudad Quetzal → Liceo Tecnológico Ciudad Quetzal
+[2025-10-15 13:39:30]   • Colegio: Iemcoop → Iemcoop
+[2025-10-15 13:39:30]   • Colegio: Liceo Guatemala → Liceo Guatemala
+[2025-10-15 13:39:30]   • Colegio: ISEA → ISEA
+[2025-10-15 13:39:30]   • Colegio: ITEC Uvg campus altiplano → Universidad del Valle de Guatemala
+[2025-10-15 13:39:30]   • Colegio: Colegio Rosario → Colegio Rosario
+[2025-10-15 13:39:30]   • Colegio: CED-IECA → CED-IECA
+[2025-10-15 13:39:30]   • Colegio: UMG → Universidad Mariano Gálvez
+[2025-10-15 13:39:30]   • Colegio: Suizo xela → Colegio Suizo Americano
+[2025-10-15 13:39:30]   • Colegio: Colegio Científico Montessori → Colegio Científico Montessori
+[2025-10-15 13:39:30]   • Colegio: Colegio americano nuestra familia → Colegio Americano Nuestra Familia
+[2025-10-15 13:39:30]   • Colegio: colegio público → Colegio público
+[2025-10-15 13:39:30]   • Colegio: INEDCE → INEDCE
+[2025-10-15 13:39:30]   • Colegio: pronea → PRONEA
+[2025-10-15 13:39:30]   • Colegio: Mariano Gálvez de Guatemala → Universidad Mariano Gálvez
+[2025-10-15 13:39:30]   • Colegio: formación Integral → Instituto de Formación Integral
+[2025-10-15 13:39:30]   • Colegio: Colegio Mixto Integral, San Lucas Sacatepéquez → Colegio Mixto Integral, San Lucas Sacatepéquez
+[2025-10-15 13:39:30]   • Colegio: Uvg altiplano → Universidad del Valle de Guatemala
+[2025-10-15 13:39:30]   • Colegio: Centro Educativo Técnico Laboral KINAL → Centro Educativo Técnico Laboral KINAL
+[2025-10-15 13:39:30]   • Colegio: Injofc Tierra blanca → Injofc Tierra blanca
+[2025-10-15 13:39:30]   • Colegio: Estudie en el King David → Colegio King David
+[2025-10-15 13:39:30]   • Colegio: IMB pc → IMB pc
+[2025-10-15 13:39:30]   • Colegio: Colegio ciencia y desarrollo → Colegio Ciencia y Desarrollo
+[2025-10-15 13:39:30]   • Colegio: Panamericano → Universidad Panamericana
+[2025-10-15 13:39:30]   • Colegio: compuceic → COMPUCEIC
+[2025-10-15 13:39:30]   • Colegio: Escuela Normal Regional de Occidente → Escuela Normal Regional de Occidente
+[2025-10-15 13:39:30]   • Colegio: INEB → Instituto Nacional de Educación Básica (INEB)
+[2025-10-15 13:39:30]   • Colegio: Universidad Regional → Universidad Galileo
+[2025-10-15 13:39:30]   • Colegio: LINSA → LINSA
+[2025-10-15 13:39:30]   • Colegio: Infantes → Colegio Los Infantes
+[2025-10-15 13:39:30]   • Colegio: Calvert Hudson Global School (USA)/Bibliotech Guatemala → Calvert Hudson Global School
+[2025-10-15 13:39:30]   • Colegio: La Vid Verdadera → La Vid Verdadera
+[2025-10-15 13:39:30]   • Colegio: Instituto de educación básica y Bachillerato por madurez   La Democracia → Instituto de Educación Básica y Bachillerato por Madurez La Democracia
+[2025-10-15 13:39:30]   • Colegio: Colegio Valverde → Colegio Valverde
+[2025-10-15 13:39:31]   • Colegio: URL → Universidad Rafael Landívar
+[2025-10-15 13:39:31]   • Colegio: instituto Miguel de Cervantes → Instituto Miguel de Cervantes
+[2025-10-15 13:39:31]   • Colegio: Liceo Rotterdam → Liceo Rotterdam
+[2025-10-15 13:39:31]   • Colegio: Colegio Privado Mixto Santa Catalina → Colegio Santa Catalina
+[2025-10-15 13:39:31]   • Colegio: Hola hay maestria? → Otro
+[2025-10-15 13:39:31]   • Colegio: Colegio Privado Mixto "El paraíso" → Colegio Privado Mixto El Paraíso
+[2025-10-15 13:39:31]   • Colegio: colegio CEPREC → Colegio CEPREC
+[2025-10-15 13:39:31]   • Colegio: Bethesda → Colegio Bethesda
+[2025-10-15 13:39:31]   • Colegio: Colegio Mixto Belen → Colegio Mixto Belén
+[2025-10-15 13:39:31]   • Colegio: Instituto putzey guillermo Alvarez → Instituto Guillermo Putzeys Álvarez
+[2025-10-15 13:39:31]   • Colegio: instituto privado mixto ORIZABA → Instituto Privado Mixto Orizaba
+[2025-10-15 13:39:31]   • Colegio: soy egresado del ifj → Instituto Técnico de Formación Juvenil (IFJ)
+[2025-10-15 13:39:31]   • Colegio: Impo Superación → Impo Superación
+[2025-10-15 13:39:31]   • Colegio: Colegio Mixto Nuestra Patria → Colegio Mixto Nuestra Patria
+[2025-10-15 13:39:31]   • Colegio: UVG Sur → Universidad del Valle de Guatemala
+[2025-10-15 13:39:31]   • Colegio: Colegio Capouilliez → Colegio Capouilliez
+[2025-10-15 13:39:31]   • Colegio: colegio itvo amatitlan → Colegio ITVO Amatitlán
+[2025-10-15 13:39:31]   • Colegio: Liceo de ciencias y técnicas → Liceo de Ciencias y Técnicas
+[2025-10-15 13:39:31]   • Colegio: diversificado tohaman sibinal san Marcos → Diversificado Tohaman Sibinal San Marcos
+[2025-10-15 13:39:31]   • Colegio: Colegio liceo san Luis → Colegio Liceo San Luis
+[2025-10-15 13:39:31]   • Colegio: INEB Río Bravo Suchitepéquez, Guatemala → INEB Río Bravo Suchitepéquez
+[2025-10-15 13:39:31]   • Colegio: colegio técnico integrado → Colegio Técnico Integrado
+[2025-10-15 13:39:31]   • Colegio: Colegio mixto llano largo → Colegio Mixto Llano Largo
+[2025-10-15 13:39:31]   • Colegio: En la universidad Mariano Gálvez → Universidad Mariano Gálvez
+[2025-10-15 13:39:31]   • Colegio: Liceo técnico industrial Maya Tikal → Liceo Técnico Industrial Maya Tikal
+[2025-10-15 13:39:31]   • Colegio: E993CDX → E993CDX
+[2025-10-15 13:39:31]   • Colegio: Uvg → Universidad del Valle de Guatemala
+[2025-10-15 13:39:31]   • Colegio: instituto mixto Verapaz Impave → Instituto Mixto Verapaz (IMPAVE)
+[2025-10-15 13:39:31]   • Colegio: Umg → Universidad Mariano Gálvez
+[2025-10-15 13:39:31]   • Colegio: Instituto Normal Para Señoritas Centro América → Instituto Normal para Señoritas Centro América
+[2025-10-15 13:39:31]   • Colegio: URURAL → Universidad Rural
+[2025-10-15 13:39:31]   • Colegio: Instituto tecnológico catarina → Instituto Tecnológico Catarina
+[2025-10-15 13:39:31]   • Colegio: Colegio Amigos en la ciudad de Chiquimula → Colegio Amigos
+[2025-10-15 13:39:31]   • Colegio: Sagrado corazón naranjo → Colegio Sagrado Corazón Naranjo
+[2025-10-15 13:39:31]   • Colegio: Continental americano → Continental Americano
+[2025-10-15 13:39:31]   • Colegio: Escuela nacional de ciencias comerciales no 3 → Escuela Nacional de Ciencias Comerciales No. 3
+[2025-10-15 13:39:31]   • Colegio: Liceo Mixto Pinulteco → Liceo Mixto Pinulteco
+[2025-10-15 13:39:31]   • Colegio: colegio privado san Andrés → Colegio San Andrés
+[2025-10-15 13:39:31]   • Colegio: Colegio John Harvard → Colegio John Harvard
+[2025-10-15 13:39:31]   • Colegio: Colegio en computación San José 2 → Colegio en Computación San José 2
+[2025-10-15 13:39:31]   • Colegio: institito "villa de las niñas" Guatemala → Instituto Villa de las Niñas
+[2025-10-15 13:39:31]   • Colegio: Mariano Galvez → Universidad Mariano Gálvez
+[2025-10-15 13:39:31]   • Colegio: Liceo Cristiano Nazareth → Liceo Cristiano Nazareth
+[2025-10-15 13:39:31]   • Colegio: Colegio Esdeo → Colegio Esdeo
+[2025-10-15 13:39:31]   • Colegio: Liceo técnico de ciencias y tecnología → Liceo Técnico de Ciencias y Tecnología
+[2025-10-15 13:39:31]   • Colegio: Universidad Mesoamericana → Universidad Mesoamericana
+[2025-10-15 13:39:31]   • Colegio: Divertido Ined → Divertido Ined
+[2025-10-15 13:39:31]   • Colegio: colegio macdermont → Colegio MacDermott
+[2025-10-15 13:39:31]   • Colegio: USAC → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-15 13:39:31]   • Colegio: san Pablo de Guatemala → Colegio San Pablo
+[2025-10-15 13:39:31]   • Colegio: Gerardi → Colegio Juan Gerardi Conedera
+[2025-10-15 13:39:31]   • Colegio: Liceo Canadiense → Liceo Canadiense
+[2025-10-15 13:39:31]   • Colegio: Instituto privado guatemala de la asuncion → Instituto Privado Guatemala de la Asunción
+[2025-10-15 13:39:31]   • Colegio: UVG Atiplano → Universidad del Valle de Guatemala
+[2025-10-15 13:39:31]   • Colegio: kids Academy → Kids Academy
+[2025-10-15 13:39:31]   • Colegio: Universidad Mariano Galvez de Guatemala → Universidad Mariano Gálvez
+[2025-10-15 13:39:31]   • Colegio: Colegio Cristiano Verbo 1 → Colegio Cristiano Verbo
+[2025-10-15 13:39:31]   • Colegio: Colegio Dr Rodolfo Robles → Colegio Dr. Rodolfo Robles
+[2025-10-15 13:39:31]   • Colegio: Valle colonial → Universidad del Valle de Guatemala
+[2025-10-15 13:39:31]   • Colegio: Instituto Emiliani Somascos → Instituto Emiliani Somascos
+[2025-10-15 13:39:31]   • Colegio: Liceo frater → Liceo Frater
+[2025-10-15 13:39:31]   • Colegio: Sagrado corazón de Jesús → Colegio Sagrado Corazón de Jesús
+[2025-10-15 13:39:31]   • Colegio: Instituto normal central para señoritas belen → Instituto Normal Central para Señoritas Belén
+[2025-10-15 13:39:31]   • Colegio: Colegio interamericano → Colegio Interamericano
+[2025-10-15 13:39:31]   • Colegio: Estudié en el colegio americano Huehuetenango → Colegio Americano de Huehuetenango
+[2025-10-15 13:39:31]   • Colegio: Panamerican business school → Panamerican Business School
+[2025-10-15 13:39:31]   • Colegio: pajariro. rpjo → pajariro. rpjo
+[2025-10-15 13:39:31]   • Colegio: liceo bressani → Liceo Bressani
+[2025-10-15 13:39:31]   • Colegio: Centro educativo Aparicio → Centro Educativo Aparicio
+[2025-10-15 13:39:31]   • Colegio: Colegio IPTCE → Colegio IPTCE
+[2025-10-15 13:39:31]   • Colegio: UDEO → UDEO
+[2025-10-15 13:39:31]   • Colegio: Frances → Colegio Frances
+[2025-10-15 13:39:31]   • Colegio: universidad regional → Universidad Galileo
+[2025-10-15 13:39:31]   • Colegio: Liceo cristiano Antioquia → Liceo Cristiano Antioquia
+[2025-10-15 13:39:31]   • Colegio: Liceo Chapero → Liceo Chapero
+[2025-10-15 13:39:31]   • Colegio: universidad rural → Universidad Rural
+[2025-10-15 13:39:31]   • Colegio: usac → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-15 13:39:31]   • Colegio: Landivar → Universidad Rafael Landívar
+[2025-10-15 13:39:31]   • Colegio: Campo Alto → Campo Alto
+[2025-10-15 13:39:31]   • Colegio: IDEACOP-PAJUIL → IDEACOP-PAJUIL
+[2025-10-15 13:39:31]   • Colegio: galileo → Universidad Galileo
+[2025-10-15 13:39:31]   • Colegio: Liceo Javier → Liceo Javier
+[2025-10-15 13:39:31]   • Colegio: liceo mixto → Liceo Mixto
+[2025-10-15 13:39:31]   • Colegio: Arenales Catalán → Colegio Arenales Catalán
+[2025-10-15 13:39:31]   • Colegio: Mariano Gálvez → Universidad Mariano Gálvez
+[2025-10-15 13:39:31]   • Colegio: colegio sinai → Colegio Sinaí
+[2025-10-15 13:39:31]   • Colegio: Keystone pensylvania → Keystone pensylvania
+[2025-10-15 13:39:31]   • Colegio: Mariano  galvez de giatemala → Universidad Mariano Gálvez
+[2025-10-15 13:39:31]   • Colegio: colegio privado mixto ELITE → Colegio Privado Mixto Elite
+[2025-10-15 13:39:31]   • Colegio: Sagrado corazon → Colegio Sagrado Corazón
+[2025-10-15 13:39:31]   • Colegio: Termine mi diversificado en el liceo de computación css → Liceo de Computación CSS
+[2025-10-15 13:39:31]   • Colegio: IPGA → IPGA
+[2025-10-15 13:39:31]   • Colegio: mo → Universidad del Istmo
+[2025-10-15 13:39:31]   • Colegio: Universidad da Vinci de Guatemala → Universidad Da Vinci
+[2025-10-15 13:39:31]   • Colegio: Usac → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-15 13:39:31]   • Colegio: UVG ALTIPANO → Universidad del Valle de Guatemala
+[2025-10-15 13:39:31]   • Colegio: Italiano de Guatemala → Colegio Italiano de Guatemala
+[2025-10-15 13:39:31]   • Colegio: Winbrigde → Colegio Winbridge
+[2025-10-15 13:39:31]   • Colegio: Aden → Aden
+[2025-10-15 13:39:31]   • Colegio: Universidad Rafael Landivar → Universidad Rafael Landívar
+[2025-10-15 13:39:31]   • Colegio: Colegio Montenevado → Colegio Montenevado
+[2025-10-15 13:39:31]   • Colegio: Liceo mixto técnicas integrales → Liceo Mixto Técnicas Integrales
+[2025-10-15 13:39:31]   • Colegio: Universidad Da Vinci → Universidad Da Vinci
+[2025-10-15 13:39:31]   • Colegio: Colegio Viena Guatemalteco → Colegio Viena Guatemalteco
+[2025-10-15 13:39:31]   • Colegio: Universidad Mariano Gálvez de Guatemala → Universidad Mariano Gálvez
+[2025-10-15 13:39:31]   • Colegio: Me gradué el colegio el año pasado → Otro
+[2025-10-15 13:39:31]   • Colegio: Academia avanza → Academia Avanza
+[2025-10-15 13:39:31]   • Colegio: itec → ITEC
+[2025-10-15 13:39:31] 
+✅ Archivo limpio guardado en: datos/datos_limpios.csv
+[2025-10-15 13:39:31] 🎉 ¡Listo para cargar en Power BI!
