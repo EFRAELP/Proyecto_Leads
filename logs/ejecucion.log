@@ -2104,3 +2104,82 @@ Sin información adicional, no puedo proporcionar el nombre oficial completo del
 [2025-10-16 01:14:43] 
 ✅ Archivo guardado: datos/datos_limpios.csv
 [2025-10-16 01:14:43] 🎉 ¡Listo para Power BI!
+[2025-10-16 12:31:00] 
+============================================================
+[2025-10-16 12:31:00] 🚀 INICIANDO NORMALIZACIÓN
+[2025-10-16 12:31:00] ============================================================
+[2025-10-16 12:31:00] 
+📂 Leyendo: datos/hubspot_export.csv
+[2025-10-16 12:31:00] ✅ Leído: 20 leads
+[2025-10-16 12:31:00] 
+🔄 Unificando columnas...
+[2025-10-16 12:31:00] ✅ Unificadas: Grado Académico + Grado Académico.1
+[2025-10-16 12:31:00] ✅ Columnas unificadas
+[2025-10-16 12:31:00] 
+🏫 Normalizando colegios...
+[2025-10-16 12:31:00] Colegios únicos: 19
+[2025-10-16 12:31:00] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-16 12:31:00] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-16 12:31:00] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-16 12:31:00] 🎓 Universidad detectada: 'USAC Malacatan' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-16 12:31:00] 🎓 Universidad detectada: 'Instituto Rafael Landívar' → 'Universidad Rafael Landívar'
+[2025-10-16 12:31:00] 🤖 Consultando Claude: 'Matilde Rouge'
+[2025-10-16 12:31:19] 🤖 Consultando Claude: 'diversificado'
+[2025-10-16 12:32:17] 🤖 Consultando Claude: 'Liceo cristiano beth Shaloom'
+[2025-10-16 12:32:25] 🎓 Universidad detectada: 'landivar' → 'Universidad Rafael Landívar'
+[2025-10-16 12:32:25] 🎓 Universidad detectada: 'Universidad de San Carlos de Guatemala' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-16 12:32:25] 🤖 Consultando Claude: 'liceo Cristiano Bethesda'
+[2025-10-16 12:32:30] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-16 12:32:30] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-16 12:32:30] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-16 12:32:30] 
+🎓 Normalizando grados académicos...
+[2025-10-16 12:32:30] 
+📝 Procesando Associated Form Submission...
+[2025-10-16 12:32:30] 
+🎓 Identificando formularios únicos...
+[2025-10-16 12:32:30] Formularios únicos encontrados: 0
+[2025-10-16 12:32:30] 
+🎯 Completando Carrera de Interés...
+[2025-10-16 12:32:30] 
+🔗 Identificando URLs únicas...
+[2025-10-16 12:32:30] URLs únicas encontradas: 13
+[2025-10-16 12:32:30] 
+🔗 Categorizando URLs...
+[2025-10-16 12:32:30] ✅ Reemplazada columna: Grado Académico
+[2025-10-16 12:32:30] ✅ Eliminada columna duplicada: Grado Académico.1
+[2025-10-16 12:32:30] ✅ Reemplazada columna: Colegio Actual
+[2025-10-16 12:32:30] ✅ Eliminada columna redundante: En qué colegio estudias actualmente?
+[2025-10-16 12:32:30] ✅ Reemplazada columna: Carrera de Interés
+[2025-10-16 12:32:30] ✅ Reemplazada columna: First Page Seen
+[2025-10-16 12:32:30] ✅ Reemplazada columna: Last Page Seen
+[2025-10-16 12:32:30] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-10-16 12:32:30] 
+💾 Guardando diccionario...
+[2025-10-16 12:32:30] 💾 Backup creado: diccionario_backup_20251016_123230.json
+[2025-10-16 12:32:30] ✅ Diccionario guardado:
+[2025-10-16 12:32:30]    • 33 colegios
+[2025-10-16 12:32:30]    • 13 URLs
+[2025-10-16 12:32:30]    • 0 formularios
+[2025-10-16 12:32:30] 
+============================================================
+[2025-10-16 12:32:30] ✅ PROCESO COMPLETADO
+[2025-10-16 12:32:30] ============================================================
+[2025-10-16 12:32:30] 📊 Total de leads procesados: 20
+[2025-10-16 12:32:30] 🆕 Normalizaciones nuevas: 8
+[2025-10-16 12:32:30] 🤖 Tokens usados: 384
+[2025-10-16 12:32:30] 💰 Costo aproximado: $0.0012
+[2025-10-16 12:32:30] 
+📝 NUEVAS NORMALIZACIONES:
+[2025-10-16 12:32:30]   • Colegio: USAC Malacatan → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-16 12:32:30]   • Colegio: Instituto Rafael Landívar → Universidad Rafael Landívar
+[2025-10-16 12:32:30]   • Colegio: Matilde Rouge → Matilde Rouge
+[2025-10-16 12:32:30]   • Colegio: diversificado → Otro
+[2025-10-16 12:32:30]   • Colegio: Liceo cristiano beth Shaloom → Liceo Cristiano Beth Shalom
+[2025-10-16 12:32:30]   • Colegio: landivar → Universidad Rafael Landívar
+[2025-10-16 12:32:30]   • Colegio: Universidad de San Carlos de Guatemala → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-16 12:32:30]   • Colegio: liceo Cristiano Bethesda → Liceo Cristiano Bethesda
+[2025-10-16 12:32:30] 
+✅ Archivo guardado: datos/datos_limpios.csv
+[2025-10-16 12:32:30] 🎉 ¡Listo para Power BI!

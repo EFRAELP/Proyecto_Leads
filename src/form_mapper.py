@@ -4,6 +4,7 @@ Mapeo de formularios a carreras
 """
 
 import pandas as pd
+import re
 
 
 class FormMapper:
@@ -21,21 +22,40 @@ class FormMapper:
         self.logger = logger
     
     def extraer_primer_form(self, texto):
-        """Extrae el primer formulario de un texto con múltiples forms"""
+        """
+        Extrae el primer formulario válido de un texto con múltiples forms
+        ⭐ MODIFICADO: Filtra correctamente .elementor-form usando regex
+        """
         if not texto or pd.isna(texto):
             return "Otro"
         
-        texto_str = str(texto).strip().lower()
+        texto_str = str(texto).strip()
         
-        if ';' in texto_str:
-            forms = [f.strip() for f in texto_str.split(';')]
-            forms = [f for f in forms if f and f != '.elementor-form' and 'elementor' not in f]
-            if forms:
-                return forms[0]
+        if not texto_str:
+            return "Otro"
         
-        if '.elementor-form' not in texto_str:
-            return texto_str
+        # Separar por ; o ,
+        elementos = re.split(r'[;,]', texto_str)
         
+        # Buscar el primer elemento que NO sea .elementor-form
+        for elem in elementos:
+            elem_limpio = elem.strip()
+            
+            if not elem_limpio:
+                continue
+            
+            # Si es SOLO .elementor-form o variaciones, saltarlo
+            if re.match(r'^\.elementor-form[\s,\-\_]*$', elem_limpio, re.IGNORECASE):
+                continue
+            
+            # Si contiene .elementor-form pero tiene más texto, limpiarlo
+            elem_limpio = re.sub(r'[\s,]*\.elementor-form[\s,\-\_]*', '', elem_limpio, flags=re.IGNORECASE).strip()
+            
+            # Si después de limpiar queda algo, devolverlo
+            if elem_limpio:
+                return elem_limpio
+        
+        # Si todos los elementos eran .elementor-form
         return "Otro"
     
     def mapear_form_a_carrera(self, form, diccionario, formularios_nuevos, modo_interactivo=True):

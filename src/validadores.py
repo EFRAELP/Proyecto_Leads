@@ -56,17 +56,30 @@ class Validadores:
         return False
     
     def buscar_universidad_conocida(self, texto):
-        """Busca universidades guatemaltecas"""
+        """
+        Busca universidades guatemaltecas
+        ⭐ MODIFICADO: Verifica PRIMERO si es un colegio específico (como Instituto Rafael Landívar)
+        antes de clasificarlo como universidad
+        """
         if not texto or pd.isna(texto):
             return None
         
         texto_limpio = str(texto).strip().lower()
         
-        # ⭐ NUEVA VERIFICACIÓN: Verificar si es un colegio que NO es universidad
+        # ⭐ PASO 1: Verificar si es un COLEGIO específico (antes de verificar universidades)
+        # Esto evita que "instituto rafael landívar" sea clasificado como "Universidad Rafael Landívar"
+        if hasattr(self.config, 'COLEGIOS_ESPECIFICOS'):
+            for colegio_key, colegio_nombre in self.config.COLEGIOS_ESPECIFICOS.items():
+                if colegio_key in texto_limpio:
+                    self.logger.log(f"🏫 Colegio específico detectado: '{texto}' → '{colegio_nombre}'")
+                    return colegio_nombre
+        
+        # ⭐ PASO 2: Verificar si es un colegio que NO es universidad
         if texto_limpio in self.config.COLEGIOS_NO_UNIVERSITARIOS:
             self.logger.log(f"⚠️ No es universidad: '{texto}' → 'Otro'")
             return None
         
+        # PASO 3: Ahora sí buscar universidades (solo si NO es un colegio específico)
         if texto_limpio in self.config.UNIVERSIDADES_GT:
             return self.config.UNIVERSIDADES_GT[texto_limpio]
         
@@ -74,6 +87,7 @@ class Validadores:
             if key in texto_limpio or texto_limpio in key:
                 return universidad
         
+        # PASO 4: Fuzzy matching solo para universidades
         mejor_match = None
         mejor_score = 0
         

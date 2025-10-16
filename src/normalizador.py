@@ -201,6 +201,48 @@ class NormalizadorLeads:
         self.diccionario['grados'][grado_str] = normalizado
         return normalizado
     
+    # ⭐ NUEVO MÉTODO: Completar carrera con procesamiento de underscores del CSV
+    def completar_carrera(self, row):
+        """
+        Completa la carrera de interés - VERSIÓN MEJORADA
+        Procesa valores del CSV (con underscores) y desde formularios
+        """
+        # 1. Revisar si ya tiene un valor en "Carrera de Interés"
+        carrera_actual = row.get('Carrera de Interés', '')
+        
+        if carrera_actual and str(carrera_actual).strip() and str(carrera_actual) != 'nan':
+            carrera_str = str(carrera_actual).strip().lower()
+            
+            # Reemplazar espacios por underscores para buscar en mapeo
+            carrera_con_underscores = carrera_str.replace(' ', '_')
+            
+            # Buscar en mapeo de carreras CSV
+            if carrera_con_underscores in config.MAPEO_CARRERAS_CSV:
+                return config.MAPEO_CARRERAS_CSV[carrera_con_underscores]
+            
+            # También buscar sin underscores
+            if carrera_str in config.MAPEO_CARRERAS_CSV:
+                return config.MAPEO_CARRERAS_CSV[carrera_str]
+            
+            # Si no está en el mapeo pero tiene valor, devolverlo limpio
+            carrera_limpia = str(carrera_actual).replace('_', ' ').title()
+            return carrera_limpia
+        
+        # 2. Si no tiene carrera, intentar mapear desde formulario
+        form_limpio = row.get('___FORM_LIMPIO___', '')
+        carrera_mapeada = self.form_mapper.mapear_form_a_carrera(
+            form_limpio,
+            self.diccionario,
+            self.formularios_nuevos,
+            modo_interactivo=False
+        )
+        
+        if carrera_mapeada:
+            return carrera_mapeada
+        
+        # 3. Si no se pudo mapear
+        return "Sin especificar"
+    
     def procesar_leads(self, modo_validacion=True):
         """Proceso principal de normalización"""
         self.logger.log("\n" + "="*60)
@@ -260,29 +302,10 @@ class NormalizadorLeads:
                     modo_interactivo=True
                 )
         
-        # 6. Completar Carrera
+        # ⭐ 6. Completar Carrera - MODIFICADO para usar el nuevo método
         self.logger.log("\n🎯 Completando Carrera de Interés...")
         if 'Carrera de Interés' in df.columns:
-            def completar_carrera(row):
-                carrera_actual = row.get('Carrera de Interés', '')
-                
-                if carrera_actual and str(carrera_actual).strip() and str(carrera_actual) != 'nan':
-                    return carrera_actual
-                
-                form_limpio = row.get('___FORM_LIMPIO___', '')
-                carrera_mapeada = self.form_mapper.mapear_form_a_carrera(
-                    form_limpio,
-                    self.diccionario,
-                    self.formularios_nuevos,
-                    modo_interactivo=False
-                )
-                
-                if carrera_mapeada:
-                    return carrera_mapeada
-                
-                return "Sin especificar"
-            
-            df['___CARRERA_COMPLETADA___'] = df.apply(completar_carrera, axis=1)
+            df['___CARRERA_COMPLETADA___'] = df.apply(self.completar_carrera, axis=1)
         
         # 7. Identificar URLs
         if modo_validacion:

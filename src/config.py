@@ -48,6 +48,18 @@ UNIVERSIDADES_GT = {
     'istmo': 'Universidad del Istmo',
 }
 
+# ⭐ NUEVO: Colegios específicos que tienen nombres similares a universidades
+# Estos deben verificarse ANTES de clasificar como universidad
+COLEGIOS_ESPECIFICOS = {
+    'instituto rafael landivar': 'Instituto Rafael Landívar',
+    'instituto rafael landívar': 'Instituto Rafael Landívar',
+    'instituto rafael landival': 'Instituto Rafael Landívar',  # Error común de escritura
+    'instituto rafael landibal': 'Instituto Rafael Landívar',  # Error común de escritura
+    'colegio rafael landivar': 'Instituto Rafael Landívar',
+    'colegio rafael landívar': 'Instituto Rafael Landívar',
+    'colegio rafael landival': 'Instituto Rafael Landívar',
+}
+
 # Colegios que NO son universidades
 COLEGIOS_NO_UNIVERSITARIOS = {
     'valle colonial',
@@ -86,6 +98,26 @@ MAPEO_FORMULARIOS = {
     'form ing administracion': 'Ciencia de la Administración',
     'conoce la licenciatura en administracion': 'Administración de Empresas',
     'conoce la licenciatura en administración': 'Administración de Empresas',
+}
+
+# ⭐ NUEVO: Mapeo de carreras del CSV (con underscores)
+# Para procesar valores como "ingeniería_en_administración_de_empresas"
+MAPEO_CARRERAS_CSV = {
+    'ingeniería_en_administración_de_empresas': 'Ciencia de la Administración',
+    'ingenieria_en_administracion_de_empresas': 'Ciencia de la Administración',
+    'ciencia_de_la_administración': 'Ciencia de la Administración',
+    'ciencia_de_la_administracion': 'Ciencia de la Administración',
+    'licenciatura_en_international_marketing': 'International Marketing and Business Analytics',
+    'international_marketing': 'International Marketing and Business Analytics',
+    'marketing': 'International Marketing and Business Analytics',
+    'administración_de_empresas': 'Administración de Empresas',
+    'administracion_de_empresas': 'Administración de Empresas',
+    'licenciatura_en_administración_de_empresas': 'Administración de Empresas',
+    'licenciatura_en_administracion_de_empresas': 'Administración de Empresas',
+    'comunicación_estratégica': 'Comunicación Estratégica',
+    'comunicacion_estrategica': 'Comunicación Estratégica',
+    'maestrías': 'Maestrías',
+    'maestrias': 'Maestrías',
 }
 
 # Patrones de URLs
