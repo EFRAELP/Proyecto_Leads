@@ -2000,3 +2000,107 @@ Sin información adicional, no puedo proporcionar el nombre oficial completo del
 [2025-10-15 20:35:21] ⚠️ No es colegio: 'Cooperativa' → 'Otro'
 [2025-10-15 20:35:21] 🤖 Consultando Claude: 'INED'
 [2025-10-15 20:35:21] ❌ Error Claude: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CUA6cms3XhtUftPE5MAj7'}
+[2025-10-16 01:11:13] 
+============================================================
+[2025-10-16 01:11:13] 🚀 INICIANDO NORMALIZACIÓN
+[2025-10-16 01:11:13] ============================================================
+[2025-10-16 01:11:13] 
+📂 Leyendo: datos/hubspot_export.csv
+[2025-10-16 01:11:13] ✅ Leído: 26 leads
+[2025-10-16 01:11:13] 
+🔄 Unificando columnas...
+[2025-10-16 01:11:13] ✅ Unificadas: Grado Académico + Grado Académico.1
+[2025-10-16 01:11:13] ✅ Columnas unificadas
+[2025-10-16 01:11:13] 
+🏫 Normalizando colegios...
+[2025-10-16 01:11:13] Colegios únicos: 24
+[2025-10-16 01:11:13] 🤖 Consultando Claude: 'Don Bosco'
+[2025-10-16 01:11:20] 🤖 Consultando Claude: 'Prueba'
+[2025-10-16 01:11:25] ⚠️ Respuesta inválida detectada: 'ninguno' → 'Otro'
+[2025-10-16 01:11:25] ⚠️ No es un colegio detectado: 'Cooperativa' → 'Otro'
+[2025-10-16 01:11:25] 🤖 Consultando Claude: 'INED'
+[2025-10-16 01:11:30] 🎓 Universidad detectada: 'Rafael Landivar' → 'Universidad Rafael Landívar'
+[2025-10-16 01:11:30] 🤖 Consultando Claude: 'Progreso'
+[2025-10-16 01:11:38] ⚠️ Respuesta inválida detectada: 'No estoy en estudiando' → 'Otro'
+[2025-10-16 01:11:38] 🎓 Universidad detectada: 'Galileo' → 'Universidad Galileo'
+[2025-10-16 01:11:38] 🤖 Consultando Claude: 'Escuela Nacional Central de Formación Secretarial'
+[2025-10-16 01:11:42] 🎓 Universidad detectada: 'Universidad Galileo' → 'Universidad Galileo'
+[2025-10-16 01:11:42] 🤖 Consultando Claude: 'Ici guatemala suchitepequez'
+[2025-10-16 01:12:56] 🤖 Consultando Claude: 'Colegio Guatemalteco Bilingüe'
+[2025-10-16 01:13:01] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-16 01:13:01] 🎓 Universidad detectada: 'Universidad Mariano Gálvez' → 'Universidad Mariano Gálvez'
+[2025-10-16 01:13:01] 🤖 Consultando Claude: 'Instituto Intercultural Mixto Santiago'
+[2025-10-16 01:13:07] 🤖 Consultando Claude: 'Colegio La Asunción San Marcos'
+[2025-10-16 01:13:10] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-16 01:13:10] 🤖 Consultando Claude: 'Universidad Regional de Guatemala'
+[2025-10-16 01:14:16] 🤖 Consultando Claude: 'Colegio santa monica'
+[2025-10-16 01:14:38] ⚠️ Respuesta inválida detectada: 'Ya no estoy estudiando' → 'Otro'
+[2025-10-16 01:14:38] 🤖 Consultando Claude: 'escuela de formación secretarial'
+[2025-10-16 01:14:40] 🤖 Consultando Claude: 'magisterio'
+[2025-10-16 01:14:43] 🎓 Universidad detectada: 'Liceo comercial entre valles' → 'Universidad del Valle de Guatemala'
+[2025-10-16 01:14:43] ⚠️ Respuesta inválida detectada: 'ninguno' → 'Otro'
+[2025-10-16 01:14:43] ⚠️ No es un colegio detectado: 'Cooperativa' → 'Otro'
+[2025-10-16 01:14:43] ⚠️ Respuesta inválida detectada: 'No estoy en estudiando' → 'Otro'
+[2025-10-16 01:14:43] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-16 01:14:43] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-16 01:14:43] ⚠️ Respuesta inválida detectada: 'Ya no estoy estudiando' → 'Otro'
+[2025-10-16 01:14:43] 
+🎓 Normalizando grados académicos...
+[2025-10-16 01:14:43] 
+📝 Procesando Associated Form Submission...
+[2025-10-16 01:14:43] 
+🎓 Identificando formularios únicos...
+[2025-10-16 01:14:43] Formularios únicos encontrados: 0
+[2025-10-16 01:14:43] 
+🎯 Completando Carrera de Interés...
+[2025-10-16 01:14:43] 
+🔗 Identificando URLs únicas...
+[2025-10-16 01:14:43] URLs únicas encontradas: 23
+[2025-10-16 01:14:43] 
+🔗 Categorizando URLs...
+[2025-10-16 01:14:43] ✅ Reemplazada columna: Grado Académico
+[2025-10-16 01:14:43] ✅ Eliminada columna duplicada: Grado Académico.1
+[2025-10-16 01:14:43] ✅ Reemplazada columna: Colegio Actual
+[2025-10-16 01:14:43] ✅ Eliminada columna redundante: En qué colegio estudias actualmente?
+[2025-10-16 01:14:43] ✅ Reemplazada columna: Carrera de Interés
+[2025-10-16 01:14:43] ✅ Reemplazada columna: First Page Seen
+[2025-10-16 01:14:43] ✅ Reemplazada columna: Last Page Seen
+[2025-10-16 01:14:43] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-10-16 01:14:43] 
+💾 Guardando diccionario...
+[2025-10-16 01:14:43] ✅ Diccionario guardado:
+[2025-10-16 01:14:43]    • 24 colegios
+[2025-10-16 01:14:43]    • 13 URLs
+[2025-10-16 01:14:43]    • 0 formularios
+[2025-10-16 01:14:43] 
+============================================================
+[2025-10-16 01:14:43] ✅ PROCESO COMPLETADO
+[2025-10-16 01:14:43] ============================================================
+[2025-10-16 01:14:43] 📊 Total de leads procesados: 26
+[2025-10-16 01:14:43] 🆕 Normalizaciones nuevas: 18
+[2025-10-16 01:14:43] 🤖 Tokens usados: 1260
+[2025-10-16 01:14:43] 💰 Costo aproximado: $0.0038
+[2025-10-16 01:14:43] 
+📝 NUEVAS NORMALIZACIONES:
+[2025-10-16 01:14:43]   • Colegio: Don Bosco → Don Bosco
+[2025-10-16 01:14:43]   • Colegio: Prueba → Prueba
+[2025-10-16 01:14:43]   • Colegio: INED → INED
+[2025-10-16 01:14:43]   • Colegio: Rafael Landivar → Universidad Rafael Landívar
+[2025-10-16 01:14:43]   • Colegio: Progreso → Otro
+[2025-10-16 01:14:43]   • Colegio: Galileo → Universidad Galileo
+[2025-10-16 01:14:43]   • Colegio: Escuela Nacional Central de Formación Secretarial → Escuela Nacional Central de Formación Secretarial
+[2025-10-16 01:14:43]   • Colegio: Universidad Galileo → Universidad Galileo
+[2025-10-16 01:14:43]   • Colegio: Ici guatemala suchitepequez → Instituto de Computación Informática de Suchitepéquez
+[2025-10-16 01:14:43]   • Colegio: Colegio Guatemalteco Bilingüe → Colegio Guatemalteco Bilingüe
+[2025-10-16 01:14:43]   • Colegio: Universidad Mariano Gálvez → Universidad Mariano Gálvez
+[2025-10-16 01:14:43]   • Colegio: Instituto Intercultural Mixto Santiago → Instituto Intercultural Mixto Santiago
+[2025-10-16 01:14:43]   • Colegio: Colegio La Asunción San Marcos → Colegio La Asunción San Marcos
+[2025-10-16 01:14:43]   • Colegio: Universidad Regional de Guatemala → Universidad Regional de Guatemala
+[2025-10-16 01:14:43]   • Colegio: Colegio santa monica → Otro
+[2025-10-16 01:14:43]   • Colegio: escuela de formación secretarial → Escuela de Formación Secretarial
+[2025-10-16 01:14:43]   • Colegio: magisterio → Otro
+[2025-10-16 01:14:43]   • Colegio: Liceo comercial entre valles → Universidad del Valle de Guatemala
+[2025-10-16 01:14:43] 
+✅ Archivo guardado: datos/datos_limpios.csv
+[2025-10-16 01:14:43] 🎉 ¡Listo para Power BI!
