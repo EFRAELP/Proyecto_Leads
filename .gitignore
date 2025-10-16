@@ -1,1 +1,3 @@
 .env
+*.csv
+datos/hubspot_export.csv
