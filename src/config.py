@@ -126,29 +126,32 @@ URL_PATTERNS = {
         'administracion-empresas',
         'licenciatura-administracion',
         'lic-administracion',
+        'lic+administracion',  # URL con +
         'webinar-conoce-licenciatura-en-administracion',
         'conoce-la-licenciatura-en-administracion',
-        'lic%2badministracion',
         'form-lic-administracion',
-        'promoting-form-lic-administracion'
+        'promoting-form-lic-administracion',
+        'promoting+form+lic+administracion',  # URL con +
     ],
     'Ciencia de la Administración': [
         'ingenieria-ciencia-administracion',
         'ingenieria-administracion',
         'ciencia-administracion',
         'ing-administracion',
-        'ing%2badministracion',
+        'ing+administracion',  # URL con +
         'form-ing-administracion',
-        'promoting-form-ing-administracion'
+        'promoting-form-ing-administracion',
+        'promoting+form+ing+administracion',  # URL con +
     ],
     'International Marketing and Business Analytics': [
         'marketing-analytics',
         'licenciatura-marketing',
         'international-marketing',
         'lic-marketing',
-        'lic%2bmarketing',
+        'lic+marketing',  # URL con +
         'form-lic-marketing',
-        'promoting-form-lic-marketing'
+        'promoting-form-lic-marketing',
+        'video+marketing',  # URL con +
     ],
     'Comunicación Estratégica': [
         'comunicacion-estrategica',

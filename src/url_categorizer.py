@@ -5,6 +5,7 @@ Categorización de URLs por palabras clave y patrones
 
 import pandas as pd
 import re
+from urllib.parse import unquote
 
 
 class URLCategorizer:
@@ -22,7 +23,7 @@ class URLCategorizer:
         self.logger = logger
     
     def categorizar_url(self, url, diccionario, urls_nuevas, modo_interactivo=True):
-        """Categoriza URL por palabras clave - VERSIÓN MEJORADA"""
+        """Categoriza URL por palabras clave - VERSIÓN MEJORADA con decodificación"""
         if not url or pd.isna(url):
             return "Otro"
         
@@ -35,39 +36,42 @@ class URLCategorizer:
         if 'urls' in diccionario and url_str in diccionario['urls']:
             return diccionario['urls'][url_str]
         
-        # 2. Patrones de clasificación
-        patterns = self.config.URL_PATTERNS
+        # ⭐ 2. DECODIFICAR URL (convertir %2B a +, %25C3%25B1 a ñ, etc.)
+        url_decoded = unquote(url_str)
         
         # 3. Casos especiales "Otro"
         casos_otro = self.config.URL_CASOS_OTRO
         
         for caso in casos_otro:
-            if caso in url_str:
+            if caso in url_decoded:
                 return 'Otro'
         
-        # 4. Buscar coincidencias
+        # 4. Buscar coincidencias en AMBAS versiones (original y decodificada)
+        patterns = self.config.URL_PATTERNS
+        
         for carrera, patrones_carrera in patterns.items():
             for patron in patrones_carrera:
-                if patron in url_str:
+                # Buscar en URL original Y en URL decodificada
+                if patron in url_str or patron in url_decoded:
                     if 'urls' not in diccionario:
                         diccionario['urls'] = {}
                     diccionario['urls'][url_str] = carrera
                     return carrera
         
         # 5. Bridge Principal
-        if 'uvgbridge.gt' in url_str:
+        if 'uvgbridge.gt' in url_decoded:
             tiene_carrera = False
             for patrones_carrera in patterns.values():
-                if any(patron in url_str for patron in patrones_carrera):
+                if any(patron in url_decoded for patron in patrones_carrera):
                     tiene_carrera = True
                     break
             
             if not tiene_carrera:
-                if re.search(r'uvgbridge\.gt/?(\?|$)', url_str):
+                if re.search(r'uvgbridge\.gt/?(\?|$)', url_decoded):
                     return 'Bridge Principal'
         
         # 6. Modo interactivo
-        if modo_interactivo and 'uvgbridge.gt' in url_str:
+        if modo_interactivo and 'uvgbridge.gt' in url_decoded:
             return self.preguntar_categoria_url(url_str, diccionario, urls_nuevas)
         
         return 'Otro'

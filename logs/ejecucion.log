@@ -2183,3 +2183,285 @@ Sin información adicional, no puedo proporcionar el nombre oficial completo del
 [2025-10-16 12:32:30] 
 ✅ Archivo guardado: datos/datos_limpios.csv
 [2025-10-16 12:32:30] 🎉 ¡Listo para Power BI!
+[2025-10-16 14:06:19] 
+============================================================
+[2025-10-16 14:06:19] 🚀 INICIANDO NORMALIZACIÓN
+[2025-10-16 14:06:19] ============================================================
+[2025-10-16 14:06:19] 
+📂 Leyendo: datos/hubspot_export.csv
+[2025-10-16 14:06:19] ✅ Leído: 20 leads
+[2025-10-16 14:06:19] 
+🔄 Unificando columnas...
+[2025-10-16 14:06:19] ✅ Unificadas: Grado Académico + Grado Académico.1
+[2025-10-16 14:06:19] ✅ Columnas unificadas
+[2025-10-16 14:06:19] 
+🏫 Normalizando colegios...
+[2025-10-16 14:06:19] Colegios únicos: 19
+[2025-10-16 14:06:19] 🎓 Universidad detectada: 'Universidad Galileo' → 'Universidad Galileo'
+[2025-10-16 14:06:19] 🤖 Consultando Claude: 'Ici guatemala suchitepequez'
+[2025-10-16 14:06:22] 🤖 Consultando Claude: 'Colegio Guatemalteco Bilingüe'
+[2025-10-16 14:06:24] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-16 14:06:24] 🎓 Universidad detectada: 'Universidad Mariano Gálvez' → 'Universidad Mariano Gálvez'
+[2025-10-16 14:06:24] 🤖 Consultando Claude: 'Instituto Intercultural Mixto Santiago'
+[2025-10-16 14:06:26] 🤖 Consultando Claude: 'INED'
+[2025-10-16 14:06:28] 🤖 Consultando Claude: 'Colegio La Asunción San Marcos'
+[2025-10-16 14:06:30] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-16 14:06:30] 🤖 Consultando Claude: 'Universidad Regional de Guatemala'
+[2025-10-16 14:06:32] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-16 14:06:32] 🎓 Universidad detectada: 'USAC Malacatan' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-16 14:06:32] 🏫 Colegio específico detectado: 'Instituto Rafael Landívar' → 'Instituto Rafael Landívar'
+[2025-10-16 14:06:32] 🎓 Universidad detectada: 'Instituto Rafael Landívar' → 'Instituto Rafael Landívar'
+[2025-10-16 14:06:32] 🤖 Consultando Claude: 'Matilde Rouge'
+[2025-10-16 14:06:34] 🤖 Consultando Claude: 'diversificado'
+[2025-10-16 14:06:36] 🤖 Consultando Claude: 'Liceo cristiano beth Shaloom'
+[2025-10-16 14:06:38] 🎓 Universidad detectada: 'landivar' → 'Universidad Rafael Landívar'
+[2025-10-16 14:06:38] 🎓 Universidad detectada: 'Universidad de San Carlos de Guatemala' → 'Universidad de San Carlos de Guatemala (USAC)'
+[2025-10-16 14:06:38] 🤖 Consultando Claude: 'liceo Cristiano Bethesda'
+[2025-10-16 14:06:41] ⚠️ Respuesta inválida detectada: 'Ninguno' → 'Otro'
+[2025-10-16 14:06:41] ⚠️ Respuesta inválida detectada: 'No' → 'Otro'
+[2025-10-16 14:06:41] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-16 14:06:41] 
+🎓 Normalizando grados académicos...
+[2025-10-16 14:06:41] 
+📝 Procesando Associated Form Submission...
+[2025-10-16 14:06:41] 
+🎯 Completando Carrera de Interés...
+[2025-10-16 14:06:41] 
+🔗 Categorizando URLs...
+[2025-10-16 14:06:41] ✅ Reemplazada columna: Grado Académico
+[2025-10-16 14:06:41] ✅ Eliminada columna duplicada: Grado Académico.1
+[2025-10-16 14:06:41] ✅ Reemplazada columna: Colegio Actual
+[2025-10-16 14:06:41] ✅ Eliminada columna redundante: En qué colegio estudias actualmente?
+[2025-10-16 14:06:41] ✅ Reemplazada columna: Carrera de Interés
+[2025-10-16 14:06:41] ✅ Reemplazada columna: First Page Seen
+[2025-10-16 14:06:41] ✅ Reemplazada columna: Last Page Seen
+[2025-10-16 14:06:41] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-10-16 14:06:41] 
+💾 Guardando diccionario...
+[2025-10-16 14:06:41] ✅ Diccionario guardado:
+[2025-10-16 14:06:41]    • 19 colegios
+[2025-10-16 14:06:41]    • 4 URLs
+[2025-10-16 14:06:41]    • 0 formularios
+[2025-10-16 14:06:41] 
+============================================================
+[2025-10-16 14:06:41] ✅ PROCESO COMPLETADO
+[2025-10-16 14:06:41] ============================================================
+[2025-10-16 14:06:41] 📊 Total de leads procesados: 20
+[2025-10-16 14:06:41] 🆕 Normalizaciones nuevas: 16
+[2025-10-16 14:06:41] 🤖 Tokens usados: 973
+[2025-10-16 14:06:41] 💰 Costo aproximado: $0.0029
+[2025-10-16 14:06:41] 
+📝 NUEVAS NORMALIZACIONES:
+[2025-10-16 14:06:41]   • Colegio: Universidad Galileo → Universidad Galileo
+[2025-10-16 14:06:41]   • Colegio: Ici guatemala suchitepequez → Otro
+[2025-10-16 14:06:41]   • Colegio: Colegio Guatemalteco Bilingüe → Colegio Guatemalteco Bilingüe
+[2025-10-16 14:06:41]   • Colegio: Universidad Mariano Gálvez → Universidad Mariano Gálvez
+[2025-10-16 14:06:41]   • Colegio: Instituto Intercultural Mixto Santiago → Instituto Intercultural Mixto Santiago
+[2025-10-16 14:06:41]   • Colegio: INED → INED
+[2025-10-16 14:06:41]   • Colegio: Colegio La Asunción San Marcos → Colegio La Asunción San Marcos
+[2025-10-16 14:06:41]   • Colegio: Universidad Regional de Guatemala → Universidad Regional de Guatemala
+[2025-10-16 14:06:41]   • Colegio: USAC Malacatan → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-16 14:06:41]   • Colegio: Instituto Rafael Landívar → Instituto Rafael Landívar
+[2025-10-16 14:06:41]   • Colegio: Matilde Rouge → Matilde Rouge
+[2025-10-16 14:06:41]   • Colegio: diversificado → Otro
+[2025-10-16 14:06:41]   • Colegio: Liceo cristiano beth Shaloom → Liceo Cristiano Beth Shalom
+[2025-10-16 14:06:41]   • Colegio: landivar → Universidad Rafael Landívar
+[2025-10-16 14:06:41]   • Colegio: Universidad de San Carlos de Guatemala → Universidad de San Carlos de Guatemala (USAC)
+[2025-10-16 14:06:41]   • Colegio: liceo Cristiano Bethesda → Liceo Cristiano Bethesda
+[2025-10-16 14:06:41] 
+✅ Archivo guardado: datos/datos_limpios.csv
+[2025-10-16 14:06:41] 🎉 ¡Listo para Power BI!
+[2025-10-16 19:15:50] 
+============================================================
+[2025-10-16 19:15:50] 🚀 INICIANDO NORMALIZACIÓN
+[2025-10-16 19:15:50] ============================================================
+[2025-10-16 19:15:50] 
+📂 Leyendo: datos/hubspot_export.csv
+[2025-10-16 19:15:50] ✅ Leído: 10 leads
+[2025-10-16 19:15:50] 
+🔄 Unificando columnas...
+[2025-10-16 19:15:50] ✅ Unificadas: Grado Académico + Grado Académico.1
+[2025-10-16 19:15:50] ✅ Columnas unificadas
+[2025-10-16 19:15:50] 
+🏫 Normalizando colegios...
+[2025-10-16 19:15:50] Colegios únicos: 10
+[2025-10-16 19:15:50] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-16 19:15:50] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-16 19:15:50] 
+🎓 Normalizando grados académicos...
+[2025-10-16 19:15:50] 
+📝 Procesando Associated Form Submission...
+[2025-10-16 19:15:50] 
+🎯 Completando Carrera de Interés...
+[2025-10-16 19:15:50] 
+🔗 Categorizando URLs...
+[2025-10-16 19:15:50] 
+🔄 Reemplazando columnas originales...
+[2025-10-16 19:15:50] ✅ Reemplazada columna: Grado Académico
+[2025-10-16 19:15:50] ✅ Eliminada columna duplicada: Grado Académico.1
+[2025-10-16 19:15:50] ✅ Reemplazada columna: Colegio Actual
+[2025-10-16 19:15:50] ✅ Eliminada columna redundante: En qué colegio estudias actualmente?
+[2025-10-16 19:15:50] ✅ Reemplazada columna: Associated Form submission
+[2025-10-16 19:15:50] ✅ Reemplazada columna: Carrera de Interés
+[2025-10-16 19:15:50] ✅ Reemplazada columna: First Page Seen
+[2025-10-16 19:15:50] ✅ Reemplazada columna: Last Page Seen
+[2025-10-16 19:15:50] 
+🗑️ Eliminando columnas temporales...
+[2025-10-16 19:15:50] ✅ Eliminadas 0 columnas temporales
+[2025-10-16 19:15:50] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-10-16 19:15:50] 
+💾 Guardando diccionario...
+[2025-10-16 19:15:50] 💾 Backup creado: diccionario_backup_20251016_191550.json
+[2025-10-16 19:15:50] ✅ Diccionario guardado:
+[2025-10-16 19:15:50]    • 19 colegios
+[2025-10-16 19:15:50]    • 4 URLs
+[2025-10-16 19:15:50]    • 0 formularios
+[2025-10-16 19:15:50] 
+============================================================
+[2025-10-16 19:15:50] ✅ PROCESO COMPLETADO
+[2025-10-16 19:15:50] ============================================================
+[2025-10-16 19:15:50] 📊 Total de leads procesados: 10
+[2025-10-16 19:15:50] 🆕 Normalizaciones nuevas: 0
+[2025-10-16 19:15:50] 🤖 Tokens usados: 0
+[2025-10-16 19:15:50] 💰 Costo aproximado: $0.0000
+[2025-10-16 19:15:50] 
+✅ Archivo guardado: datos/datos_limpios.csv
+[2025-10-16 19:15:50] 🎉 ¡Listo para Power BI!
+[2025-10-16 19:21:59] 
+============================================================
+[2025-10-16 19:21:59] 🚀 INICIANDO NORMALIZACIÓN
+[2025-10-16 19:21:59] ============================================================
+[2025-10-16 19:21:59] 
+📂 Leyendo: datos/hubspot_export.csv
+[2025-10-16 19:21:59] ✅ Leído: 10 leads
+[2025-10-16 19:21:59] 
+🔄 Unificando columnas...
+[2025-10-16 19:21:59] ✅ Unificadas: Grado Académico + Grado Académico.1
+[2025-10-16 19:21:59] ✅ Columnas unificadas
+[2025-10-16 19:21:59] 
+🏫 Normalizando colegios...
+[2025-10-16 19:21:59] Colegios únicos: 10
+[2025-10-16 19:21:59] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-16 19:21:59] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-16 19:21:59] 
+🎓 Normalizando grados académicos...
+[2025-10-16 19:21:59] 
+📝 Procesando Associated Form Submission...
+[2025-10-16 19:21:59] ✓ Columna encontrada: 'Associated Form submission'
+[2025-10-16 19:21:59] ✓ Procesados 10 formularios
+[2025-10-16 19:21:59] 
+🎯 Completando Carrera de Interés...
+[2025-10-16 19:21:59] ✓ Columna encontrada: 'Carrera de Interés'
+[2025-10-16 19:21:59] 
+🔗 Categorizando URLs...
+[2025-10-16 19:21:59] 
+🔄 Reemplazando columnas originales...
+[2025-10-16 19:21:59] ✅ Reemplazada columna: Grado Académico
+[2025-10-16 19:21:59] ✅ Eliminada columna duplicada: Grado Académico.1
+[2025-10-16 19:21:59] ✅ Reemplazada columna: Colegio Actual
+[2025-10-16 19:21:59] ✅ Eliminada columna redundante: En qué colegio estudias actualmente?
+[2025-10-16 19:21:59] ✓ Reemplazando 'Associated Form submission'...
+[2025-10-16 19:21:59]   Ejemplo ANTES: Form Lic Administracion 01;.elementor-form, .elementor-form-waiting
+[2025-10-16 19:21:59]   Ejemplo PROCESADO: Form Lic Administracion 01
+[2025-10-16 19:21:59]   Ejemplo DESPUÉS: Form Lic Administracion 01
+[2025-10-16 19:21:59] ✅ Reemplazada columna: Associated Form submission
+[2025-10-16 19:21:59] ✓ Reemplazando 'Carrera de Interés'...
+[2025-10-16 19:21:59] ✅ Reemplazada columna: Carrera de Interés
+[2025-10-16 19:21:59] ✅ Reemplazada columna: First Page Seen
+[2025-10-16 19:21:59] ✅ Reemplazada columna: Last Page Seen
+[2025-10-16 19:21:59] 
+🗑️ Eliminando columnas temporales...
+[2025-10-16 19:21:59] ✅ Eliminadas 0 columnas temporales
+[2025-10-16 19:21:59] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-10-16 19:21:59] 
+💾 Guardando diccionario...
+[2025-10-16 19:21:59] 💾 Backup creado: diccionario_backup_20251016_192159.json
+[2025-10-16 19:21:59] ✅ Diccionario guardado:
+[2025-10-16 19:21:59]    • 19 colegios
+[2025-10-16 19:21:59]    • 4 URLs
+[2025-10-16 19:21:59]    • 2 formularios
+[2025-10-16 19:21:59] 
+============================================================
+[2025-10-16 19:21:59] ✅ PROCESO COMPLETADO
+[2025-10-16 19:21:59] ============================================================
+[2025-10-16 19:21:59] 📊 Total de leads procesados: 10
+[2025-10-16 19:21:59] 🆕 Normalizaciones nuevas: 0
+[2025-10-16 19:21:59] 🤖 Tokens usados: 0
+[2025-10-16 19:21:59] 💰 Costo aproximado: $0.0000
+[2025-10-16 19:21:59] 
+✅ Archivo guardado: datos/datos_limpios.csv
+[2025-10-16 19:21:59] 🎉 ¡Listo para Power BI!
+[2025-10-16 19:40:06] 
+============================================================
+[2025-10-16 19:40:06] 🚀 INICIANDO NORMALIZACIÓN
+[2025-10-16 19:40:06] ============================================================
+[2025-10-16 19:40:06] 
+📂 Leyendo: datos/hubspot_export.csv
+[2025-10-16 19:40:06] ✅ Leído: 10 leads
+[2025-10-16 19:40:06] 
+🔄 Unificando columnas...
+[2025-10-16 19:40:06] ✅ Unificadas: Grado Académico + Grado Académico.1
+[2025-10-16 19:40:06] ✅ Columnas unificadas
+[2025-10-16 19:40:06] 
+🏫 Normalizando colegios...
+[2025-10-16 19:40:06] Colegios únicos: 10
+[2025-10-16 19:40:06] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-16 19:40:06] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-16 19:40:06] 
+🎓 Normalizando grados académicos...
+[2025-10-16 19:40:06] 
+📝 Procesando Associated Form Submission...
+[2025-10-16 19:40:06] ✓ Columna encontrada: 'Associated Form submission'
+[2025-10-16 19:40:06] ✓ Procesados 10 formularios
+[2025-10-16 19:40:06] 
+🎓 Identificando formularios únicos...
+[2025-10-16 19:40:06] Formularios únicos encontrados: 2
+[2025-10-16 19:40:06] 
+🎯 Completando Carrera de Interés...
+[2025-10-16 19:40:06] ✓ Columna encontrada: 'Carrera de Interés'
+[2025-10-16 19:40:06] 
+🔗 Identificando URLs únicas...
+[2025-10-16 19:40:06] URLs únicas encontradas: 4
+[2025-10-16 19:40:06] 
+🔗 Categorizando URLs...
+[2025-10-16 19:40:06] 
+🔄 Reemplazando columnas originales...
+[2025-10-16 19:40:06] ✅ Reemplazada columna: Grado Académico
+[2025-10-16 19:40:06] ✅ Eliminada columna duplicada: Grado Académico.1
+[2025-10-16 19:40:06] ✅ Reemplazada columna: Colegio Actual
+[2025-10-16 19:40:06] ✅ Eliminada columna redundante: En qué colegio estudias actualmente?
+[2025-10-16 19:40:06] ✓ Reemplazando 'Associated Form submission'...
+[2025-10-16 19:40:06]   Ejemplo ANTES: Form Lic Administracion 01;.elementor-form, .elementor-form-waiting
+[2025-10-16 19:40:06]   Ejemplo PROCESADO: Form Lic Administracion 01
+[2025-10-16 19:40:06]   Ejemplo DESPUÉS: Form Lic Administracion 01
+[2025-10-16 19:40:06] ✅ Reemplazada columna: Associated Form submission
+[2025-10-16 19:40:06] ✓ Reemplazando 'Carrera de Interés'...
+[2025-10-16 19:40:06] ✅ Reemplazada columna: Carrera de Interés
+[2025-10-16 19:40:06] ✅ Reemplazada columna: First Page Seen
+[2025-10-16 19:40:06] ✅ Reemplazada columna: Last Page Seen
+[2025-10-16 19:40:06] 
+🗑️ Eliminando columnas temporales...
+[2025-10-16 19:40:06] ✅ Eliminadas 0 columnas temporales
+[2025-10-16 19:40:06] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-10-16 19:40:06] 
+💾 Guardando diccionario...
+[2025-10-16 19:40:06] 💾 Backup creado: diccionario_backup_20251016_194006.json
+[2025-10-16 19:40:06] ✅ Diccionario guardado:
+[2025-10-16 19:40:06]    • 19 colegios
+[2025-10-16 19:40:06]    • 4 URLs
+[2025-10-16 19:40:06]    • 2 formularios
+[2025-10-16 19:40:06] 
+============================================================
+[2025-10-16 19:40:06] ✅ PROCESO COMPLETADO
+[2025-10-16 19:40:06] ============================================================
+[2025-10-16 19:40:06] 📊 Total de leads procesados: 10
+[2025-10-16 19:40:06] 🆕 Normalizaciones nuevas: 0
+[2025-10-16 19:40:06] 🤖 Tokens usados: 0
+[2025-10-16 19:40:06] 💰 Costo aproximado: $0.0000
+[2025-10-16 19:40:06] 
+✅ Archivo guardado: datos/datos_limpios.csv
+[2025-10-16 19:40:06] 🎉 ¡Listo para Power BI!

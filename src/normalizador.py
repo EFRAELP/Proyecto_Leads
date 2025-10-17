@@ -201,7 +201,6 @@ class NormalizadorLeads:
         self.diccionario['grados'][grado_str] = normalizado
         return normalizado
     
-    # ⭐ NUEVO MÉTODO: Completar carrera con procesamiento de underscores del CSV
     def completar_carrera(self, row):
         """
         Completa la carrera de interés - VERSIÓN MEJORADA
@@ -282,9 +281,20 @@ class NormalizadorLeads:
         
         # 5. Procesar formularios
         self.logger.log("\n📝 Procesando Associated Form Submission...")
-        if 'Associated Form Submission' in df.columns:
-            df['___FORM_LIMPIO___'] = df['Associated Form Submission'].apply(self.form_mapper.extraer_primer_form)
+        
+        # ⭐ BUSCAR la columna de formularios sin importar mayúsculas
+        form_col_input = None
+        for col in df.columns:
+            if col.lower() == 'associated form submission':
+                form_col_input = col
+                break
+        
+        if form_col_input:
+            self.logger.log(f"✓ Columna encontrada: '{form_col_input}'")
+            df['___FORM_LIMPIO___'] = df[form_col_input].apply(self.form_mapper.extraer_primer_form)
+            self.logger.log(f"✓ Procesados {len(df)} formularios")
         else:
+            self.logger.log("⚠️ No se encontró columna de formularios, usando 'Otro'")
             df['___FORM_LIMPIO___'] = 'Otro'
         
         if modo_validacion:
@@ -302,10 +312,24 @@ class NormalizadorLeads:
                     modo_interactivo=True
                 )
         
-        # ⭐ 6. Completar Carrera - MODIFICADO para usar el nuevo método
+        # 6. Completar Carrera - MODIFICADO para usar el nuevo método
         self.logger.log("\n🎯 Completando Carrera de Interés...")
-        if 'Carrera de Interés' in df.columns:
+        
+        # ⭐ BUSCAR la columna de carrera sin importar mayúsculas
+        carrera_col_input = None
+        for col in df.columns:
+            if col.lower() == 'carrera de interés':
+                carrera_col_input = col
+                break
+        
+        if carrera_col_input:
+            self.logger.log(f"✓ Columna encontrada: '{carrera_col_input}'")
+            # Temporalmente renombrar para que completar_carrera funcione
+            df['Carrera de Interés'] = df[carrera_col_input]
             df['___CARRERA_COMPLETADA___'] = df.apply(self.completar_carrera, axis=1)
+        else:
+            self.logger.log("⚠️ No se encontró columna 'Carrera de Interés'")
+            df['___CARRERA_COMPLETADA___'] = 'Sin especificar'
         
         # 7. Identificar URLs
         if modo_validacion:
@@ -345,7 +369,10 @@ class NormalizadorLeads:
                 )
             )
         
-        # 9. Reemplazar columnas originales
+        # ⭐ 9. Reemplazar columnas originales - CORREGIDO COMPLETAMENTE
+        self.logger.log("\n🔄 Reemplazando columnas originales...")
+        
+        # Grado Académico
         grado_cols = [col for col in df.columns if col == 'Grado Académico' or col.startswith('Grado Académico.')]
         if grado_cols:
             df[grado_cols[0]] = df['___GRADO_NORMALIZADO___']
@@ -356,6 +383,7 @@ class NormalizadorLeads:
                     df.drop(col_duplicada, axis=1, inplace=True)
                     self.logger.log(f"✅ Eliminada columna duplicada: {col_duplicada}")
         
+        # Colegio Actual
         if 'Colegio Actual' in df.columns:
             df['Colegio Actual'] = df['___COLEGIO_NORMALIZADO___']
             self.logger.log("✅ Reemplazada columna: Colegio Actual")
@@ -364,14 +392,48 @@ class NormalizadorLeads:
             df.drop('En qué colegio estudias actualmente?', axis=1, inplace=True)
             self.logger.log("✅ Eliminada columna redundante: En qué colegio estudias actualmente?")
         
-        if 'Associated Form Submission' in df.columns:
-            df['Associated Form Submission'] = df['___FORM_LIMPIO___']
-            self.logger.log("✅ Reemplazada columna: Associated Form Submission")
+        # ⭐ Associated Form Submission - REESCRITO COMPLETAMENTE
+        form_col = None
+        for col in df.columns:
+            if col.lower() == 'associated form submission':
+                form_col = col
+                break
         
-        if 'Carrera de Interés' in df.columns and '___CARRERA_COMPLETADA___' in df.columns:
-            df['Carrera de Interés'] = df['___CARRERA_COMPLETADA___']
-            self.logger.log("✅ Reemplazada columna: Carrera de Interés")
+        if form_col and '___FORM_LIMPIO___' in df.columns:
+            # Mostrar valores antes y después para debug
+            self.logger.log(f"✓ Reemplazando '{form_col}'...")
+            self.logger.log(f"  Ejemplo ANTES: {df[form_col].iloc[0] if len(df) > 0 else 'N/A'}")
+            self.logger.log(f"  Ejemplo PROCESADO: {df['___FORM_LIMPIO___'].iloc[0] if len(df) > 0 else 'N/A'}")
+            
+            df[form_col] = df['___FORM_LIMPIO___']
+            
+            self.logger.log(f"  Ejemplo DESPUÉS: {df[form_col].iloc[0] if len(df) > 0 else 'N/A'}")
+            self.logger.log(f"✅ Reemplazada columna: {form_col}")
+        else:
+            if not form_col:
+                self.logger.log("❌ ERROR: No se encontró columna 'Associated Form Submission'")
+                self.logger.log(f"   Columnas disponibles: {list(df.columns)}")
+            else:
+                self.logger.log("❌ ERROR: No se encontró columna temporal '___FORM_LIMPIO___'")
         
+        # ⭐ Carrera de Interés - REESCRITO COMPLETAMENTE
+        carrera_col = None
+        for col in df.columns:
+            if col.lower() == 'carrera de interés':
+                carrera_col = col
+                break
+        
+        if carrera_col and '___CARRERA_COMPLETADA___' in df.columns:
+            self.logger.log(f"✓ Reemplazando '{carrera_col}'...")
+            df[carrera_col] = df['___CARRERA_COMPLETADA___']
+            self.logger.log(f"✅ Reemplazada columna: {carrera_col}")
+        else:
+            if not carrera_col:
+                self.logger.log("❌ ERROR: No se encontró columna 'Carrera de Interés'")
+            else:
+                self.logger.log("❌ ERROR: No se encontró columna temporal '___CARRERA_COMPLETADA___'")
+        
+        # First Page Seen y Last Page Seen
         if 'First Page Seen' in df.columns and '___PRIMERA_PAGINA___' in df.columns:
             df['First Page Seen'] = df['___PRIMERA_PAGINA___']
             self.logger.log("✅ Reemplazada columna: First Page Seen")
@@ -380,12 +442,14 @@ class NormalizadorLeads:
             self.logger.log("✅ Reemplazada columna: Last Page Seen")
         
         # 10. Eliminar columnas temporales
+        self.logger.log("\n🗑️ Eliminando columnas temporales...")
         columnas_temporales = [
             '___COLEGIO_UNIFICADO___', '___COLEGIO_NORMALIZADO___',
             '___GRADO_UNIFICADO___', '___GRADO_NORMALIZADO___', '___FORM_LIMPIO___',
             '___CARRERA_COMPLETADA___', '___PRIMERA_PAGINA___', '___ULTIMA_PAGINA___'
         ]
         df.drop([c for c in columnas_temporales if c in df.columns], axis=1, inplace=True)
+        self.logger.log(f"✅ Eliminadas {len([c for c in columnas_temporales if c in df.columns])} columnas temporales")
         
         # 11. Guardar resultado
         self.logger.log(f"\n💾 Guardando archivo limpio: {config.OUTPUT_FILE}")
