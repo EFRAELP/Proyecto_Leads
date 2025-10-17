@@ -46,9 +46,60 @@ UNIVERSIDADES_GT = {
     'rural': 'Universidad Rural',
     'del istmo': 'Universidad del Istmo',
     'istmo': 'Universidad del Istmo',
+    # ⭐ NUEVAS VARIANTES AGREGADAS
+    'itec uvg': 'Universidad del Valle de Guatemala',
+    'itec altiplano': 'Universidad del Valle de Guatemala',
+    'itec uvg altiplano': 'Universidad del Valle de Guatemala',
+    'itec uvg campus altiplano': 'Universidad del Valle de Guatemala',
+    'uvg altiplano': 'Universidad del Valle de Guatemala',
+    'uvg sur': 'Universidad del Valle de Guatemala',
+    'san pablo': 'Universidad de San Pablo de Guatemala',
+    'san pablo de guatemala': 'Universidad de San Pablo de Guatemala',
 }
 
-# ⭐ NUEVO: Colegios específicos que tienen nombres similares a universidades
+# ⭐ NUEVO: Colegios guatemaltecos conocidos y relevantes
+COLEGIOS_CONOCIDOS = {
+    # Colegios importantes que NO deben ser marcados como "Otro"
+    'iga': 'Instituto Guatemalteco Americano',
+    'instituto guatemalteco americano': 'Instituto Guatemalteco Americano',
+    'ipga': 'Instituto Privado Guatemala Americano',
+    'instituto privado guatemala americano': 'Instituto Privado Guatemala Americano',
+    'ined': 'Instituto Nacional de Educación Diversificada (INED)',
+    'instituto nacional de educación diversificada': 'Instituto Nacional de Educación Diversificada (INED)',
+    'ineb': 'Instituto Nacional de Educación Básica (INEB)',
+    'instituto nacional de educación básica': 'Instituto Nacional de Educación Básica (INEB)',
+    'don bosco': 'Colegio Don Bosco',
+    'colegio don bosco': 'Colegio Don Bosco',
+    'liceo javier': 'Liceo Javier',
+    'american school': 'Colegio Americano',
+    'colegio americano': 'Colegio Americano',
+    'maya': 'Colegio Maya',
+    'colegio maya': 'Colegio Maya',
+    'liceo guatemala': 'Liceo Guatemala',
+    'monte maría': 'Colegio Monte María',
+    'colegio monte maría': 'Colegio Monte María',
+}
+
+# ⭐ NUEVO: Siglas que deben expandirse (solo si se encuentran en diccionario o Claude puede identificar)
+SIGLAS_EXPANDIBLES = [
+    'IMB-PC', 'IEMCOOP', 'ISEA', 'CED-IECA', 'CEPREC', 'UDEO', 
+    'IDEACOP-PAJUIL', 'IGA', 'IPGA', 'INED', 'INEB', 'CCB'
+]
+
+# ⭐ NUEVO: Patrones que indican que es un COLEGIO (no universidad)
+PATRONES_COLEGIO = [
+    'liceo',
+    'instituto',
+    'colegio',
+    'escuela',
+    'ined',
+    'ineb',
+    'centro educativo',
+    'academia',
+    'seminario',
+]
+
+# ⭐ ORIGINAL: Colegios específicos que tienen nombres similares a universidades
 # Estos deben verificarse ANTES de clasificar como universidad
 COLEGIOS_ESPECIFICOS = {
     'instituto rafael landivar': 'Instituto Rafael Landívar',
@@ -67,13 +118,21 @@ COLEGIOS_NO_UNIVERSITARIOS = {
     'colegio valle colonial'
 }
 
-# Respuestas inválidas
+# Respuestas inválidas (EXPANDIDO)
 RESPUESTAS_INVALIDAS = [
+    # Respuestas negativas
     'no', 'ninguno', 'ninguna', 'no estudio', 'no estoy estudiando',
     'no aplica', 'n/a', 'na', 'no tengo', 'ya me gradué', 'graduado',
-    'terminado', 'solo necesito información', 'hola', 'saludos',
+    'terminado', 'finalizado',
+    # ⭐ NUEVO: Respuestas de prueba/test
+    'prueba', 'test', 'testing', 'demo', 'ejemplo', 'aaa', 'xxx', 'zzz',
+    'asdf', 'qwerty', '123', 'abc',
+    # Respuestas sin información
+    'solo necesito información', 'hola', 'saludos', 'buenos días', 'buenas tardes',
+    # Carreras o títulos (no son colegios)
     'diseño grafico', 'diseño gráfico', 'ingenieria', 'ingeniería',
-    'certificado en', 'perito en', 'maestria', 'maestría', 'licenciatura'
+    'certificado en', 'perito en', 'maestria', 'maestría', 'licenciatura',
+    'bachillerato', 'magisterio', 'diversificado',
 ]
 
 # Siglas ambiguas
@@ -100,7 +159,7 @@ MAPEO_FORMULARIOS = {
     'conoce la licenciatura en administración': 'Administración de Empresas',
 }
 
-# ⭐ NUEVO: Mapeo de carreras del CSV (con underscores)
+# Mapeo de carreras del CSV (con underscores)
 # Para procesar valores como "ingeniería_en_administración_de_empresas"
 MAPEO_CARRERAS_CSV = {
     'ingeniería_en_administración_de_empresas': 'Ciencia de la Administración',
