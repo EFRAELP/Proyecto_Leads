@@ -36,17 +36,10 @@ class URLCategorizer:
         if 'urls' in diccionario and url_str in diccionario['urls']:
             return diccionario['urls'][url_str]
         
-        # ⭐ 2. DECODIFICAR URL (convertir %2B a +, %25C3%25B1 a ñ, etc.)
+        # 2. DECODIFICAR URL (convertir %2B a +, %25C3%25B1 a ñ, etc.)
         url_decoded = unquote(url_str)
         
-        # 3. Casos especiales "Otro"
-        casos_otro = self.config.URL_CASOS_OTRO
-        
-        for caso in casos_otro:
-            if caso in url_decoded:
-                return 'Otro'
-        
-        # 4. Buscar coincidencias en AMBAS versiones (original y decodificada)
+        # ⭐ 3. PRIMERO buscar coincidencias de carreras (ANTES de verificar "Otro")
         patterns = self.config.URL_PATTERNS
         
         for carrera, patrones_carrera in patterns.items():
@@ -56,7 +49,15 @@ class URLCategorizer:
                     if 'urls' not in diccionario:
                         diccionario['urls'] = {}
                     diccionario['urls'][url_str] = carrera
+                    self.logger.log(f"🔗 URL categorizada: '{carrera}' (patrón: '{patron}')")
                     return carrera
+        
+        # 4. AHORA SÍ verificar casos especiales "Otro" (solo si NO se encontró carrera)
+        casos_otro = self.config.URL_CASOS_OTRO
+        
+        for caso in casos_otro:
+            if caso in url_decoded:
+                return 'Otro'
         
         # 5. Bridge Principal
         if 'uvgbridge.gt' in url_decoded:

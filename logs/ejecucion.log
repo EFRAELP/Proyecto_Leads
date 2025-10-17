@@ -2465,3 +2465,71 @@ Sin información adicional, no puedo proporcionar el nombre oficial completo del
 [2025-10-16 19:40:06] 
 ✅ Archivo guardado: datos/datos_limpios.csv
 [2025-10-16 19:40:06] 🎉 ¡Listo para Power BI!
+[2025-10-16 19:46:18] 
+============================================================
+[2025-10-16 19:46:18] 🚀 INICIANDO NORMALIZACIÓN
+[2025-10-16 19:46:18] ============================================================
+[2025-10-16 19:46:18] 
+📂 Leyendo: datos/hubspot_export.csv
+[2025-10-16 19:46:18] ✅ Leído: 10 leads
+[2025-10-16 19:46:18] 
+🔄 Unificando columnas...
+[2025-10-16 19:46:18] ✅ Unificadas: Grado Académico + Grado Académico.1
+[2025-10-16 19:46:18] ✅ Columnas unificadas
+[2025-10-16 19:46:18] 
+🏫 Normalizando colegios...
+[2025-10-16 19:46:18] Colegios únicos: 10
+[2025-10-16 19:46:18] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-16 19:46:18] ⚠️ Respuesta inválida detectada: 'No estudio' → 'Otro'
+[2025-10-16 19:46:18] 
+🎓 Normalizando grados académicos...
+[2025-10-16 19:46:18] 
+📝 Procesando Associated Form Submission...
+[2025-10-16 19:46:18] ✓ Columna encontrada: 'Associated Form submission'
+[2025-10-16 19:46:18] ✓ Procesados 10 formularios
+[2025-10-16 19:46:18] 
+🎯 Completando Carrera de Interés...
+[2025-10-16 19:46:18] ✓ Columna encontrada: 'Carrera de Interés'
+[2025-10-16 19:46:18] 
+🔗 Categorizando URLs...
+[2025-10-16 19:46:18] 🔗 URL categorizada: 'Administración de Empresas' (patrón: 'lic+administracion')
+[2025-10-16 19:46:18] 🔗 URL categorizada: 'Administración de Empresas' (patrón: 'lic+administracion')
+[2025-10-16 19:46:18] 🔗 URL categorizada: 'International Marketing and Business Analytics' (patrón: 'video+marketing')
+[2025-10-16 19:46:18] 
+🔄 Reemplazando columnas originales...
+[2025-10-16 19:46:18] ✅ Reemplazada columna: Grado Académico
+[2025-10-16 19:46:18] ✅ Eliminada columna duplicada: Grado Académico.1
+[2025-10-16 19:46:18] ✅ Reemplazada columna: Colegio Actual
+[2025-10-16 19:46:18] ✅ Eliminada columna redundante: En qué colegio estudias actualmente?
+[2025-10-16 19:46:18] ✓ Reemplazando 'Associated Form submission'...
+[2025-10-16 19:46:18]   Ejemplo ANTES: Form Lic Administracion 01;.elementor-form, .elementor-form-waiting
+[2025-10-16 19:46:18]   Ejemplo PROCESADO: Form Lic Administracion 01
+[2025-10-16 19:46:18]   Ejemplo DESPUÉS: Form Lic Administracion 01
+[2025-10-16 19:46:18] ✅ Reemplazada columna: Associated Form submission
+[2025-10-16 19:46:18] ✓ Reemplazando 'Carrera de Interés'...
+[2025-10-16 19:46:18] ✅ Reemplazada columna: Carrera de Interés
+[2025-10-16 19:46:18] ✅ Reemplazada columna: First Page Seen
+[2025-10-16 19:46:18] ✅ Reemplazada columna: Last Page Seen
+[2025-10-16 19:46:18] 
+🗑️ Eliminando columnas temporales...
+[2025-10-16 19:46:18] ✅ Eliminadas 0 columnas temporales
+[2025-10-16 19:46:18] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-10-16 19:46:18] 
+💾 Guardando diccionario...
+[2025-10-16 19:46:18] 💾 Backup creado: diccionario_backup_20251016_194618.json
+[2025-10-16 19:46:18] ✅ Diccionario guardado:
+[2025-10-16 19:46:18]    • 19 colegios
+[2025-10-16 19:46:18]    • 7 URLs
+[2025-10-16 19:46:18]    • 2 formularios
+[2025-10-16 19:46:18] 
+============================================================
+[2025-10-16 19:46:18] ✅ PROCESO COMPLETADO
+[2025-10-16 19:46:18] ============================================================
+[2025-10-16 19:46:18] 📊 Total de leads procesados: 10
+[2025-10-16 19:46:18] 🆕 Normalizaciones nuevas: 0
+[2025-10-16 19:46:18] 🤖 Tokens usados: 0
+[2025-10-16 19:46:18] 💰 Costo aproximado: $0.0000
+[2025-10-16 19:46:18] 
+✅ Archivo guardado: datos/datos_limpios.csv
+[2025-10-16 19:46:18] 🎉 ¡Listo para Power BI!
