@@ -50,14 +50,40 @@ UNIVERSIDADES_GT = {
     # ⭐ NUEVO: Universidad Regional
     'regional': 'Universidad Regional',
     'universidad regional': 'Universidad Regional',
+
+    # ⭐ NUEVAS VARIANTES AGREGADAS
+    'itec uvg': 'Universidad del Valle de Guatemala',
+    'itec altiplano': 'Universidad del Valle de Guatemala',
+    'itec uvg altiplano': 'Universidad del Valle de Guatemala',
+    'itec uvg campus altiplano': 'Universidad del Valle de Guatemala',
+    'uvg altiplano': 'Universidad del Valle de Guatemala',
+    'uvg sur': 'Universidad del Valle de Guatemala',
+    'san pablo': 'Universidad de San Pablo de Guatemala',
+    'san pablo de guatemala': 'Universidad de San Pablo de Guatemala',
+
 }
 
 # ⭐ Colegios conocidos con nombres exactos
 COLEGIOS_CONOCIDOS = {
+    # Colegios importantes que NO deben ser marcados como "Otro"
     'iga': 'Instituto Guatemalteco Americano (IGA)',
     'instituto guatemalteco americano': 'Instituto Guatemalteco Americano (IGA)',
     'ipga': 'Instituto Privado Guatemala Americano (IPGA)',
     'instituto privado guatemala americano': 'Instituto Privado Guatemala Americano (IPGA)',
+    'ined': 'Instituto Nacional de Educación Diversificada (INED)',
+    'instituto nacional de educación diversificada': 'Instituto Nacional de Educación Diversificada (INED)',
+    'ineb': 'Instituto Nacional de Educación Básica (INEB)',
+    'instituto nacional de educación básica': 'Instituto Nacional de Educación Básica (INEB)',
+    'don bosco': 'Colegio Don Bosco',
+    'colegio don bosco': 'Colegio Don Bosco',
+    'liceo javier': 'Liceo Javier',
+    'american school': 'Colegio Americano',
+    'colegio americano': 'Colegio Americano',
+    'maya': 'Colegio Maya',
+    'colegio maya': 'Colegio Maya',
+    'liceo guatemala': 'Liceo Guatemala',
+    'monte maría': 'Colegio Monte María',
+    'colegio monte maría': 'Colegio Monte María',
     'kinal': 'Centro Educativo Técnico Laboral Kinal',
     'centro educativo tecnico laboral kinal': 'Centro Educativo Técnico Laboral Kinal',
     'imence': 'Instituto Mixto de Enseñanza IMENCE',

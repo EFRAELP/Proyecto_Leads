@@ -55,6 +55,37 @@ class Validadores:
         
         return False
     
+    # ⭐ NUEVO: Detectar títulos académicos
+    def detectar_titulo_carrera(self, texto):
+        """
+        Detecta si el texto es un título académico o carrera, no un colegio
+        Retorna True si es un título/carrera que debe marcarse como "Otro"
+        """
+        if not texto or pd.isna(texto):
+            return False
+        
+        texto_limpio = str(texto).strip().lower()
+        
+        # Lista de patrones que indican títulos académicos
+        titulos = [
+            'perito en', 'perito contador', 'perita en',
+            'bachiller en', 'bachillerato en',
+            'tecnico en', 'técnico en', 'tecnica en', 'técnica en',
+            'licenciatura en', 'licenciado en', 'licenciada en',
+            'maestria en', 'maestría en', 'master en',
+            'ingeniero en', 'ingeniera en', 'ingenieria en', 'ingeniería en',
+            'arquitecto', 'arquitecta', 'arquitectura',
+            'doctor en', 'doctora en',
+            'abogado', 'abogada',
+            'contador', 'contadora',
+        ]
+        
+        for titulo in titulos:
+            if titulo in texto_limpio:
+                return True
+        
+        return False
+    
     def buscar_universidad_conocida(self, texto):
         """
         Busca universidades guatemaltecas
@@ -100,7 +131,10 @@ class Validadores:
         return mejor_match
     
     def fuzzy_match(self, texto, categoria, diccionario):
-        """Fuzzy matching en diccionario"""
+        """
+        Fuzzy matching en diccionario
+        ⭐ MODIFICADO: Umbral aumentado de 85 a 92 para ser más estricto
+        """
         if not texto or pd.isna(texto):
             return None
             
@@ -116,7 +150,8 @@ class Validadores:
                 mejor_score = score
                 mejor_match = key
         
-        if mejor_score > 85:
+        # ⭐ CAMBIADO: De 85 a 92 (más estricto)
+        if mejor_score > 92:
             return diccionario_cat[mejor_match]
         
         return None

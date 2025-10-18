@@ -26,14 +26,16 @@ class NormalizadorClaude:
         self.llamadas_totales = 0
     
     def normalizar_con_claude(self, texto, tipo):
-        """Usa Claude API para normalizar"""
+        """Usa Claude API para normalizar - VERSIÓN MEJORADA CON PROMPT CONSERVADOR"""
         if not self.client:
             self.logger.log("⚠️ No hay API key")
             return texto
         
-        # ⭐ PROMPT MEJORADO con instrucciones específicas
+        # ⭐ PROMPT COMPLETAMENTE REESCRITO - MÁS AGRESIVO CON "OTRO"
         prompts = {
-            'colegio': f"""Eres un experto en instituciones educativas de Guatemala. Normaliza este nombre: "{texto}"
+            'colegio': f"""Eres un clasificador ESTRICTO de instituciones educativas guatemaltecas.
+
+TEXTO A CLASIFICAR: "{texto}"
 
 🔍 CUÁNDO USAR WEB_SEARCH:
 - Si ves SIGLAS desconocidas (IGA, IPGA, IMB-PC, IEMCOOP, ISEA, CED-IECA, CEPREC, UDEO, CCB, etc.)
@@ -73,6 +75,10 @@ E) SIGLAS - USA WEB_SEARCH:
 F) NÚMEROS EN NOMBRES:
    ⚠️ NO CAMBIES números: "Escuela No. 5" → "Escuela Nacional de Ciencias Comerciales No. 5"
    ❌ NO cambies 5 por 3 u otro número
+
+G) CUÁNDO TENGAS DUDA → "Otro":
+   Si hay CUALQUIER incertidumbre sobre si es una institución real, responde "Otro".
+   Mejor clasificar como "Otro" que dar un nombre incorrecto.
 
 📤 RESPONDE SOLO CON:
 - El nombre normalizado limpio
@@ -231,9 +237,8 @@ SOLO el grado normalizado, sin explicaciones."""
             else:
                 print("⚠️ Opción inválida. Selecciona 1-3.")
     
-    # ✅ FUNCIÓN RESTAURADA
     def preguntar_carrera_form(self, form_name, diccionario, formularios_nuevos):
-        """Pregunta al usuario a qué carrera pertenece un formulario"""
+        """Pregunta al usuario a qué carrera pertenece un formulario - MANTIENE FUNCIONALIDAD ORIGINAL"""
         print(f"\n{'='*60}")
         print(f"📝 FORMULARIO NO RECONOCIDO")
         print(f"Formulario: {form_name}")
@@ -276,10 +281,9 @@ SOLO el grado normalizado, sin explicaciones."""
         """Retorna el total de tokens usados - FUNCIONALIDAD ORIGINAL"""
         return self.tokens_usados
     
-    # ⭐ NUEVO: Método para obtener estadísticas detalladas
     def get_estadisticas(self):
         """
-        Retorna estadísticas detalladas del uso de Claude
+        Retorna estadísticas detalladas del uso de Claude - NUEVO
         
         Returns:
             dict: Diccionario con métricas de uso

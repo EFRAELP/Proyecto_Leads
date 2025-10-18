@@ -112,7 +112,6 @@ class NormalizadorLeads:
         self.logger.log("✅ Columnas unificadas")
         return df
     
-    # ⭐ NUEVO: Método para validar localmente antes de llamar a Claude
     def validar_colegio_localmente(self, colegio_str):
         """
         Valida el colegio localmente usando diccionarios y patrones
@@ -130,6 +129,12 @@ class NormalizadorLeads:
             self.stats_respuestas_invalidas += 1
             self.logger.log(f"⚠️ Respuesta inválida detectada: '{colegio_str}' → 'Otro'")
             return "Otro", 'respuesta_invalida'
+        
+        # ⭐ 2.5 NUEVO: Verificar si es un título/carrera académica
+        if self.validadores.detectar_titulo_carrera(colegio_str):
+            self.stats_respuestas_invalidas += 1
+            self.logger.log(f"⚠️ Título académico detectado: '{colegio_str}' → 'Otro'")
+            return "Otro", 'titulo_carrera'
         
         # 3. Verificar si NO es colegio
         if self.validadores.detectar_no_es_colegio(colegio_str):
@@ -247,13 +252,16 @@ class NormalizadorLeads:
         
         grado_lower = grado_str.lower()
         
+        # Detectar estudiantes universitarios
         if 'universitario' in grado_lower or 'universidad' in grado_lower:
             return "Estudiante Universitario"
         
+        # Buscar números en el grado
         match = re.search(r'(\d+)', grado_lower)
         if match:
             numero = match.group(1)
             
+            # Diversificado o Bachillerato
             if any(palabra in grado_lower for palabra in ['bachillerato', 'perito', 'diversificado']):
                 if numero == '4':
                     return "4to Diversificado"
@@ -262,6 +270,7 @@ class NormalizadorLeads:
                 elif numero == '6':
                     return "6to Diversificado"
             
+            # Básico
             if 'basico' in grado_lower or 'básico' in grado_lower:
                 if numero == '1':
                     return "1ro Básico"
@@ -270,12 +279,15 @@ class NormalizadorLeads:
                 elif numero == '3':
                     return "3ro Básico"
         
+        # Graduados
         if 'graduado' in grado_lower and 'diversificado' in grado_lower:
             return "Graduado Diversificado"
         
+        # Buscar en diccionario
         if grado_str in self.diccionario['grados']:
             return self.diccionario['grados'][grado_str]
         
+        # Si no se pudo normalizar, guardarlo
         normalizado = grado_str
         self.diccionario['grados'][grado_str] = normalizado
         return normalizado
@@ -321,7 +333,6 @@ class NormalizadorLeads:
         # 3. Si no se pudo mapear
         return "Sin especificar"
     
-    # ⭐ NUEVO: Método para mostrar estadísticas detalladas
     def mostrar_resumen_estadisticas(self):
         """Muestra resumen detallado de estadísticas de normalización"""
         # Obtener estadísticas de Claude
@@ -385,7 +396,7 @@ class NormalizadorLeads:
         
         self.logger.log(f"Colegios únicos: {len(colegios_unicos)}")
         
-        # ⭐ MODIFICADO: Normalizar todos los colegios únicos primero
+        # Normalizar todos los colegios únicos primero
         for colegio in colegios_unicos:
             self.normalizar_colegio(colegio, modo_validacion=modo_validacion)
         
@@ -449,7 +460,7 @@ class NormalizadorLeads:
             self.logger.log("⚠️ No se encontró columna 'Carrera de Interés'")
             df['___CARRERA_COMPLETADA___'] = 'Sin especificar'
         
-        # ⭐ 7. Identificar URLs únicas (RESTAURADO)
+        # 7. Identificar URLs únicas
         if modo_validacion:
             self.logger.log("\n🔗 Identificando URLs únicas...")
             
@@ -517,7 +528,7 @@ class NormalizadorLeads:
             df.drop('En qué colegio estudias actualmente?', axis=1, inplace=True)
             self.logger.log("✅ Eliminada columna redundante: En qué colegio estudias actualmente?")
         
-        # ⭐ Associated Form Submission - REESCRITO COMPLETAMENTE (RESTAURADO)
+        # ⭐ Associated Form Submission - CON DEBUGGING
         form_col = None
         for col in df.columns:
             if col.lower() == 'associated form submission':
@@ -541,7 +552,7 @@ class NormalizadorLeads:
             else:
                 self.logger.log("❌ ERROR: No se encontró columna temporal '___FORM_LIMPIO___'")
         
-        # ⭐ Carrera de Interés - REESCRITO COMPLETAMENTE (RESTAURADO)
+        # ⭐ Carrera de Interés - CON DEBUGGING
         carrera_col = None
         for col in df.columns:
             if col.lower() == 'carrera de interés':
@@ -557,12 +568,12 @@ class NormalizadorLeads:
                 self.logger.log("❌ ERROR: No se encontró columna 'Carrera de Interés'")
             else:
                 self.logger.log("❌ ERROR: No se encontró columna temporal '___CARRERA_COMPLETADA___'")
-        
-        # First Page Seen y Last Page Seen
+        # First Page Seen
         if 'First Page Seen' in df.columns and '___PRIMERA_PAGINA___' in df.columns:
             df['First Page Seen'] = df['___PRIMERA_PAGINA___']
             self.logger.log("✅ Reemplazada columna: First Page Seen")
         
+        # Last Page Seen
         if 'Last Page Seen' in df.columns and '___ULTIMA_PAGINA___' in df.columns:
             df['Last Page Seen'] = df['___ULTIMA_PAGINA___']
             self.logger.log("✅ Reemplazada columna: Last Page Seen")
