@@ -68,8 +68,6 @@ COLEGIOS_CONOCIDOS = {
     # Colegios importantes que NO deben ser marcados como "Otro"
     'iga': 'Instituto Guatemalteco Americano (IGA)',
     'instituto guatemalteco americano': 'Instituto Guatemalteco Americano (IGA)',
-    'ipga': 'Instituto Privado Guatemala Americano (IPGA)',
-    'instituto privado guatemala americano': 'Instituto Privado Guatemala Americano (IPGA)',
     'ined': 'Instituto Nacional de Educación Diversificada (INED)',
     'instituto nacional de educación diversificada': 'Instituto Nacional de Educación Diversificada (INED)',
     'ineb': 'Instituto Nacional de Educación Básica (INEB)',
@@ -77,6 +75,7 @@ COLEGIOS_CONOCIDOS = {
     'don bosco': 'Colegio Don Bosco',
     'colegio don bosco': 'Colegio Don Bosco',
     'liceo javier': 'Liceo Javier',
+    'javier': 'Liceo Javier',
     'american school': 'Colegio Americano',
     'colegio americano': 'Colegio Americano',
     'maya': 'Colegio Maya',
@@ -101,6 +100,285 @@ COLEGIOS_CONOCIDOS = {
     'aden': 'Otro',
 }
 
+# ⭐ COLEGIOS DE INTERÉS PRIORITARIO (Agregar después de las líneas existentes)
+COLEGIOS_PRIORITARIOS = {
+    # KINAL
+    'kinal': 'Centro Educativo Técnico Laboral Kinal',
+    'colegio kinal': 'Centro Educativo Técnico Laboral Kinal',
+    'cetl kinal': 'Centro Educativo Técnico Laboral Kinal',
+    'centro kinal': 'Centro Educativo Técnico Laboral Kinal',
+    'centro educativo kinal': 'Centro Educativo Técnico Laboral Kinal',
+    'tecnico laboral kinal': 'Centro Educativo Técnico Laboral Kinal',
+    
+    # INSTITUTO BELGA GUATEMALTECO
+    'belga': 'Instituto Belga Guatemalteco',
+    'instituto belga': 'Instituto Belga Guatemalteco',
+    'belga guatemalteco': 'Instituto Belga Guatemalteco',
+    
+    # HEBRÓN
+    'hebron': 'Colegio Hebrón',
+    'hebrón': 'Colegio Hebrón',
+    
+    # EL VALLE
+    'el valle': 'Centro Educativo El Valle',
+    'centro valle': 'Centro Educativo El Valle',
+    'centro educativo el valle': 'Centro Educativo El Valle',
+    
+    # DISCOVERY SCHOOL
+    'discovery': 'Colegio Discovery School',
+    'discovery school': 'Colegio Discovery School',
+    
+    # BETHANIA
+    'bethania': 'Instituto Bethania',
+    'instituto bethania': 'Instituto Bethania',
+    
+    # EDUCATE
+    'educate': 'Colegio Bilingüe Educate',
+    'bilingue educate': 'Colegio Bilingüe Educate',
+    
+    # SANTA TERESITA
+    'santa teresita': 'Colegio Santa Teresita',
+    
+    # INTERNACIONES
+    'internaciones': 'Colegio Internaciones',
+    
+    # CAPOUILLIEZ
+    'capouilliez': 'Colegio Mixto Capouilliez',
+    'mixto capouilliez': 'Colegio Mixto Capouilliez',
+    'capouiliez': 'Colegio Mixto Capouilliez',
+    
+    # ALFREDO CARRILLO RAMÍREZ
+    'alfredo carrillo': 'Escuela Normal de Maestras para Párvulos Alfredo Carrillo Ramírez',
+    'alfredo carrillo ramirez': 'Escuela Normal de Maestras para Párvulos Alfredo Carrillo Ramírez',
+    'normal parvulos': 'Escuela Normal de Maestras para Párvulos Alfredo Carrillo Ramírez',
+    'normal de maestras': 'Escuela Normal de Maestras para Párvulos Alfredo Carrillo Ramírez',
+    
+    # LICEO GUATEMALA
+    'liceo guatemala': 'Instituto Privado de Educación Diversificada Liceo Guatemala',
+    
+    # SAGRADO CORAZÓN
+    'sagrado corazon': 'Colegio El Sagrado Corazón de Jesús',
+    'sagrado corazon de jesus': 'Colegio El Sagrado Corazón de Jesús',
+    'el sagrado corazon': 'Colegio El Sagrado Corazón de Jesús',
+    
+    # IGA (ya existe, pero agregar más variaciones)
+    'guatemalteco americano': 'Instituto Guatemalteco Americano (IGA)',
+    
+    # MANOS A LA OBRA
+    'manos a la obra': 'Colegio Bilingüe Manos a la Obra',
+    'manos obra': 'Colegio Bilingüe Manos a la Obra',
+    'caes': 'Colegio Bilingüe Manos a la Obra CAES',
+    'manos a la obra caes': 'Colegio Bilingüe Manos a la Obra CAES',
+    'manos a la obra roosevelt': 'Colegio Bilingüe Manos a la Obra Roosevelt',
+    'manos obra roosevelt': 'Colegio Bilingüe Manos a la Obra Roosevelt',
+    
+    # EL SHADDAI (normalizar sin zona)
+    'shaddai': 'Colegio Cristiano Bilingüe El Shaddai',
+    'el shaddai': 'Colegio Cristiano Bilingüe El Shaddai',
+    'cristiano el shaddai': 'Colegio Cristiano Bilingüe El Shaddai',
+    
+    # MONTANO CORTIJO
+    'montano cortijo': 'Colegio Montano Cortijo',
+    
+    # ALEMÁN
+    'aleman': 'Colegio Alemán de Guatemala',
+    'colegio aleman': 'Colegio Alemán de Guatemala',
+    
+    # VIENA
+    'viena': 'Colegio Viena Guatemalteco',
+    'viena guatemalteco': 'Colegio Viena Guatemalteco',
+    
+    # CAMPO VERDE
+    'campo verde': 'Colegio Bilingüe Campo Verde',
+    
+    # VERBO
+    'verbo': 'Colegio Experimental Cristiano Verbo',
+    'cristiano verbo': 'Colegio Experimental Cristiano Verbo',
+    'experimental verbo': 'Colegio Experimental Cristiano Verbo',
+    
+    # AGUSTINIANO
+    'agustiniano': 'Colegio Agustiniano',
+    
+    # AMERITEC
+    'ameritec': 'Colegio Tecnológico Americano Ameritec',
+    'tecnologico americano': 'Colegio Tecnológico Americano Ameritec',
+    
+    # MONTANO PORTAL
+    'montano portal': 'Colegio Montano Portal Los Álamos',
+    'portal los alamos': 'Colegio Montano Portal Los Álamos',
+    
+    # AMERICANO DEL SUR
+    'americano del sur': 'Colegio Americano del Sur',
+    'americano sur': 'Colegio Americano del Sur',
+    
+    # LEHNSEN
+    'lehnsen': 'Colegio Lehnsen',
+    
+    # RICARDO BRESSANI
+    'bressani': 'Liceo Dr. Ricardo Bressani',
+    'ricardo bressani': 'Liceo Dr. Ricardo Bressani',
+    'dr bressani': 'Liceo Dr. Ricardo Bressani',
+    
+    # VALLE DE OCCIDENTE
+    'valle occidente': 'Colegio El Valle de Occidente',
+    'valle de occidente': 'Colegio El Valle de Occidente',
+    
+    # LA ASUNCIÓN
+    'la asuncion': 'Colegio La Asunción',
+    'asuncion': 'Colegio La Asunción',
+    
+    # ROCA DE AYUDA
+    'roca de ayuda': 'Liceo Cristiano Roca de Ayuda',
+    'roca ayuda': 'Liceo Cristiano Roca de Ayuda',
+    
+    # EL PRADO
+    'el prado': 'Colegio Bilingüe El Prado',
+    'bilingue el prado': 'Colegio Bilingüe El Prado',
+    
+    # LA SALLE (normalizar sin ubicación)
+    'la salle': 'Liceo La Salle',
+    'liceo la salle': 'Liceo La Salle',
+    'lasalle': 'Liceo La Salle',
+    
+    # FRATER
+    'frater': 'Liceo Cristiano Frater',
+    'cristiano frater': 'Liceo Cristiano Frater',
+    
+    # ESQUIPULTECO
+    'esquipulteco': 'Liceo Esquipulteco Bilingüe',
+    'liceo esquipulteco': 'Liceo Esquipulteco Bilingüe',
+    
+    # SAGRADO CORAZÓN EL NARANJO
+    'sagrado corazon naranjo': 'Colegio de Señoritas El Sagrado Corazón El Naranjo',
+    'el naranjo': 'Colegio de Señoritas El Sagrado Corazón El Naranjo',
+    'señoritas el naranjo': 'Colegio de Señoritas El Sagrado Corazón El Naranjo',
+    
+    # INTELLEGO
+    'intellego': 'Colegio Centro de Aprendizaje Intelecto Intellego',
+    'intelecto': 'Colegio Centro de Aprendizaje Intelecto Intellego',
+    'centro intelecto': 'Colegio Centro de Aprendizaje Intelecto Intellego',
+    
+    # BOSTON
+    'boston': 'Colegio Boston',
+    
+    # TECNOLÓGICO BILINGÜE
+    'tecnologico bilingue': 'Instituto Tecnológico Bilingüe',
+    
+    # COLONIAL BILINGÜE
+    'colonial': 'Colegio Colonial Bilingüe',
+    'colegio colonial': 'Colegio Colonial Bilingüe',
+    'colonial bilingue': 'Colegio Colonial Bilingüe',
+    
+    # MAPLE BEAR
+    'maple bear': 'Maple Bear',
+    'maple': 'Maple Bear',
+    
+    # SAN FRANCISCO JAVIER
+    'san francisco javier': 'Colegio San Francisco Javier',
+    'francisco javier': 'Colegio San Francisco Javier',
+    
+    # SAN JOSÉ DE LOS INFANTES
+    'san jose infantes': 'Colegio San José de los Infantes',
+    'san jose de los infantes': 'Colegio San José de los Infantes',
+    'infantes': 'Colegio San José de los Infantes',
+    
+    # MACDERMONT
+    'macdermont': 'Colegio Mixto Bilingüe Macdermont',
+    'bilingue macdermont': 'Colegio Mixto Bilingüe Macdermont',
+    
+    # IMB-PC
+    'imb-pc': 'Colegio de Informática IMB-PC',
+    'imb pc': 'Colegio de Informática IMB-PC',
+    'imbpc': 'Colegio de Informática IMB-PC',
+    'imb': 'Colegio de Informática IMB-PC',
+    
+    # GIBBS
+    'gibbs': 'Colegio Gibbs',
+    
+    # CHRISTIAN AMERICAN SCHOOL
+    'christian american': 'Colegio Christian American School of Guatemala',
+    'cas guatemala': 'Colegio Christian American School of Guatemala',
+    'cas': 'Colegio Christian American School of Guatemala',
+    
+    # CONTINENTAL AMERICANO
+    'continental americano': 'Colegio Continental Americano',
+    'continental': 'Colegio Continental Americano',
+    
+    # CED
+    'ced': 'Centro de Estudios Diversificados CED',
+    'centro estudios diversificados': 'Centro de Estudios Diversificados CED',
+    
+    # SAN MATEO
+    'san mateo': 'Liceo Mixto San Mateo',
+    'liceo san mateo': 'Liceo Mixto San Mateo',
+    
+    # EPIC
+    'epic': 'Colegio Epic Guatemala',
+    'epic guatemala': 'Colegio Epic Guatemala',
+    
+    # MARÍA AUXILIADORA
+    'maria auxiliadora': 'Instituto María Auxiliadora',
+    'auxiliadora': 'Instituto María Auxiliadora',
+    
+    # SUIZO
+    'suizo': 'Colegio Privado Mixto Suizo Quetzaltenango',
+    'colegio suizo': 'Colegio Privado Mixto Suizo Quetzaltenango',
+    
+    # JESÚS REY DE GLORIA
+    'rey de gloria': 'Colegio Jesús Rey de Gloria',
+    'jesus rey': 'Colegio Jesús Rey de Gloria',
+    'jesus rey de gloria': 'Colegio Jesús Rey de Gloria',
+    
+    # CENTRO DE APRENDIZAJE BILINGÜE
+    'cab': 'Centro de Aprendizaje Bilingüe',
+    'centro aprendizaje bilingue': 'Centro de Aprendizaje Bilingüe',
+    
+    # AMERICANO SAN JUAN
+    'americano san juan': 'Colegio Americano San Juan',
+    
+    # IEA
+    'iea': 'Instituto de Estudios Avanzados (IEA)',
+    'estudios avanzados': 'Instituto de Estudios Avanzados (IEA)',
+    
+    # VON HUMBOLDT
+    'von humboldt': 'Colegio Von Humboldt',
+    'humboldt': 'Colegio Von Humboldt',
+    
+    # SAGRADA FAMILIA
+    'sagrada familia': 'Colegio Sagrada Familia',
+    
+    # NALEB
+    'naleb': 'Colegio Naleb',
+    
+    # ASA - AFTER SCHOOL ACADEMY
+    'asa': 'Centro Educativo ASA (After School Academy)',
+    'after school academy': 'Centro Educativo ASA (After School Academy)',
+    'after school': 'Centro Educativo ASA (After School Academy)',
+    
+    # INTECAP
+    'intecap': 'INTECAP',
+    
+    # CAMPO ALTO
+    'campo alto': 'Colegio Bilingüe Campo Alto',
+    'bilingue campo alto': 'Colegio Bilingüe Campo Alto',
+    'campo alto sur': 'Colegio Bilingüe Campo Alto Sur',
+    
+    # LA VID
+    'la vid': 'Centro Educativo La Vid',
+    'centro la vid': 'Centro Educativo La Vid',
+    
+    # CAMPO REAL
+    'campo real': 'Colegio Bilingüe Campo Real',
+    'bilingue campo real': 'Colegio Bilingüe Campo Real',
+    
+    # HOWARD GARDNER
+    'howard gardner': 'Colegio Americano Howard Gardner',
+    'colegio howard gardner': 'Colegio Americano Howard Gardner',
+    'gardner': 'Colegio Americano Howard Gardner',
+}
+
+# ⭐ Agregar colegios prioritarios a COLEGIOS_CONOCIDOS
+COLEGIOS_CONOCIDOS.update(COLEGIOS_PRIORITARIOS)
 # ⭐ Colegios específicos que tienen nombres similares a universidades
 # Estos deben verificarse ANTES de clasificar como universidad
 COLEGIOS_ESPECIFICOS = {
@@ -149,8 +427,7 @@ SIGLAS_AMBIGUAS = [
 
 # ⭐ NUEVO: Siglas que se deben expandir (para usar con web_search)
 SIGLAS_EXPANDIBLES = [
-    'iga', 'ipga', 'imence', 'linsa', 'imb-pc', 'igs', 
-    'iemcoop', 'isea', 'ced-ieca', 'ineb', 'ined'
+    'iga', 'iemcoop', 'isea', 'ced-ieca', 'ineb', 'ined'
 ]
 
 # Instituciones que NO son colegios
@@ -241,7 +518,7 @@ URL_PATTERNS = {
 }
 
 # Casos especiales que siempre son "Otro"
-CASOS_OTRO_URL = [
+URL_CASOS_OTRO = [
     'facebook.com',
     'fb.com',
     'instagram.com',

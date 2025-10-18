@@ -1,18 +1,44 @@
-# Cachés y compilados
-_pycache_/
+# Cachés y compilados de Python
+__pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Pytho
+.pyc
 
 # Entorno virtual
 venv/
+env/
+ENV/
+
+# Variables de entorno
 .env
+.env.local
+
+# Archivos de logs
+logs/
+*.log
 
 # Archivos temporales
-*.log
 *.tmp
 *.bak
-*.csv
+*.swp
+*~
 
-# Archivos de configuración locales
-config.json
-.env
+# Archivos de datos (CSVs procesados)
+datos/hubspot_export.csv
+datos/datos_limpios.csv
+
+# Backups automáticos
+backups/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
