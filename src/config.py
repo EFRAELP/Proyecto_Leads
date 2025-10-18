@@ -44,68 +44,44 @@ UNIVERSIDADES_GT = {
     'panamericana': 'Universidad Panamericana',
     'upana': 'Universidad Panamericana',
     'rural': 'Universidad Rural',
+    'urural': 'Universidad Rural',
     'del istmo': 'Universidad del Istmo',
     'istmo': 'Universidad del Istmo',
-    # ⭐ NUEVAS VARIANTES AGREGADAS
-    'itec uvg': 'Universidad del Valle de Guatemala',
-    'itec altiplano': 'Universidad del Valle de Guatemala',
-    'itec uvg altiplano': 'Universidad del Valle de Guatemala',
-    'itec uvg campus altiplano': 'Universidad del Valle de Guatemala',
-    'uvg altiplano': 'Universidad del Valle de Guatemala',
-    'uvg sur': 'Universidad del Valle de Guatemala',
-    'san pablo': 'Universidad de San Pablo de Guatemala',
-    'san pablo de guatemala': 'Universidad de San Pablo de Guatemala',
+    # ⭐ NUEVO: Universidad Regional
+    'regional': 'Universidad Regional',
+    'universidad regional': 'Universidad Regional',
 }
 
-# ⭐ NUEVO: Colegios guatemaltecos conocidos y relevantes
+# ⭐ Colegios conocidos con nombres exactos
 COLEGIOS_CONOCIDOS = {
-    # Colegios importantes que NO deben ser marcados como "Otro"
-    'iga': 'Instituto Guatemalteco Americano',
-    'instituto guatemalteco americano': 'Instituto Guatemalteco Americano',
-    'ipga': 'Instituto Privado Guatemala Americano',
-    'instituto privado guatemala americano': 'Instituto Privado Guatemala Americano',
-    'ined': 'Instituto Nacional de Educación Diversificada (INED)',
-    'instituto nacional de educación diversificada': 'Instituto Nacional de Educación Diversificada (INED)',
-    'ineb': 'Instituto Nacional de Educación Básica (INEB)',
-    'instituto nacional de educación básica': 'Instituto Nacional de Educación Básica (INEB)',
-    'don bosco': 'Colegio Don Bosco',
-    'colegio don bosco': 'Colegio Don Bosco',
-    'liceo javier': 'Liceo Javier',
-    'american school': 'Colegio Americano',
-    'colegio americano': 'Colegio Americano',
-    'maya': 'Colegio Maya',
-    'colegio maya': 'Colegio Maya',
-    'liceo guatemala': 'Liceo Guatemala',
-    'monte maría': 'Colegio Monte María',
-    'colegio monte maría': 'Colegio Monte María',
+    'iga': 'Instituto Guatemalteco Americano (IGA)',
+    'instituto guatemalteco americano': 'Instituto Guatemalteco Americano (IGA)',
+    'ipga': 'Instituto Privado Guatemala Americano (IPGA)',
+    'instituto privado guatemala americano': 'Instituto Privado Guatemala Americano (IPGA)',
+    'kinal': 'Centro Educativo Técnico Laboral Kinal',
+    'centro educativo tecnico laboral kinal': 'Centro Educativo Técnico Laboral Kinal',
+    'imence': 'Instituto Mixto de Enseñanza IMENCE',
+    'linsa': 'Liceo Integral del Norte LINSA',
+    # ⭐ NUEVOS: Casos específicos que identificaste
+    'insar': 'Otro',
+    'usar': 'Otro',
+    'ecc': 'Otro',
+    'itv': 'Otro',
+    'ccb': 'Otro',
+    'valle colonial': 'Otro',
+    'campo alto': 'Campo Alto',
+    'educate': 'Otro',
+    'edúcate': 'Otro',
+    'aden': 'Otro',
 }
 
-# ⭐ NUEVO: Siglas que deben expandirse (solo si se encuentran en diccionario o Claude puede identificar)
-SIGLAS_EXPANDIBLES = [
-    'IMB-PC', 'IEMCOOP', 'ISEA', 'CED-IECA', 'CEPREC', 'UDEO', 
-    'IDEACOP-PAJUIL', 'IGA', 'IPGA', 'INED', 'INEB', 'CCB'
-]
-
-# ⭐ NUEVO: Patrones que indican que es un COLEGIO (no universidad)
-PATRONES_COLEGIO = [
-    'liceo',
-    'instituto',
-    'colegio',
-    'escuela',
-    'ined',
-    'ineb',
-    'centro educativo',
-    'academia',
-    'seminario',
-]
-
-# ⭐ ORIGINAL: Colegios específicos que tienen nombres similares a universidades
+# ⭐ Colegios específicos que tienen nombres similares a universidades
 # Estos deben verificarse ANTES de clasificar como universidad
 COLEGIOS_ESPECIFICOS = {
     'instituto rafael landivar': 'Instituto Rafael Landívar',
     'instituto rafael landívar': 'Instituto Rafael Landívar',
-    'instituto rafael landival': 'Instituto Rafael Landívar',  # Error común de escritura
-    'instituto rafael landibal': 'Instituto Rafael Landívar',  # Error común de escritura
+    'instituto rafael landival': 'Instituto Rafael Landívar',
+    'instituto rafael landibal': 'Instituto Rafael Landívar',
     'colegio rafael landivar': 'Instituto Rafael Landívar',
     'colegio rafael landívar': 'Instituto Rafael Landívar',
     'colegio rafael landival': 'Instituto Rafael Landívar',
@@ -118,27 +94,37 @@ COLEGIOS_NO_UNIVERSITARIOS = {
     'colegio valle colonial'
 }
 
-# Respuestas inválidas (EXPANDIDO)
+# ⭐ Respuestas inválidas (EXPANDIDO)
 RESPUESTAS_INVALIDAS = [
-    # Respuestas negativas
+    # Originales
     'no', 'ninguno', 'ninguna', 'no estudio', 'no estoy estudiando',
     'no aplica', 'n/a', 'na', 'no tengo', 'ya me gradué', 'graduado',
-    'terminado', 'finalizado',
-    # ⭐ NUEVO: Respuestas de prueba/test
-    'prueba', 'test', 'testing', 'demo', 'ejemplo', 'aaa', 'xxx', 'zzz',
-    'asdf', 'qwerty', '123', 'abc',
-    # Respuestas sin información
-    'solo necesito información', 'hola', 'saludos', 'buenos días', 'buenas tardes',
-    # Carreras o títulos (no son colegios)
+    'terminado', 'solo necesito información', 'hola', 'saludos',
     'diseño grafico', 'diseño gráfico', 'ingenieria', 'ingeniería',
     'certificado en', 'perito en', 'maestria', 'maestría', 'licenciatura',
-    'bachillerato', 'magisterio', 'diversificado',
+    # ⭐ NUEVOS - Casos identificados
+    'xd', 'aub no', 'hola hay', 'hay maestria', 'hay maestría',
+    'ahorita no tengo', 'no tengo oportunidad',
+    'universidad completa', 'ya tengo universidad',
+    'ya tengo maestria', 'ya tengo maestría',
+    'graduada', 'graduado',
+    'perito', 'tecnico', 'técnico',
+    'colegio publico', 'colegio público',
+    'no estudio ya me gradue', 'no estudio ya me gradué',
+    'este año no estoy estudiando', 'aun no estudio', 'aún no estudio',
+    'trabajo en', 'no estoy estudiando por motivos',
 ]
 
-# Siglas ambiguas
+# ⭐ Siglas ambiguas (MANTENIDO)
 SIGLAS_AMBIGUAS = [
     'igs', 'mo', 'itce', 'insar', 'altiplano', 'ecc', 'xd',
     'fase', 'usar', 'aub no', 'graduated from', 'ex alumna', 'educate'
+]
+
+# ⭐ NUEVO: Siglas que se deben expandir (para usar con web_search)
+SIGLAS_EXPANDIBLES = [
+    'iga', 'ipga', 'imence', 'linsa', 'imb-pc', 'igs', 
+    'iemcoop', 'isea', 'ced-ieca', 'ineb', 'ined'
 ]
 
 # Instituciones que NO son colegios
@@ -150,6 +136,11 @@ NO_SON_COLEGIOS = [
     'aden business school'
 ]
 
+# Patrones de nombres de colegios
+PATRONES_COLEGIO = [
+    'liceo', 'instituto', 'colegio', 'escuela', 'centro educativo'
+]
+
 # Mapeo de formularios a carreras
 MAPEO_FORMULARIOS = {
     'form lic administracion': 'Administración de Empresas',
@@ -159,8 +150,7 @@ MAPEO_FORMULARIOS = {
     'conoce la licenciatura en administración': 'Administración de Empresas',
 }
 
-# Mapeo de carreras del CSV (con underscores)
-# Para procesar valores como "ingeniería_en_administración_de_empresas"
+# ⭐ Mapeo de carreras del CSV (con underscores)
 MAPEO_CARRERAS_CSV = {
     'ingeniería_en_administración_de_empresas': 'Ciencia de la Administración',
     'ingenieria_en_administracion_de_empresas': 'Ciencia de la Administración',
@@ -185,32 +175,30 @@ URL_PATTERNS = {
         'administracion-empresas',
         'licenciatura-administracion',
         'lic-administracion',
-        'lic+administracion',  # URL con +
-        'webinar-conoce-licenciatura-en-administracion',
-        'conoce-la-licenciatura-en-administracion',
+        'lic+administracion',
+        'lic%2badministracion',
         'form-lic-administracion',
         'promoting-form-lic-administracion',
-        'promoting+form+lic+administracion',  # URL con +
+        'webinar-conoce-licenciatura-en-administracion',
+        'conoce-la-licenciatura-en-administracion',
     ],
     'Ciencia de la Administración': [
         'ingenieria-ciencia-administracion',
         'ingenieria-administracion',
         'ciencia-administracion',
         'ing-administracion',
-        'ing+administracion',  # URL con +
+        'ing%2badministracion',
         'form-ing-administracion',
         'promoting-form-ing-administracion',
-        'promoting+form+ing+administracion',  # URL con +
     ],
     'International Marketing and Business Analytics': [
         'marketing-analytics',
         'licenciatura-marketing',
         'international-marketing',
         'lic-marketing',
-        'lic+marketing',  # URL con +
+        'lic%2bmarketing',
         'form-lic-marketing',
         'promoting-form-lic-marketing',
-        'video+marketing',  # URL con +
     ],
     'Comunicación Estratégica': [
         'comunicacion-estrategica',
@@ -226,8 +214,8 @@ URL_PATTERNS = {
     ]
 }
 
-# Casos especiales de URLs que son "Otro"
-URL_CASOS_OTRO = [
+# Casos especiales que siempre son "Otro"
+CASOS_OTRO_URL = [
     'facebook.com',
     'fb.com',
     'instagram.com',
@@ -242,7 +230,6 @@ URL_CASOS_OTRO = [
 
 def crear_carpetas():
     """Crea las carpetas necesarias si no existen"""
-    import os
     os.makedirs('datos', exist_ok=True)
     os.makedirs('logs', exist_ok=True)
     os.makedirs(BACKUP_DIR, exist_ok=True)
