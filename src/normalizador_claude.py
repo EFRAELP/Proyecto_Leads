@@ -38,7 +38,7 @@ class NormalizadorClaude:
 TEXTO A CLASIFICAR: "{texto}"
 
 🔍 CUÁNDO USAR WEB_SEARCH:
-- Si ves SIGLAS desconocidas (IGA, IPGA, IMB-PC, IEMCOOP, ISEA, CED-IECA, CEPREC, UDEO, CCB, etc.)
+- Si ves SIGLAS desconocidas (IGA, IPGA, IMB-PC, IEMCOOP, ISEA, CED-IECA, CEPREC, etc.)
 - Si el nombre es poco común y no estás 100% seguro
 - Si necesitas verificar si una institución existe en Guatemala
 
@@ -62,7 +62,6 @@ C) UNIVERSIDADES GUATEMALTECAS:
 
 D) ERRORES COMUNES A EVITAR:
    ❌ "escuela de formación secretarial" → "Escuela de Formación Secretarial" (NO universidad)
-   ❌ "Liceo comercial entre valles" → mantenerlo o investigar (NO es UVG automáticamente)
    ❌ "mo" sin contexto → "Otro" (no inventes)
    ❌ IGA = Instituto Guatemalteco Americano (colegio real, NO "Otro")
    ❌ IPGA = Instituto Privado Guatemala Americano (investiga si no estás seguro)

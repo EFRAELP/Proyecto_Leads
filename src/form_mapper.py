@@ -53,6 +53,9 @@ class FormMapper:
             
             # Si después de limpiar queda algo, devolverlo
             if elem_limpio:
+                # Verificar que no sea solo "waiting" u otras variaciones inválidas
+                if elem_limpio.lower() in ['waiting', 'form-waiting', 'elementor-form-waiting']:
+                    continue
                 return elem_limpio
         
         # Si todos los elementos eran .elementor-form

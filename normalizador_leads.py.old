@@ -87,7 +87,6 @@ NO_SON_COLEGIOS = [
     'instituto guatemalteco de seguridad social',
     'asociación grupo ceiba',
     'cooperativa',
-    'aden business school'
 ]
 
 # Mapeo de formularios a carreras

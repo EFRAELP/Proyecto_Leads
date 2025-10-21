@@ -92,12 +92,12 @@ COLEGIOS_CONOCIDOS = {
     'usar': 'Otro',
     'ecc': 'Otro',
     'itv': 'Otro',
-    'ccb': 'Otro',
+    'ccb': 'Colegio Colonial Bilingüe',
     'valle colonial': 'Otro',
     'campo alto': 'Campo Alto',
     'educate': 'Otro',
     'edúcate': 'Otro',
-    'aden': 'Otro',
+    'aden': 'ADEN International Business School',
 }
 
 # ⭐ COLEGIOS DE INTERÉS PRIORITARIO (Agregar después de las líneas existentes)
@@ -192,9 +192,9 @@ COLEGIOS_PRIORITARIOS = {
     'campo verde': 'Colegio Bilingüe Campo Verde',
     
     # VERBO
-    'verbo': 'Colegio Experimental Cristiano Verbo',
-    'cristiano verbo': 'Colegio Experimental Cristiano Verbo',
-    'experimental verbo': 'Colegio Experimental Cristiano Verbo',
+    'verbo': 'Colegio Cristiano Verbo',
+    'cristiano verbo': 'Colegio Cristiano Verbo',
+    'experimental verbo': 'Colegio Cristiano Verbo',
     
     # AGUSTINIANO
     'agustiniano': 'Colegio Agustiniano',
