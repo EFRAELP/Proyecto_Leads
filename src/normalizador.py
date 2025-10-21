@@ -3,7 +3,9 @@ normalizador.py
 Clase principal del Normalizador de Leads
 Orquesta todos los módulos para el procesamiento completo
 """
-
+import webbrowser
+import subprocess
+import time
 import os
 import pandas as pd
 import re
@@ -771,6 +773,84 @@ class NormalizadorLeads:
         self.logger.log(f"\n✅ Archivo guardado: {config.OUTPUT_FILE}")
         self.logger.log("🎉 ¡Listo para Power BI!")
 
+        # ============================================
+        # ABRIR SHAREPOINT Y CARPETA PARA SUBIDA
+        # ============================================
+        
+        # Configuración de SharePoint
+        URL_SHAREPOINT = "https://uvggt.sharepoint.com/sites/FacultaddeAdministracinyNegocios/Documentos%20compartidos/Forms/AllItems.aspx?FolderCTID=0x01200038E488C28480E54BA0F64CD2B37CC6E3&id=%2Fsites%2FFacultaddeAdministracinyNegocios%2FDocumentos%20compartidos%2F90%20Taskforce%20Bridge%20Students%2FBridge%20Intelligence%2FLeads%20Intelligence"  # ⚠️ CAMBIA ESTO
+        
+        self.logger.log("\n" + "="*60)
+        self.logger.log("📤 PREPARANDO SUBIDA A SHAREPOINT")
+        self.logger.log("="*60)
+        self.logger.log(f"📂 Archivo listo: {config.OUTPUT_FILE}")
+        self.logger.log("\n🚀 Abriendo SharePoint y carpeta local...")
+        
+        try:
+            # Abrir SharePoint en navegador
+            webbrowser.open(URL_SHAREPOINT)
+            time.sleep(2)
+            
+            # Abrir carpeta local con el archivo seleccionado
+            subprocess.Popen(f'explorer /select,"{config.OUTPUT_FILE}"')
+            time.sleep(1)
+            
+            # Intentar organizar ventanas (opcional)
+            try:
+                import pygetwindow as gw
+                import ctypes
+                
+                ventanas = gw.getAllWindows()
+                
+                # Buscar navegador
+                navegador = None
+                for ventana in ventanas:
+                    if any(browser in ventana.title.lower() for browser in ['chrome', 'edge', 'firefox', 'sharepoint']):
+                        navegador = ventana
+                        break
+                
+                # Buscar explorador
+                explorador = None
+                for ventana in ventanas:
+                    if 'explorador' in ventana.title.lower() or 'explorer' in ventana.title.lower():
+                        explorador = ventana
+                        break
+                
+                if navegador and explorador:
+                    user32 = ctypes.windll.user32
+                    ancho_pantalla = user32.GetSystemMetrics(0)
+                    alto_pantalla = user32.GetSystemMetrics(1)
+                    mitad_ancho = ancho_pantalla // 2
+                    
+                    navegador.restore()
+                    navegador.moveTo(0, 0)
+                    navegador.resizeTo(mitad_ancho, alto_pantalla)
+                    
+                    explorador.restore()
+                    explorador.moveTo(mitad_ancho, 0)
+                    explorador.resizeTo(mitad_ancho, alto_pantalla)
+                    
+                    self.logger.log("✅ Ventanas organizadas en pantalla dividida")
+                else:
+                    self.logger.log("ℹ️  Ventanas abiertas (organízalas manualmente si es necesario)")
+                    
+            except ImportError:
+                self.logger.log("ℹ️  Instala 'pygetwindow' para organización automática de ventanas")
+            except Exception as e:
+                self.logger.log(f"ℹ️  Ventanas abiertas: {e}")
+            
+            self.logger.log("\n" + "="*60)
+            self.logger.log("👉 SIGUIENTE PASO:")
+            self.logger.log("="*60)
+            self.logger.log("🖱️  1. Arrastra el archivo de DERECHA → IZQUIERDA")
+            self.logger.log("   (Explorador → SharePoint)")
+            self.logger.log("💾 2. Clic en 'Reemplazar' cuando pregunte")
+            self.logger.log("="*60)
+            
+        except Exception as e:
+            self.logger.log(f"⚠️ No se pudieron abrir las ventanas automáticamente: {e}")
+            self.logger.log(f"📂 Archivo guardado en: {config.OUTPUT_FILE}")
+            self.logger.log(f"🌐 SharePoint: {URL_SHAREPOINT}")
 
 def main():
     """Función principal de ejecución"""
@@ -809,3 +889,5 @@ def main():
     normalizador.procesar_leads(modo_validacion=validar)
     
     input("\n\nPresiona Enter para salir...")
+
+
