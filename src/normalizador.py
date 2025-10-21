@@ -437,6 +437,27 @@ class NormalizadorLeads:
         self.normalizaciones_nuevas.append(f"Grado: {grado_str} → {resultado} (default)")
         return resultado
     
+    def normalizar_telefono(self, telefono):
+            """
+            Limpia y normaliza números de teléfono
+            1. Quita todo lo que NO sea número (espacios, guiones, +, paréntesis, etc.)
+            2. Toma los últimos 8 dígitos
+            """
+            if pd.isna(telefono) or str(telefono).strip() == '':
+                return ''
+            
+            # Convertir a string y limpiar
+            telefono_str = str(telefono).strip()
+            
+            # Paso 1: Quitar todo excepto números
+            solo_numeros = re.sub(r'\D', '', telefono_str)
+            
+            # Paso 2: Tomar los últimos 8 dígitos
+            if len(solo_numeros) >= 8:
+                return solo_numeros[-8:]
+            else:
+                return solo_numeros  # Si tiene menos de 8, devolver lo que haya
+
     def completar_carrera(self, row):
         """
         Completa la carrera de interés - VERSIÓN MEJORADA
@@ -553,6 +574,12 @@ class NormalizadorLeads:
         # 4. Normalizar grados
         self.logger.log("\n🎓 Normalizando grados académicos...")
         df['___GRADO_NORMALIZADO___'] = df['___GRADO_UNIFICADO___'].apply(self.normalizar_grado)
+
+        # 📞 Normalizando números de teléfono...
+        if 'Phone Number' in df.columns:
+            self.logger.log("\n📞 Normalizando números de teléfono...")
+            df['Phone Number'] = df['Phone Number'].apply(self.normalizar_telefono)
+            self.logger.log("✅ Teléfonos normalizados (últimos 8 dígitos)")
         
         # 5. Procesar formularios
         self.logger.log("\n📝 Procesando Associated Form Submission...")
