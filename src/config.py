@@ -63,7 +63,7 @@ UNIVERSIDADES_GT = {
 
 }
 
-# ⭐ Colegios conocidos con nombres exactos
+# ⭐ Colegios conocidos con nombres exactos (se mantiene todo lo existente)
 COLEGIOS_CONOCIDOS = {
     # Colegios importantes que NO deben ser marcados como "Otro"
     'iga': 'Instituto Guatemalteco Americano (IGA)',
@@ -235,7 +235,7 @@ COLEGIOS_PRIORITARIOS = {
     'el prado': 'Colegio Bilingüe El Prado',
     'bilingue el prado': 'Colegio Bilingüe El Prado',
     
-    # LA SALLE (normalizar sin ubicación)
+    # LA SALLE
     'la salle': 'Liceo La Salle',
     'liceo la salle': 'Liceo La Salle',
     'lasalle': 'Liceo La Salle',
@@ -398,7 +398,8 @@ COLEGIOS_NO_UNIVERSITARIOS = {
     'colegio valle colonial'
 }
 
-# ⭐ Respuestas inválidas (EXPANDIDO)
+
+# Respuestas inválidas (EXPANDIDO)
 RESPUESTAS_INVALIDAS = [
     # Originales
     'no', 'ninguno', 'ninguna', 'no estudio', 'no estoy estudiando',
@@ -406,7 +407,7 @@ RESPUESTAS_INVALIDAS = [
     'terminado', 'solo necesito información', 'hola', 'saludos',
     'diseño grafico', 'diseño gráfico', 'ingenieria', 'ingeniería',
     'certificado en', 'perito en', 'maestria', 'maestría', 'licenciatura',
-    # ⭐ NUEVOS - Casos identificados
+    # Casos adicionales
     'xd', 'aub no', 'hola hay', 'hay maestria', 'hay maestría',
     'ahorita no tengo', 'no tengo oportunidad',
     'universidad completa', 'ya tengo universidad',
@@ -419,13 +420,13 @@ RESPUESTAS_INVALIDAS = [
     'trabajo en', 'no estoy estudiando por motivos',
 ]
 
-# ⭐ Siglas ambiguas (MANTENIDO)
+# Siglas ambiguas
 SIGLAS_AMBIGUAS = [
     'igs', 'mo', 'itce', 'insar', 'altiplano', 'ecc', 'xd',
     'fase', 'usar', 'aub no', 'graduated from', 'ex alumna', 'educate'
 ]
 
-# ⭐ NUEVO: Siglas que se deben expandir (para usar con web_search)
+# Siglas que se deben expandir
 SIGLAS_EXPANDIBLES = [
     'iga', 'iemcoop', 'isea', 'ced-ieca', 'ineb', 'ined'
 ]
@@ -453,7 +454,7 @@ MAPEO_FORMULARIOS = {
     'conoce la licenciatura en administración': 'Administración de Empresas',
 }
 
-# ⭐ Mapeo de carreras del CSV (con underscores)
+# Mapeo de carreras del CSV (con underscores)
 MAPEO_CARRERAS_CSV = {
     'ingeniería_en_administración_de_empresas': 'Ciencia de la Administración',
     'ingenieria_en_administracion_de_empresas': 'Ciencia de la Administración',
@@ -536,3 +537,116 @@ def crear_carpetas():
     os.makedirs('datos', exist_ok=True)
     os.makedirs('logs', exist_ok=True)
     os.makedirs(BACKUP_DIR, exist_ok=True)
+
+
+# ============================================================
+# ⭐ NUEVAS CONSTANTES PARA NORMALIZACIÓN DE GRADOS ACADÉMICOS
+# ============================================================
+
+# Mapeo de números escritos en texto a dígitos
+NUMEROS_TEXTO = {
+    'primero': '1',
+    'primer': '1',
+    'primera': '1',
+    'segundo': '2',
+    'segunda': '2',
+    'tercero': '3',
+    'tercer': '3',
+    'tercera': '3',
+    'cuarto': '4',
+    'cuarta': '4',
+    'quinto': '5',
+    'quinta': '5',
+    'sexto': '6',
+    'sexta': '6',
+    'septimo': '7',  # Sin tilde porque se normalizan
+    'septima': '7',
+}
+
+# Keywords para detectar estudiantes universitarios
+KEYWORDS_UNIVERSITARIO = [
+    'universidad',
+    'universitario',
+    'universitaria',
+    'carrera',
+    'facultad',
+    'licenciatura',
+    'ingenieria',  # Sin tilde
+    'tecnico superior',
+    'semestre',
+    'ano',  # Sin tilde (año)
+    'trimestre',
+    'cuatrimestre',
+    'bachelor',
+    'pem',
+    'profesor',
+    'profesora',
+    'maestria',  # Sin tilde
+    'postgrado',
+    'posgrado',
+]
+
+# Keywords para detectar graduación
+KEYWORDS_GRADUADO = [
+    'graduado',
+    'graduada',
+    'egresado',
+    'egresada',
+    'finalizado',
+    'finalizada',
+    'terminado',
+    'terminada',
+    'finalice',
+    'termine',
+    'gradue',  # Sin tilde
+    'egrese',
+]
+
+# Keywords para detectar diversificado/bachillerato
+KEYWORDS_DIVERSIFICADO = [
+    'diversificado',
+    'bachiller',
+    'bachillerato',
+    'bachi',
+    'perito',
+    'perita',
+    'secretari',
+    'magisterio',
+]
+
+# Keywords para detectar básico
+KEYWORDS_BASICO = [
+    'basico',  # Sin tilde
+    'ciclo basico',
+    'educacion basica',  # Sin tilde
+]
+
+# Patrones que indican valores de prueba/basura
+PATRONES_BASURA = [
+    'test',
+    'prueba',
+    'demo',
+    'ejemplo',
+    'aaa',
+    'xxx',
+    'asdf',
+    'qwerty',
+    'n/a',
+    '---',
+    '...',
+]
+
+# Opciones disponibles para validación manual de grados
+GRADOS_OPCIONES = [
+    "1ro. Básico",
+    "2do. Básico",
+    "3ro. Básico",
+    "4to. Diversificado",
+    "5to. Diversificado",
+    "6to. Diversificado",
+    "7mo. Diversificado",
+    "Estudiante Universitario",
+    "Graduado Diversificado",
+    "Graduado Universitario",
+    "Sin especificar",
+]

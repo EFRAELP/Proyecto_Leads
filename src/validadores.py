@@ -151,7 +151,7 @@ class Validadores:
                 mejor_match = key
         
         # ⭐ CAMBIADO: De 85 a 92 (más estricto)
-        if mejor_score > 92:
+        if mejor_score > 88:
             return diccionario_cat[mejor_match]
         
         return None
@@ -168,3 +168,124 @@ class Validadores:
                 return True
         
         return False
+
+# ============================================================
+# ⭐ NUEVAS FUNCIONES PARA NORMALIZACIÓN DE GRADOS ACADÉMICOS
+# ============================================================
+
+def es_valor_basura(texto, config):
+    """
+    Detecta si un valor es basura/prueba sin sentido
+    
+    Args:
+        texto: Texto a validar
+        config: Módulo de configuración con PATRONES_BASURA
+        
+    Returns:
+        True si es basura, False si no
+    """
+    if not texto or pd.isna(texto):
+        return False
+    
+    texto_str = str(texto).strip().lower()
+    
+    # Verificar si está vacío después de limpiar
+    if not texto_str or len(texto_str) < 1:
+        return False
+    
+    # 1. Verificar patrones de basura del config
+    for patron in config.PATRONES_BASURA:
+        if patron in texto_str:
+            return True
+    
+    # 2. Detectar códigos alfanuméricos sin sentido (ABC123, XYZ999)
+    import re
+    if re.match(r'^[a-z]{2,}[0-9]{2,}$', texto_str):
+        return True
+    
+    # 3. Detectar letras repetidas (aaa, xxx, asdf)
+    if len(set(texto_str)) <= 2 and len(texto_str) >= 3:
+        return True
+    
+    # 4. Detectar números largos sin sentido (más de 4 dígitos)
+    if texto_str.isdigit() and len(texto_str) > 4:
+        return True
+    
+    # 5. Solo símbolos
+    if all(c in '-._ /\\|()[]{}' for c in texto_str):
+        return True
+    
+    return False
+
+
+def detectar_graduacion_implicita(texto, config):
+    """
+    Detecta si el texto implica que la persona ya se graduó
+    
+    Args:
+        texto: Texto normalizado (minúsculas, sin tildes)
+        config: Módulo de configuración con KEYWORDS_GRADUADO
+        
+    Returns:
+        True si implica graduación, False si no
+    """
+    if not texto or pd.isna(texto):
+        return False
+    
+    texto_str = str(texto).strip().lower()
+    
+    # Buscar keywords de graduación
+    for keyword in config.KEYWORDS_GRADUADO:
+        if keyword in texto_str:
+            return True
+    
+    return False
+
+
+def validar_grado_manual(grado_original, grados_opciones, logger):
+    """
+    Muestra menú interactivo para clasificar manualmente un grado académico
+    
+    Args:
+        grado_original: Valor original que no se pudo clasificar
+        grados_opciones: Lista de opciones disponibles (de config.GRADOS_OPCIONES)
+        logger: Instancia de Logger para registrar la decisión
+        
+    Returns:
+        El grado normalizado seleccionado por el usuario
+    """
+    print("\n" + "="*60)
+    print(f"⚠️  NO SE PUDO CLASIFICAR AUTOMÁTICAMENTE: '{grado_original}'")
+    print("="*60)
+    print("\nSelecciona la clasificación correcta:\n")
+    
+    # Mostrar opciones numeradas
+    for i, opcion in enumerate(grados_opciones, 1):
+        print(f"  {i}. {opcion}")
+    
+    # Solicitar input del usuario
+    while True:
+        try:
+            respuesta = input(f"\nElige una opción (1-{len(grados_opciones)}): ").strip()
+            
+            # Validar que sea un número
+            opcion_num = int(respuesta)
+            
+            # Validar que esté en el rango
+            if 1 <= opcion_num <= len(grados_opciones):
+                grado_seleccionado = grados_opciones[opcion_num - 1]
+                
+                # Registrar en log
+                logger.log(f"✅ Clasificación manual: '{grado_original}' → '{grado_seleccionado}'")
+                
+                print(f"\n✅ Guardado como: {grado_seleccionado}\n")
+                return grado_seleccionado
+            else:
+                print(f"⚠️  Por favor, ingresa un número entre 1 y {len(grados_opciones)}")
+                
+        except ValueError:
+            print("⚠️  Por favor, ingresa un número válido")
+        except KeyboardInterrupt:
+            print("\n\n⚠️  Proceso interrumpido por el usuario")
+            logger.log(f"⚠️ Clasificación manual cancelada para: '{grado_original}'")
+            return "Sin especificar"

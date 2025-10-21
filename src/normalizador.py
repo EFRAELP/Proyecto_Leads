@@ -241,56 +241,199 @@ class NormalizadorLeads:
         
         return normalizado
     
-    def normalizar_grado(self, grado):
-        """Normaliza grado académico"""
-        if not grado or pd.isna(grado):
-            return "Sin especificar"
+    def normalizar_grado(self, grado, modo_validacion=True):
+        """
+        Normaliza grado académico con detección completa de patrones
         
+        Args:
+            grado: Valor del grado a normalizar
+            modo_validacion: Si True, pregunta al usuario en casos ambiguos
+            
+        Returns:
+            Grado normalizado
+        """
+        # Importar funciones auxiliares
+        from .validadores import es_valor_basura, detectar_graduacion_implicita, validar_grado_manual
+        
+        # ========================================
+        # PASO 1: Pre-procesamiento
+        # ========================================
+        
+        # Verificar si es nulo o vacío
+        if grado is None or pd.isna(grado):
+            if modo_validacion:
+                self.logger.log(f"⚠️ Valor nulo/vacío detectado - solicitando clasificación manual")
+                return validar_grado_manual("(vacío)", config.GRADOS_OPCIONES, self.logger)
+            else:
+                return "Sin especificar"
+        
+        # Convertir a string y limpiar
         grado_str = str(grado).strip()
+        
+        # Verificar si está vacío después de strip
         if not grado_str:
-            return "Sin especificar"
+            if modo_validacion:
+                self.logger.log(f"⚠️ Valor vacío detectado - solicitando clasificación manual")
+                return validar_grado_manual("(vacío)", config.GRADOS_OPCIONES, self.logger)
+            else:
+                return "Sin especificar"
         
-        grado_lower = grado_str.lower()
-        
-        # Detectar estudiantes universitarios
-        if 'universitario' in grado_lower or 'universidad' in grado_lower:
-            return "Estudiante Universitario"
-        
-        # Buscar números en el grado
-        match = re.search(r'(\d+)', grado_lower)
-        if match:
-            numero = match.group(1)
-            
-            # Diversificado o Bachillerato
-            if any(palabra in grado_lower for palabra in ['bachillerato', 'perito', 'diversificado']):
-                if numero == '4':
-                    return "4to Diversificado"
-                elif numero == '5':
-                    return "5to Diversificado"
-                elif numero == '6':
-                    return "6to Diversificado"
-            
-            # Básico
-            if 'basico' in grado_lower or 'básico' in grado_lower:
-                if numero == '1':
-                    return "1ro Básico"
-                elif numero == '2':
-                    return "2do Básico"
-                elif numero == '3':
-                    return "3ro Básico"
-        
-        # Graduados
-        if 'graduado' in grado_lower and 'diversificado' in grado_lower:
-            return "Graduado Diversificado"
-        
-        # Buscar en diccionario
+        # Buscar en diccionario primero (si ya fue clasificado antes)
         if grado_str in self.diccionario['grados']:
             return self.diccionario['grados'][grado_str]
         
-        # Si no se pudo normalizar, guardarlo
-        normalizado = grado_str
-        self.diccionario['grados'][grado_str] = normalizado
-        return normalizado
+        # Normalizar formato: lowercase y quitar tildes
+        grado_lower = grado_str.lower()
+        grado_normalizado = grado_lower.replace('á', 'a').replace('é', 'e').replace('í', 'i').replace('ó', 'o').replace('ú', 'u').replace('ñ', 'n')
+        
+        # Reemplazar guiones bajos por espacios
+        grado_normalizado = grado_normalizado.replace('_', ' ')
+        
+        # ========================================
+        # PASO 2: Detectar Graduado Universitario
+        # ========================================
+        if 'graduado' in grado_normalizado and 'universitario' in grado_normalizado:
+            self.diccionario['grados'][grado_str] = "Graduado Universitario"
+            self.normalizaciones_nuevas.append(f"Grado: {grado_str} → Graduado Universitario")
+            return "Graduado Universitario"
+        
+        # ========================================
+        # PASO 3: Detectar Graduado Diversificado
+        # ========================================
+        if 'graduado' in grado_normalizado and 'diversificado' in grado_normalizado:
+            self.diccionario['grados'][grado_str] = "Graduado Diversificado"
+            self.normalizaciones_nuevas.append(f"Grado: {grado_str} → Graduado Diversificado")
+            return "Graduado Diversificado"
+        
+        # Detectar graduación implícita (finalizado, terminado, egresado)
+        if detectar_graduacion_implicita(grado_normalizado, config):
+            self.diccionario['grados'][grado_str] = "Graduado Diversificado"
+            self.normalizaciones_nuevas.append(f"Grado: {grado_str} → Graduado Diversificado")
+            return "Graduado Diversificado"
+        
+        # ========================================
+        # PASO 4: Detectar Estudiante Universitario
+        # ========================================
+        contador_keywords_universitario = 0
+        for keyword in config.KEYWORDS_UNIVERSITARIO:
+            if keyword in grado_normalizado:
+                contador_keywords_universitario += 1
+        
+        if contador_keywords_universitario >= 1:
+            self.diccionario['grados'][grado_str] = "Estudiante Universitario"
+            self.normalizaciones_nuevas.append(f"Grado: {grado_str} → Estudiante Universitario")
+            return "Estudiante Universitario"
+        
+        # ========================================
+        # PASO 5: Extraer número del texto
+        # ========================================
+        numero_extraido = None
+        
+        # 5.1 Buscar ordinales (4to, 5to, 6to, 7mo, 1ro, 2do, 3ro)
+        match_ordinal = re.search(r'(\d+)(to|mo|ro|do)\.?', grado_normalizado)
+        if match_ordinal:
+            numero_extraido = match_ordinal.group(1)
+        
+        # 5.2 Si no encontró ordinal, buscar números en texto
+        if not numero_extraido:
+            for texto_num, digito in config.NUMEROS_TEXTO.items():
+                if texto_num in grado_normalizado:
+                    numero_extraido = digito
+                    break
+        
+        # 5.3 Si no encontró número en texto, buscar dígito solo
+        if not numero_extraido:
+            match_digito = re.search(r'\b([1-7])\b', grado_normalizado)
+            if match_digito:
+                numero_extraido = match_digito.group(1)
+        
+        # ========================================
+        # PASO 6: Clasificar por número
+        # ========================================
+        if numero_extraido:
+            # Convertir a int para comparar
+            num = int(numero_extraido)
+            
+            # BÁSICOS (1-3)
+            if num in [1, 2, 3]:
+                # Verificar si tiene contexto de "básico"
+                tiene_basico = any(keyword in grado_normalizado for keyword in config.KEYWORDS_BASICO)
+                
+                if tiene_basico:
+                    # Formatear según el número
+                    if num == 1:
+                        resultado = "1ro. Básico"
+                    elif num == 2:
+                        resultado = "2do. Básico"
+                    else:  # num == 3
+                        resultado = "3ro. Básico"
+                    
+                    self.diccionario['grados'][grado_str] = resultado
+                    self.normalizaciones_nuevas.append(f"Grado: {grado_str} → {resultado}")
+                    return resultado
+                else:
+                    # No tiene contexto, preguntar
+                    if modo_validacion:
+                        self.logger.log(f"⚠️ Número {num} sin contexto - solicitando clasificación manual")
+                        resultado = validar_grado_manual(grado_str, config.GRADOS_OPCIONES, self.logger)
+                        self.diccionario['grados'][grado_str] = resultado
+                        self.normalizaciones_nuevas.append(f"Grado: {grado_str} → {resultado}")
+                        return resultado
+                    else:
+                        # Sin modo validación, asumir básico
+                        if num == 1:
+                            resultado = "1ro. Básico"
+                        elif num == 2:
+                            resultado = "2do. Básico"
+                        else:
+                            resultado = "3ro. Básico"
+                        
+                        self.diccionario['grados'][grado_str] = resultado
+                        return resultado
+            
+            # DIVERSIFICADO (4-7)
+            elif num in [4, 5, 6, 7]:
+                # Formatear según el número
+                if num == 4:
+                    resultado = "4to. Diversificado"
+                elif num == 5:
+                    resultado = "5to. Diversificado"
+                elif num == 6:
+                    resultado = "6to. Diversificado"
+                else:  # num == 7
+                    resultado = "7mo. Diversificado"
+                
+                self.diccionario['grados'][grado_str] = resultado
+                self.normalizaciones_nuevas.append(f"Grado: {grado_str} → {resultado}")
+                return resultado
+        
+        # ========================================
+        # PASO 7: Detectar diversificado SIN número
+        # ========================================
+        tiene_keyword_diversificado = any(keyword in grado_normalizado for keyword in config.KEYWORDS_DIVERSIFICADO)
+        
+        if tiene_keyword_diversificado:
+            resultado = "5to. Diversificado"
+            self.diccionario['grados'][grado_str] = resultado
+            self.normalizaciones_nuevas.append(f"Grado: {grado_str} → {resultado}")
+            return resultado
+        
+        # ========================================
+        # PASO 8: Detectar valores basura
+        # ========================================
+        if es_valor_basura(grado_normalizado, config):
+            resultado = "5to. Diversificado"
+            self.diccionario['grados'][grado_str] = resultado
+            self.normalizaciones_nuevas.append(f"Grado: {grado_str} → {resultado} (basura)")
+            return resultado
+        
+        # ========================================
+        # PASO 9: Default - no coincide con nada
+        # ========================================
+        resultado = "5to. Diversificado"
+        self.diccionario['grados'][grado_str] = resultado
+        self.normalizaciones_nuevas.append(f"Grado: {grado_str} → {resultado} (default)")
+        return resultado
     
     def completar_carrera(self, row):
         """
