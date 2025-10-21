@@ -422,7 +422,7 @@ RESPUESTAS_INVALIDAS = [
 
 # Siglas ambiguas
 SIGLAS_AMBIGUAS = [
-    'igs', 'mo', 'itce', 'insar', 'altiplano', 'ecc', 'xd',
+    'igs', 'mo', 'itce', 'insar', 'altiplano', 'xd',
     'fase', 'usar', 'aub no', 'graduated from', 'ex alumna', 'educate'
 ]
 

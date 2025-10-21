@@ -5037,3 +5037,93 @@ Total de colegios procesados: 605
 [2025-10-20 22:06:38] 
 ✅ Archivo guardado: datos/datos_limpios.csv
 [2025-10-20 22:06:38] 🎉 ¡Listo para Power BI!
+[2025-10-21 00:47:26] 
+============================================================
+[2025-10-21 00:47:26] 🚀 INICIANDO NORMALIZACIÓN
+[2025-10-21 00:47:26] ============================================================
+[2025-10-21 00:47:26] 
+📂 Leyendo: datos/hubspot_export.csv
+[2025-10-21 00:47:26] ✅ Leído: 373 leads
+[2025-10-21 00:47:26] 
+🔄 Unificando columnas...
+[2025-10-21 00:47:26] ✅ Unificadas: Grado Académico + Grado Académico.1
+[2025-10-21 00:47:26] ✅ Columnas unificadas
+[2025-10-21 00:47:26] 
+🏫 Normalizando colegios...
+[2025-10-21 00:47:26] Colegios únicos: 282
+[2025-10-21 00:47:26] 🔍 Sigla ambigua detectada: 'IGS'
+[2025-10-21 00:47:26] 🔍 Sigla ambigua detectada: 'Fase'
+[2025-10-21 00:47:26] 🔍 Sigla ambigua detectada: 'Itce'
+[2025-10-21 00:47:26] 🔍 Sigla ambigua detectada: 'IGS'
+[2025-10-21 00:47:26] 🔍 Sigla ambigua detectada: 'Fase'
+[2025-10-21 00:47:26] 🔍 Sigla ambigua detectada: 'Itce'
+[2025-10-21 00:47:26] 🔍 Sigla ambigua detectada: 'Itce'
+[2025-10-21 00:47:26] 
+🎓 Normalizando grados académicos...
+[2025-10-21 00:47:26] 
+📝 Procesando Associated Form Submission...
+[2025-10-21 00:47:26] ✓ Columna encontrada: 'Associated Form submission'
+[2025-10-21 00:47:26] ✓ Procesados 373 formularios
+[2025-10-21 00:47:26] 
+🎯 Completando Carrera de Interés...
+[2025-10-21 00:47:26] ✓ Columna encontrada: 'Carrera de Interés'
+[2025-10-21 00:47:26] 
+🔗 Categorizando URLs...
+[2025-10-21 00:47:26] 
+🔄 Reemplazando columnas originales...
+[2025-10-21 00:47:26] ✅ Reemplazada columna: Grado Académico
+[2025-10-21 00:47:26] ✅ Eliminada columna duplicada: Grado Académico.1
+[2025-10-21 00:47:26] ✅ Reemplazada columna: Colegio Actual
+[2025-10-21 00:47:26] ✅ Eliminada columna redundante: En qué colegio estudias actualmente?
+[2025-10-21 00:47:26] ✓ Reemplazando 'Associated Form submission'...
+[2025-10-21 00:47:26]   Ejemplo ANTES: .elementor-form, .elementor-form-waiting;.elementor-form, .elementor-form-waiting;.elementor-form, .elementor-form-waiting;.elementor-form;.elementor-form;.elementor-form, .elementor-form-waiting;.elementor-form, .elementor-form-waiting;.elementor-form, .elementor-form-waiting;.elementor-form, .elementor-form-waiting;.elementor-form, .elementor-form-waiting;.elementor-form, .elementor-form-waiting
+[2025-10-21 00:47:26]   Ejemplo PROCESADO: Otro
+[2025-10-21 00:47:26]   Ejemplo DESPUÉS: Otro
+[2025-10-21 00:47:26] ✅ Reemplazada columna: Associated Form submission
+[2025-10-21 00:47:26] ✓ Reemplazando 'Carrera de Interés'...
+[2025-10-21 00:47:26] ✅ Reemplazada columna: Carrera de Interés
+[2025-10-21 00:47:26] ✅ Reemplazada columna: First Page Seen
+[2025-10-21 00:47:26] ✅ Reemplazada columna: Last Page Seen
+[2025-10-21 00:47:26] 
+🗑️ Eliminando columnas temporales...
+[2025-10-21 00:47:26] ✅ Eliminadas 0 columnas temporales
+[2025-10-21 00:47:26] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-10-21 00:47:26] 
+💾 Guardando diccionario...
+[2025-10-21 00:47:26] 💾 Backup creado: diccionario_backup_20251021_004726.json
+[2025-10-21 00:47:26] ✅ Diccionario guardado:
+[2025-10-21 00:47:26]    • 279 colegios
+[2025-10-21 00:47:26]    • 22 URLs
+[2025-10-21 00:47:26]    • 4 formularios
+[2025-10-21 00:47:26] 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2025-10-21 00:47:26] 📊 ESTADÍSTICAS DE NORMALIZACIÓN DE COLEGIOS
+[2025-10-21 00:47:26] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2025-10-21 00:47:26] 
+Total de colegios procesados: 605
+[2025-10-21 00:47:26] 
+🏠 VALIDACIONES LOCALES (sin Claude): 605 (100.0%)
+[2025-10-21 00:47:26]   ├─ En diccionario previo: 605
+[2025-10-21 00:47:26]   ├─ Respuestas inválidas → 'Otro': 0
+[2025-10-21 00:47:26]   ├─ Colegios conocidos: 0
+[2025-10-21 00:47:26]   ├─ Universidades conocidas: 0
+[2025-10-21 00:47:26]   └─ Patrones automáticos: 0
+[2025-10-21 00:47:26] 
+🤖 CONSULTAS A CLAUDE API: 0 (0.0%)
+[2025-10-21 00:47:26]   ├─ Sin web_search: 0
+[2025-10-21 00:47:26]   ├─ Con web_search: 0
+[2025-10-21 00:47:26]   └─ % con web_search: 0%
+[2025-10-21 00:47:26] 
+💡 Tokens usados: 0
+[2025-10-21 00:47:26] 💰 Costo aproximado: $0.0000
+[2025-10-21 00:47:26] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2025-10-21 00:47:26] 
+============================================================
+[2025-10-21 00:47:26] ✅ PROCESO COMPLETADO
+[2025-10-21 00:47:26] ============================================================
+[2025-10-21 00:47:26] 📊 Total de leads procesados: 373
+[2025-10-21 00:47:26] 🆕 Normalizaciones nuevas: 0
+[2025-10-21 00:47:26] 
+✅ Archivo guardado: datos/datos_limpios.csv
+[2025-10-21 00:47:26] 🎉 ¡Listo para Power BI!
