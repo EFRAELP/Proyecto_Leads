@@ -5236,3 +5236,232 @@ Total de colegios procesados: 605
 [2025-10-21 12:08:03]    (Explorador → SharePoint)
 [2025-10-21 12:08:03] 💾 2. Clic en 'Reemplazar' cuando pregunte
 [2025-10-21 12:08:03] ============================================================
+[2025-11-03 13:03:43] 
+============================================================
+[2025-11-03 13:03:43] 🚀 INICIANDO NORMALIZACIÓN
+[2025-11-03 13:03:43] ============================================================
+[2025-11-03 13:03:43] 
+📂 Leyendo: datos/hubspot_export.csv
+[2025-11-03 13:03:43] ✅ Leído: 471 leads
+[2025-11-03 13:03:43] 
+🔄 Unificando columnas...
+[2025-11-03 13:03:43] ✅ Unificadas: Grado Académico + Grado Académico.1
+[2025-11-03 13:03:43] ✅ Columnas unificadas
+[2025-11-03 13:03:43] 
+🏫 Normalizando colegios...
+[2025-11-03 13:03:43] Colegios únicos: 360
+[2025-11-03 13:03:43] 🤖 Consultando Claude: 'IDCA'
+[2025-11-03 13:03:46] ⚠️ Respuesta muy larga: 'IDCA' → 'Otro'
+[2025-11-03 13:03:46] 📚 Patrón colegio detectado: 'Escuela Nacional de Ciencias Comerciales  comercio' → 'Escuela Nacional De Ciencias Comerciales  Comercio'
+[2025-11-03 13:03:46] 📚 Patrón colegio detectado: 'Liceo canadiense' → 'Liceo Canadiense'
+[2025-11-03 13:03:46] ✅ Colegio conocido: 'INTECAP' → 'INTECAP'
+[2025-11-03 13:03:46] 🤖 Consultando Claude: 'Emilio Rosales Ponce'
+[2025-11-03 13:03:49] 🎓 Universidad detectada: 'I Semestre universidad mariano Gálvez' → 'Universidad Mariano Gálvez'
+[2025-11-03 13:03:49] 📚 Patrón colegio detectado: 'Liceo Profesional de Informática' → 'Liceo Profesional De Informática'
+[2025-11-03 13:03:49] 🤖 Consultando Claude: 'Experimental'
+[2025-11-03 13:03:51] 📚 Patrón colegio detectado: 'Liceo mixto latino' → 'Liceo Mixto Latino'
+[2025-11-03 13:03:51] 🤖 Consultando Claude: 'San José de la Encarnación'
+[2025-11-03 13:03:56] ⚠️ Respuesta muy larga: 'San José de la Encarnación' → 'Otro'
+[2025-11-03 13:03:56] 🤖 Consultando Claude: 'grupo ceiba'
+[2025-11-03 13:04:01] ⚠️ Respuesta muy larga: 'grupo ceiba' → 'Otro'
+[2025-11-03 13:04:01] 📚 Patrón colegio detectado: 'Instituto indígena nuestra señora de socorro, La Antigua Guatemala' → 'Instituto Indígena Nuestra Señora De Socorro, La Antigua Guatemala'
+[2025-11-03 13:04:01] 🤖 Consultando Claude: 'Campoalegre'
+[2025-11-03 13:04:04] ⚠️ Respuesta muy larga: 'Campoalegre' → 'Otro'
+[2025-11-03 13:04:04] 📚 Patrón colegio detectado: 'Liceo Mixto San Juan' → 'Liceo Mixto San Juan'
+[2025-11-03 13:04:04] 🎓 Universidad detectada: 'Liceo valle del sol' → 'Universidad del Valle de Guatemala'
+[2025-11-03 13:04:04] 🤖 Consultando Claude: 'maestra de preprimaria'
+[2025-11-03 13:04:06] 🤖 Consultando Claude: 'Centro Tecnológico El Éxito'
+[2025-11-03 13:04:10] ⚠️ Respuesta muy larga: 'Centro Tecnológico El Éxito' → 'Otro'
+[2025-11-03 13:04:10] 🤖 Consultando Claude: 'Bilingue santo domingo'
+[2025-11-03 13:04:14] ⚠️ Respuesta muy larga: 'Bilingue santo domingo' → 'Otro'
+[2025-11-03 13:04:14] 📚 Patrón colegio detectado: 'Liceo preuniversitario Torricelli' → 'Liceo Preuniversitario Torricelli'
+[2025-11-03 13:04:14] 🔍 Sigla ambigua detectada: 'Cen'
+[2025-11-03 13:04:14] 🤖 Consultando Claude: 'ITI GK'
+[2025-11-03 13:05:45] ❌ Error Claude: Error code: 500 - {'type': 'error', 'error': {'type': 'api_error', 'message': 'Internal server error'}, 'request_id': 'req_011CUmUcHg5tR5ZK2MmLJdRd'}
+[2025-11-03 13:05:45] 🤖 Consultando Claude: 'ISEA Business School'
+[2025-11-03 13:05:49] ⚠️ Respuesta muy larga: 'ISEA Business School' → 'Otro'
+[2025-11-03 13:05:49] 🤖 Consultando Claude: 'Montesquieu'
+[2025-11-03 13:05:56] ⚠️ Respuesta muy larga: 'Montesquieu' → 'Otro'
+[2025-11-03 13:05:56] 📚 Patrón colegio detectado: 'Colegio campo alto Colinas' → 'Colegio Campo Alto Colinas'
+[2025-11-03 13:05:56] 📚 Patrón colegio detectado: 'Colegio Cristiano Verbo Alamos' → 'Colegio Cristiano Verbo Alamos'
+[2025-11-03 13:05:56] 🎓 Universidad detectada: 'Panamericana' → 'Universidad Panamericana'
+[2025-11-03 13:05:56] ⚠️ Título académico detectado: 'Bachillerato en ciencias y letras con orientación en computación' → 'Otro'
+[2025-11-03 13:05:56] 📚 Patrón colegio detectado: 'Centro Educativo Rax Kiche' → 'Centro Educativo Rax Kiche'
+[2025-11-03 13:05:56] 🤖 Consultando Claude: 'etma'
+[2025-11-03 13:05:59] 🎓 Universidad detectada: 'UFM' → 'Universidad Francisco Marroquín'
+[2025-11-03 13:05:59] 🤖 Consultando Claude: 'Este año termine, shaddai san Benito'
+[2025-11-03 13:06:05] ⚠️ Respuesta muy larga: 'Este año termine, shaddai san Benito' → 'Otro'
+[2025-11-03 13:06:05] 📚 Patrón colegio detectado: 'Liceo Villa hermosa en informática comercial' → 'Liceo Villa Hermosa En Informática Comercial'
+[2025-11-03 13:06:05] 📚 Patrón colegio detectado: 'Liceo Manuel Galich' → 'Liceo Manuel Galich'
+[2025-11-03 13:06:05] 🎓 Universidad detectada: 'Pause mis estudios pero estaba en la mariano galvez' → 'Universidad Mariano Gálvez'
+[2025-11-03 13:06:05] ⚠️ Respuesta inválida detectada: 'Ya me gradué en el instituto Rafael Landívar' → 'Otro'
+[2025-11-03 13:06:05] 📚 Patrón colegio detectado: 'Liceo técnico maya tikal' → 'Liceo Técnico Maya Tikal'
+[2025-11-03 13:06:05] 📚 Patrón colegio detectado: 'Colegio "Cristo Rey"' → 'Colegio "Cristo Rey"'
+[2025-11-03 13:06:05] ⚠️ Título académico detectado: 'Tengo un técnico en publicidad profesional universitario' → 'Otro'
+[2025-11-03 13:06:05] 🤖 Consultando Claude: 'Duversifucado terminado'
+[2025-11-03 13:06:07] 📚 Patrón colegio detectado: 'Instituto Americano en Ciencias de Computación' → 'Instituto Americano En Ciencias De Computación'
+[2025-11-03 13:06:07] ✅ Colegio conocido: 'capouilliez' → 'Colegio Mixto Capouilliez'
+[2025-11-03 13:06:07] ⚠️ Respuesta inválida detectada: 'graduado' → 'Otro'
+[2025-11-03 13:06:07] 📚 Patrón colegio detectado: 'Colegio Liceo Clásico en Computación fin de semana' → 'Colegio Liceo Clásico En Computación Fin De Semana'
+[2025-11-03 13:06:07] 📚 Patrón colegio detectado: 'Instituto privado mixto Concepción samayac suchitepequez' → 'Instituto Privado Mixto Concepción Samayac Suchitepequez'
+[2025-11-03 13:06:07] 🤖 Consultando Claude: 'Anteriormente en Instituto La Salle Mixto Intercultural Santiago'
+[2025-11-03 13:06:10] ⚠️ Respuesta muy larga: 'Anteriormente en Instituto La Salle Mixto Intercultural Santiago' → 'Otro'
+[2025-11-03 13:06:10] 🤖 Consultando Claude: 'inmnem retalhuleu'
+[2025-11-03 13:06:14] ⚠️ Respuesta muy larga: 'inmnem retalhuleu' → 'Otro'
+[2025-11-03 13:06:14] 📚 Patrón colegio detectado: 'instituto tecnológico municipal TEC' → 'Instituto Tecnológico Municipal Tec'
+[2025-11-03 13:06:14] 📚 Patrón colegio detectado: 'liceo antigueño' → 'Liceo Antigueño'
+[2025-11-03 13:06:14] 🎓 Universidad detectada: 'Universidad Mariano Galvez' → 'Universidad Mariano Gálvez'
+[2025-11-03 13:06:14] 🎓 Universidad detectada: 'colegio privado rafael landivar' → 'Universidad Rafael Landívar'
+[2025-11-03 13:06:14] 📚 Patrón colegio detectado: 'Liceo san jose, san jose el idolo suchitepequez' → 'Liceo San Jose, San Jose El Idolo Suchitepequez'
+[2025-11-03 13:06:14] 📚 Patrón colegio detectado: 'Colegio María Auxiliadora' → 'Colegio María Auxiliadora'
+[2025-11-03 13:06:14] 🤖 Consultando Claude: 'stella de hernandez'
+[2025-11-03 13:06:17] 🤖 Consultando Claude: 'von hayerk'
+[2025-11-03 13:06:21] ⚠️ Respuesta muy larga: 'von hayerk' → 'Otro'
+[2025-11-03 13:06:21] ✓ Fuzzy match: 'Sagrado Corazón' → 'Colegio El Sagrado Corazón de Jesús'
+[2025-11-03 13:06:21] 🤖 Consultando Claude: 'El saber'
+[2025-11-03 13:06:23] ✅ Colegio conocido: 'La salle' → 'Liceo La Salle'
+[2025-11-03 13:06:23] 📚 Patrón colegio detectado: 'colegio classe' → 'Colegio Classe'
+[2025-11-03 13:06:23] 🤖 Consultando Claude: 'seguir estudiando'
+[2025-11-03 13:06:25] 📚 Patrón colegio detectado: 'Instituto tecnología y ciencia' → 'Instituto Tecnología Y Ciencia'
+[2025-11-03 13:06:25] 🤖 Consultando Claude: 'Bilingua Vista Hermosa (graduado)'
+[2025-11-03 13:06:27] 🎓 Universidad detectada: 'Universidad Rural de Guatemala' → 'Universidad Rural'
+[2025-11-03 13:06:27] 📚 Patrón colegio detectado: 'Colegio Evangelico Mixto  Bethesda' → 'Colegio Evangelico Mixto  Bethesda'
+[2025-11-03 13:06:27] 📚 Patrón colegio detectado: 'Liceo de computación siglo XXI' → 'Liceo De Computación Siglo Xxi'
+[2025-11-03 13:06:27] ⚠️ No es un colegio detectado: 'Instituto normal mixto Diversificado por cooperativa Chicaman' → 'Otro'
+[2025-11-03 13:06:27] 🤖 Consultando Claude: 'Nacional de ciencia comerciales no.3 jornada nocturna'
+[2025-11-03 13:06:29] 📚 Patrón colegio detectado: 'Escuela profesional San Vicente de paúl' → 'Escuela Profesional San Vicente De Paúl'
+[2025-11-03 13:06:29] 🤖 Consultando Claude: 'IMEBBM'
+[2025-11-03 13:06:33] ⚠️ Respuesta con formato: 'IMEBBM' → 'Otro'
+[2025-11-03 13:06:33] ⚠️ Respuesta inválida detectada: 'Ninguna' → 'Otro'
+[2025-11-03 13:06:33] ✅ Colegio conocido: 'Kinal' → 'Centro Educativo Técnico Laboral Kinal'
+[2025-11-03 13:06:33] 📚 Patrón colegio detectado: 'Instituto tecnológico Lincoln' → 'Instituto Tecnológico Lincoln'
+[2025-11-03 13:06:33] 📚 Patrón colegio detectado: 'Liceo Clásico en Computación' → 'Liceo Clásico En Computación'
+[2025-11-03 13:06:33] 🤖 Consultando Claude: 'Ya terminé'
+[2025-11-03 13:06:36] 🎓 Universidad detectada: 'Universidad UMG' → 'Universidad Mariano Gálvez'
+[2025-11-03 13:06:36] 📚 Patrón colegio detectado: 'Colegio Campo alto Colinas' → 'Colegio Campo Alto Colinas'
+[2025-11-03 13:06:36] ⚠️ Respuesta inválida detectada: 'graduada' → 'Otro'
+[2025-11-03 13:06:36] 🤖 Consultando Claude: 'estudios culminados'
+[2025-11-03 13:06:38] 🤖 Consultando Claude: 'INED Poza Verde'
+[2025-11-03 13:06:42] ⚠️ Respuesta muy larga: 'INED Poza Verde' → 'Otro'
+[2025-11-03 13:06:42] 🔍 Sigla ambigua detectada: 'IGS'
+[2025-11-03 13:06:42] 🔍 Sigla ambigua detectada: 'Fase'
+[2025-11-03 13:06:42] 🔍 Sigla ambigua detectada: 'Itce'
+[2025-11-03 13:06:42] 🔍 Sigla ambigua detectada: 'Cen'
+[2025-11-03 13:06:42] 🔍 Sigla ambigua detectada: 'IGS'
+[2025-11-03 13:06:42] 🔍 Sigla ambigua detectada: 'Fase'
+[2025-11-03 13:06:42] 🔍 Sigla ambigua detectada: 'Itce'
+[2025-11-03 13:06:42] 🔍 Sigla ambigua detectada: 'Itce'
+[2025-11-03 13:06:42] 
+🎓 Normalizando grados académicos...
+[2025-11-03 13:06:42] 
+📞 Normalizando números de teléfono...
+[2025-11-03 13:06:42] ✅ Teléfonos normalizados (últimos 8 dígitos)
+[2025-11-03 13:06:42] 
+📝 Procesando Associated Form Submission...
+[2025-11-03 13:06:42] ✓ Columna encontrada: 'Associated Form submission'
+[2025-11-03 13:06:42] ✓ Procesados 471 formularios
+[2025-11-03 13:06:42] 
+🎯 Completando Carrera de Interés...
+[2025-11-03 13:06:42] ✓ Columna encontrada: 'Carrera de Interés'
+[2025-11-03 13:06:42] 
+🔗 Categorizando URLs...
+[2025-11-03 13:06:42] 🔗 URL categorizada: 'Ciencia de la Administración' (patrón: 'ing%2badministracion')
+[2025-11-03 13:06:42] 🔗 URL categorizada: 'Administración de Empresas' (patrón: 'lic+administracion')
+[2025-11-03 13:06:42] 🔗 URL categorizada: 'International Marketing and Business Analytics' (patrón: 'lic%2bmarketing')
+[2025-11-03 13:06:42] 
+🔄 Reemplazando columnas originales...
+[2025-11-03 13:06:42] ✅ Reemplazada columna: Grado Académico
+[2025-11-03 13:06:42] ✅ Eliminada columna duplicada: Grado Académico.1
+[2025-11-03 13:06:42] ✅ Reemplazada columna: Colegio Actual
+[2025-11-03 13:06:42] ✅ Eliminada columna redundante: En qué colegio estudias actualmente?
+[2025-11-03 13:06:42] ✓ Reemplazando 'Associated Form submission'...
+[2025-11-03 13:06:42]   Ejemplo ANTES: .elementor-form, .elementor-form-waiting;.elementor-form, .elementor-form-waiting;.elementor-form, .elementor-form-waiting;.elementor-form;.elementor-form;.elementor-form, .elementor-form-waiting;.elementor-form, .elementor-form-waiting;.elementor-form, .elementor-form-waiting;.elementor-form, .elementor-form-waiting;.elementor-form, .elementor-form-waiting;.elementor-form, .elementor-form-waiting
+[2025-11-03 13:06:42]   Ejemplo PROCESADO: Otro
+[2025-11-03 13:06:42]   Ejemplo DESPUÉS: Otro
+[2025-11-03 13:06:42] ✅ Reemplazada columna: Associated Form submission
+[2025-11-03 13:06:42] ✓ Reemplazando 'Carrera de Interés'...
+[2025-11-03 13:06:42] ✅ Reemplazada columna: Carrera de Interés
+[2025-11-03 13:06:42] ✅ Reemplazada columna: First Page Seen
+[2025-11-03 13:06:42] ✅ Reemplazada columna: Last Page Seen
+[2025-11-03 13:06:42] 
+🗑️ Eliminando columnas temporales...
+[2025-11-03 13:06:42] ✅ Eliminadas 0 columnas temporales
+[2025-11-03 13:06:42] 
+💾 Guardando archivo limpio: datos/datos_limpios.csv
+[2025-11-03 13:06:42] 
+💾 Guardando diccionario...
+[2025-11-03 13:06:42] 💾 Backup creado: diccionario_backup_20251103_130642.json
+[2025-11-03 13:06:42] ✅ Diccionario guardado:
+[2025-11-03 13:06:42]    • 356 colegios
+[2025-11-03 13:06:42]    • 25 URLs
+[2025-11-03 13:06:42]    • 4 formularios
+[2025-11-03 13:06:42] 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2025-11-03 13:06:42] 📊 ESTADÍSTICAS DE NORMALIZACIÓN DE COLEGIOS
+[2025-11-03 13:06:42] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2025-11-03 13:06:42] 
+Total de colegios procesados: 778
+[2025-11-03 13:06:42] 
+🏠 VALIDACIONES LOCALES (sin Claude): 751 (96.5%)
+[2025-11-03 13:06:42]   ├─ En diccionario previo: 702
+[2025-11-03 13:06:42]   ├─ Respuestas inválidas → 'Otro': 7
+[2025-11-03 13:06:42]   ├─ Colegios conocidos: 4
+[2025-11-03 13:06:42]   ├─ Universidades conocidas: 9
+[2025-11-03 13:06:42]   └─ Patrones automáticos: 29
+[2025-11-03 13:06:42] 
+🤖 CONSULTAS A CLAUDE API: 27 (3.5%)
+[2025-11-03 13:06:42]   ├─ Sin web_search: 26
+[2025-11-03 13:06:42]   ├─ Con web_search: 0
+[2025-11-03 13:06:42]   └─ % con web_search: 0.0%
+[2025-11-03 13:06:42] 
+💡 Tokens usados: 25,059
+[2025-11-03 13:06:42] 💰 Costo aproximado: $0.0752
+[2025-11-03 13:06:42] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2025-11-03 13:06:42] 
+============================================================
+[2025-11-03 13:06:42] ✅ PROCESO COMPLETADO
+[2025-11-03 13:06:42] ============================================================
+[2025-11-03 13:06:42] 📊 Total de leads procesados: 471
+[2025-11-03 13:06:42] 🆕 Normalizaciones nuevas: 78
+[2025-11-03 13:06:42] 
+📝 NUEVAS NORMALIZACIONES:
+[2025-11-03 13:06:42]   • Colegio: IDCA → Otro
+[2025-11-03 13:06:42]   • Colegio: Escuela Nacional de Ciencias Comerciales  comercio → Escuela Nacional De Ciencias Comerciales  Comercio
+[2025-11-03 13:06:42]   • Colegio: Liceo canadiense → Liceo Canadiense
+[2025-11-03 13:06:42]   • Colegio: INTECAP → INTECAP
+[2025-11-03 13:06:42]   • Colegio: Emilio Rosales Ponce → Otro
+[2025-11-03 13:06:42]   • Colegio: I Semestre universidad mariano Gálvez → Universidad Mariano Gálvez
+[2025-11-03 13:06:42]   • Colegio: Liceo Profesional de Informática → Liceo Profesional De Informática
+[2025-11-03 13:06:42]   • Colegio: Experimental → Otro
+[2025-11-03 13:06:42]   • Colegio: Liceo mixto latino → Liceo Mixto Latino
+[2025-11-03 13:06:42]   • Colegio: San José de la Encarnación → Otro
+[2025-11-03 13:06:42]   • Colegio: grupo ceiba → Otro
+[2025-11-03 13:06:42]   • Colegio: Instituto indígena nuestra señora de socorro, La Antigua Guatemala → Instituto Indígena Nuestra Señora De Socorro, La Antigua Guatemala
+[2025-11-03 13:06:42]   • Colegio: Campoalegre → Otro
+[2025-11-03 13:06:42]   • Colegio: Liceo Mixto San Juan → Liceo Mixto San Juan
+[2025-11-03 13:06:42]   • Colegio: Liceo valle del sol → Universidad del Valle de Guatemala
+[2025-11-03 13:06:42]   • Colegio: maestra de preprimaria → Otro
+[2025-11-03 13:06:42]   • Colegio: Centro Tecnológico El Éxito → Otro
+[2025-11-03 13:06:42]   • Colegio: Bilingue santo domingo → Otro
+[2025-11-03 13:06:42]   • Colegio: Liceo preuniversitario Torricelli → Liceo Preuniversitario Torricelli
+[2025-11-03 13:06:42]   • Colegio: ITI GK → ITI GK
+[2025-11-03 13:06:42]   ... y 58 más
+[2025-11-03 13:06:42] 
+✅ Archivo guardado: datos/datos_limpios.csv
+[2025-11-03 13:06:42] 🎉 ¡Listo para Power BI!
+[2025-11-03 13:06:42] 
+============================================================
+[2025-11-03 13:06:42] 📤 PREPARANDO SUBIDA A SHAREPOINT
+[2025-11-03 13:06:42] ============================================================
+[2025-11-03 13:06:42] 📂 Archivo listo: datos/datos_limpios.csv
+[2025-11-03 13:06:42] 
+🚀 Abriendo SharePoint y carpeta local...
+[2025-11-03 13:06:46] ℹ️  Instala 'pygetwindow' para organización automática de ventanas
+[2025-11-03 13:06:46] 
+============================================================
+[2025-11-03 13:06:46] 👉 SIGUIENTE PASO:
+[2025-11-03 13:06:46] ============================================================
+[2025-11-03 13:06:46] 🖱️  1. Arrastra el archivo de DERECHA → IZQUIERDA
+[2025-11-03 13:06:46]    (Explorador → SharePoint)
+[2025-11-03 13:06:46] 💾 2. Clic en 'Reemplazar' cuando pregunte
+[2025-11-03 13:06:46] ============================================================
